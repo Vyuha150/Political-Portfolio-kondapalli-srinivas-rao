@@ -505,7 +505,7 @@ Preloader Area CSS
 	position:relative;
 }
 .overlay:before{
-	position:absolute;
+	position:bottom;
 	content:"";
 	left:0;
 	top:0;
