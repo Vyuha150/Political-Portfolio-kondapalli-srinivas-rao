@@ -43,67 +43,96 @@
         <link rel="stylesheet" href="css/responsive.css">
 		
     </head>
-	<header class="header" >
-		<!-- New Container -->
-		<div class="image-container" >
-			<div class="container">
-				<div class="row">
-					<div class="col-2"><img src="img/moditopbar.jpg" alt="Image 1" class="round-image"></div>
-					<div class="col-2"><img src="img/SRI-NARA-CHANDRA-BABU-NAIDU-modified.png" alt="Image 2" class="round-image"></div>
-					<div class="col-2"><img src="img/Pawan K-modified.png" alt="Image 3" class="round-image"></div>
-					<div class="col-2"><img src="img/allaince.jpg" alt="Image 4" class="round-image"></div>
-					<div class="col-2"><img src="img/srntr.webp" alt="Image 5" class="round-image"></div>
-					<div class="col-2"><img src="img/Picture_of_nara_lokesh.png" alt="Image 6" class="round-image"></div>
-				</div>
-			</div>
-		</div>
-		<!-- End New Container -->
-	
-		<!-- Header Inner -->
-		<div class="header-inner">
-			<div class="container">
-				<div class="inner">
-					<div class="row">
-						<div class="col-lg-3 col-md-3 col-12">
-							<!-- Start Logo -->
-							<div class="logo">
-								<a href="index.html"><img src="img/TDPLogo.png" alt="#"></a>
-							</div>
-							<!-- End Logo -->
-							<!-- Mobile Nav -->
-							<div class="mobile-nav"></div>
-							<!-- End Mobile Nav -->
-						</div>
-						<div class="col-lg-7 col-md-9 col-12">
-							<!-- Main Menu -->
-							<div class="main-menu">
-								<nav class="navigation">
-									<ul class="nav menu">
-										<li ><a href="index.html">Home </a>
-										</li>
-										<li><a href="outmotives.html">Our Motive </a></li>
-										<li><a href="photogallary.html">Photo Gallery </a></li>
-										
-										<li><a href="contact.html">Contact Us</a>
-											<li class="active"><a href="blog-single.html">About me</a></li>
-										</li>
-									</ul>
-								</nav>
-							</div>
-							<!--/ End Main Menu -->
-						</div>
-						<div class="col-lg-2 col-12">
-							<div class="get-quote">
-								<a href="volunteer.html" class="btn">Join Volunteer</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--/ End Header Inner -->
-	</header>
 
+	<!-- Header Inner -->
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		.header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background-color: rgb(4, 4, 4);
+			padding: 10px 20px;
+		}
+		.header .left-images img {
+			height: 50px;
+			margin-right: 10px;
+			border-radius: 50%;
+		}
+		.header .nav-links {
+			flex-grow: 1;
+			text-align: center;
+		}
+		.header .nav-links a {
+			margin: 0 15px;
+			text-decoration: none;
+			color: #e8e7e7;
+			position: relative; /* For dropdown positioning */
+		}
+		.header .nav-links .dropdown {
+			display: inline-block;
+			position: relative;
+		}
+		.header .nav-links .dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+			text-align: left;
+			white-space: nowrap;
+		}
+		.header .nav-links .dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+		.header .nav-links .dropdown-content a:hover {
+			background-color: #a19e9e;
+		}
+		.header .nav-links .dropdown:hover .dropdown-content {
+			display: block;
+		}
+		.header .right-image img {
+			height: 50px;
+			border-radius: 50%;
+		}
+		.header .nav-links a:hover {
+            text-decoration: underline;
+			color: #f1e217;
+        }
+	</style>
+<div class="header">
+	<div class="left-images">
+		<img src="img/header/alliance3.png" alt="TDP" >
+		<img src="img/header/tdplogoll.png" alt="TDP">
+	</div>
+	<div class="nav-links">
+		<a href="index.html">Home</a>
+		<a href="outmotives.html">Our Initiatives</a>
+		<a href="photogallary.html">Photo Gallery</a>
+		<a href="contact.html">Contact Us</a>
+		<div class="dropdown">
+			<a href="outmotives.html">About me</a>
+			<div class="dropdown-content">
+				<a href="#motive1">My Journey</a>
+				<a href="#motive2">Our Leadership</a>
+			</div>
+		</div>
+	</div>
+	<div class="right-image">
+		<img src="img/header/srntr.png" alt="Sr NTR">
+		<img src="img/header/cbn.png" alt="Chandra Babu Naidu">
+		<img src="img/header/modi.png" alt="Modi">
+		<img src="img/header/pspk.png" alt="pspk">
+		<img src="img/header/lokesh.png" alt="Lokesh">
+		<img src="img/header/pmkheader.png" alt="PMK">
+	</div>
+</div>
 		<!-- End Header Area -->
 		
 		<!-- Breadcrumbs -->
@@ -142,8 +171,18 @@
 									<!-- News Text -->
 									<div class="news-text">
 										<p>
-											Putta Mahesh Kumar (born on April 10th, 1988), is an Indian politician and the elected candidate for Lok Sabha from Eluru Lok Sabha constituency. He is a member of the Telugu Desam Party. One of the youngest politician in Andhra Pradesh. </p>
-											<p>Putta Mahesh Kumar, the esteemed Member of Parliament from Eluru, Andhra Pradesh, and a proud representative of the Telugu Desam Party (TDP), is a beacon of leadership, innovation, and dedication. As the driving force behind PMK Infrastructures, Mahesh Kumar transformed a modest enterprise into an industry leader through his strategic vision and relentless pursuit of excellence. His remarkable entry into politics, marked by a decisive victory in his first contest, underscores the trust and confidence that the people of Eluru place in his leadership.
+											An Young Energetic Politician who has been elected by the people of Andhra Pradesh as a Member of Parliament (M.P) for the district of Eluru in the general election of 2024.
+										</p>
+										<p>He secured a landslide victory in the Member of Parliament (Lok Sabha) elections, garnering an unprecedented majority of 1,81,857 votes. 
+											This achievement set a new record for the highest majority in the history of the Eluru parliament sector. Additionally, he made history as one of the youngest politicians to be elected as an MP candidate from the Telugu Desam Party in the general elections of 2024.
+										</p>
+										<p>
+											Driven by a strong sense of humanitarianism, he firmly advocates for the active participation of everyone in creating a better world for the less privileged. Leading by example, he has adopted his ancestral village in the Mydukur District of Andhra Pradesh.
+											 Through his philanthropic efforts, he has undertaken the construction of schools, provision of drinking water facilities, and improvement of infrastructure.
+											</p>
+											<p> Additionally, he has been actively involved in storm and flood relief activities, along with various other charitable initiatives through his own charitable Trust, named "Putta Vijayalakshmi Seva Society," aiming to foster a more equitable, humane, and sustainable society.
+										
+											
 											</p>
 											<div class="image-gallery">
 											<div class="row">
@@ -189,19 +228,14 @@
 					<div class="col-lg-4 col-12">
 						<div class="main-sidebar">
 							<!-- Single Widget -->
-							<div class="single-widget search">
-								<div class="form">
-									<input type="email" placeholder="Search Here...">
-									<a class="button" href="#"><i class="fa fa-search"></i></a>
-								</div>
-							</div>
+							
 							<!--/ End Single Widget -->
 							<!-- Single Widget -->
 							<div class="single-widget category">
 								<h3 class="title">Personal details </h3>
 								<ul class="categor-list">
 									<h5>Born: </h5>
-									<p>	Putta
+									<p>	
 										10 April 1988 (age 36)
 										Proddutur, Kadapa, Andhra Pradesh, India</p>
 										<h5>Political party: </h5>
@@ -213,10 +247,6 @@
 										<h5>Education: </h5>
 									<p>		
 										Jawaharlal Nehru Technological University, Hyderabad (Civil Engineering)</p>
-										<h5>Parents: </h5>
-									<p>		
-										Putta Sudhakar Yadav (father)
-										Putta Vijayalakshmi (mother)</p>
 								</ul>
 							</div>
 							<!--/ End Single Widget -->
@@ -243,17 +273,40 @@
 							<!-- Single Widget -->
 							<!--/ End Single Widget -->
 							<!-- Single Widget -->
+<!-- 
+							<style>
+								.thumbnail-container {
+									text-align: center;
+									margin-top: 20px;
+								}
+						
+								.thumbnail-container img {
+									width: 100%;
+									max-width: 560px; /* Set maximum width to maintain aspect ratio */
+									height: auto; /* Maintain aspect ratio */
+									border: 1px solid #ddd; /* Optional: border around thumbnail */
+									border-radius: 8px; /* Optional: rounded corners */
+								}
+							</style> -->
+<!-- 
+<div class="thumbnail-container">
+	<img id="thumbnail" src="" alt="YouTube Thumbnail">
+</div> -->
+				
 							<div class="single-widget side-tags">
-								<h3 class="title">Tags</h3>
+								<h3 class="title">My Journey</h3>
 								<ul class="tag">
-									<li><a href="#">People</a></li>
-									<li><a href="#">Social</a></li>
-									<li><a href="#">Leader</a></li>
-									<li><a href="#">Eluru</a></li>
-									<li><a href="#">Education</a></li>
-									<li><a href="#">Empowerment</a></li>
-									<li><a href="#">Government</a></li>
-									<li><a href="#">TDP</a></li>
+									<div class="single-post">
+										<div class="image">
+											<img src="img/biopiclink.png" alt="#">
+										</div>
+										<div class="content">
+											<h5><a href="https://www.youtube.com/watch?v=kN7W7taFK_E">My Biopic</a></h5>
+										<div>
+											<ul class="comment">
+											<p> A YouTube Video of my bipoic from a common person to the Member of Lok Sabha.</p>
+											</ul>
+									</div>
 								</ul>
 							</div>
 							<!--/ End Single Widget -->
@@ -375,5 +428,23 @@
 		<script src="js/bootstrap.min.js"></script>
 		<!-- Main JS -->
 		<script src="js/main.js"></script>
+
+		<script>
+			function getYouTubeThumbnail(url) {
+				// Extract video ID from URL
+				const videoIdMatch = url.match(/(?:youtube\.com\/(?:embed\/|v\/|v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+				if (videoIdMatch) {
+					return `https://img.youtube.com/vi/${videoIdMatch[1]}/hqdefault.jpg`;
+				}
+				return '';
+			}
+	
+			// YouTube video URL
+			const youtubeUrl = 'https://www.youtube.com/watch?v=kN7W7taFK_E'; 
+	
+			// Get the thumbnail URL and set it as the src of the image
+			const thumbnailUrl = getYouTubeThumbnail(youtubeUrl);
+			document.getElementById('thumbnail').src = thumbnailUrl;
+		</script>
     </body>
 </html>

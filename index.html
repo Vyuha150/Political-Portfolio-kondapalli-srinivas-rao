@@ -41,68 +41,94 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/responsive.css">
-		
-    </head>
-	<header class="header" >
-		<!-- New Container -->
-		<div class="image-container" >
-			<div class="container">
-				<div class="row">
-					<div class="col-2"><img src="img/moditopbar.jpg" alt="Image 1" class="round-image"></div>
-					<div class="col-2"><img src="img/SRI-NARA-CHANDRA-BABU-NAIDU-modified.png" alt="Image 2" class="round-image"></div>
-					<div class="col-2"><img src="img/Pawan K-modified.png" alt="Image 3" class="round-image"></div>
-					<div class="col-2"><img src="img/allaince.jpg" alt="Image 4" class="round-image"></div>
-					<div class="col-2"><img src="img/srntr.webp" alt="Image 5" class="round-image"></div>
-					<div class="col-2"><img src="img/Picture_of_nara_lokesh.png" alt="Image 6" class="round-image"></div>
-				</div>
-			</div>
-		</div>
-		<!-- End New Container -->
+	</head>
 	
-		<!-- Header Inner -->
-		<div class="header-inner">
-			<div class="container">
-				<div class="inner">
-					<div class="row">
-						<div class="col-lg-3 col-md-3 col-12">
-							<!-- Start Logo -->
-							<div class="logo">
-								<a href="index.html"><img src="img/TDPLogo.png" alt="#"></a>
-							</div>
-							<!-- End Logo -->
-							<!-- Mobile Nav -->
-							<div class="mobile-nav"></div>
-							<!-- End Mobile Nav -->
-						</div>
-						<div class="col-lg-7 col-md-9 col-12">
-							<!-- Main Menu -->
-							<div class="main-menu">
-								<nav class="navigation">
-									<ul class="nav menu">
-										<li><a href="index.html">Home </a>
-										</li>
-										<li><a href="outmotives.html">Our Motive </a></li>
-										<li><a href="photogallary.html">Photo Gallery </a></li>
-										
-										<li><a href="contact.html">Contact Us</a>
-											<li><a href="blog-single.html">About me</a></li>
-										</li>
-									</ul>
-								</nav>
-							</div>
-							<!--/ End Main Menu -->
-						</div>
-						<div class="col-lg-2 col-12">
-							<div class="get-quote">
-								<a href="volunteer.html" class="btn">Join Volunteer</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<!-- Header Inner -->
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		.header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background-color: rgb(4, 4, 4);
+			padding: 10px 20px;
+		}
+		.header .left-images img {
+			height: 50px;
+			margin-right: 10px;
+			border-radius: 50%;
+		}
+		.header .nav-links {
+			flex-grow: 1;
+			text-align: center;
+		}
+		.header .nav-links a {
+			margin: 0 15px;
+			text-decoration: none;
+			color: #e8e7e7;
+			position: relative; /* For dropdown positioning */
+		}
+		.header .nav-links .dropdown {
+			display: inline-block;
+			position: relative;
+		}
+		.header .nav-links .dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+			text-align: left;
+			white-space: nowrap;
+		}
+		.header .nav-links .dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+		.header .nav-links .dropdown-content a:hover {
+			background-color: #a19e9e;
+		}
+		.header .nav-links .dropdown:hover .dropdown-content {
+			display: block;
+		}
+		.header .right-image img {
+			height: 50px;
+			border-radius: 50%;
+		}
+		.header .nav-links a:hover {
+            text-decoration: underline;
+			color: #f1e217;
+        }
+	</style>
+<div class="header">
+	<div class="left-images">
+		<img src="img/header/alliance3.png" alt="TDP" >
+		<img src="img/header/tdplogoll.png" alt="TDP">
+	</div>
+	<div class="nav-links">
+		<a href="index.html">Home</a>
+		<a href="outmotives.html">Our Initiatives</a>
+		<a href="photogallary.html">Photo Gallery</a>
+		<a href="contact.html">Contact Us</a>
+		<a href="blog-single.html">About me</a>
+	</div>
+	<div class="right-image">
+		<img src="img/header/srntr.png" alt="Sr NTR">
+		<img src="img/header/cbn.png" alt="Chandra Babu Naidu">
+		<img src="img/header/modi.png" alt="Modi">
+		<img src="img/header/pspk.png" alt="pspk">
+		<img src="img/header/lokesh.png" alt="Lokesh">
+		<img src="img/header/pmkheader.png" alt="PMK">
+	</div>
+</div>
+	
+	
 		<!--/ End Header Inner -->
-	</header>
 	
     <body>
 	
@@ -152,16 +178,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="single-slider" style="background-image:url('img/tdptop2.jpg')">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-7">
-								<div class="text">
-									<h2 style="color: black;"><b>తెలుగువారి ఆత్మగౌరవం కపడతనికి పుట్టినా పార్టీ మన తెలుగుదేశం పార్టీ</b></h2>								
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="single-slider" style="background-image:url('img/clipboard.png')">
+				
 				</div>
 				<div class="single-slider" style="background-image:url('img/tdppkbg.jpg')">
 					<div class="container">
@@ -249,6 +267,60 @@
 		</div>	
 		</section>
 		
+		<style>
+			
+			.left-side-ad {
+			display: none; /* Initially hide the ad */
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 256px; /* Fixed width */
+            height: 256px; /* Fixed height */
+            background-color: #f1f1f1;
+            border-right: 2px solid #ccc;
+            z-index: 1000;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Shadow based on fixed size */
+        }
+
+		.left-side-ad img {
+    width: 100%; /* Image fits container */
+    height: 100%; /* Adjust height as needed to fit text */
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
+		.close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            font-size: 16px;
+            line-height: 24px;
+            color: #333;
+        }
+
+        .close-btn:before {
+            content: '×'; /* Close icon */
+            display: block;
+            text-align: center;
+        }
+
+    </style>
+	
+	<div class="left-side-ad" id="adContainer">
+        <button class="close-btn" id="closeBtn"></button>
+        <a href="https://forms.gle/45URE1q2jKe2HHsCA">
+            <img src="img/ad.png" alt="Advertisement">
+    </div>
+
 	
 		<!-- Start Schedule Area -->
 
@@ -716,5 +788,16 @@
 		<script src="js/main.js"></script>
 		<script src="formDisplay/app.js"></script>
 
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				setTimeout(function() {
+					document.getElementById('adContainer').style.display = 'flex';
+				}, 3000); // 5000 milliseconds = 5 seconds
+			});
+		
+			document.getElementById('closeBtn').addEventListener('click', function() {
+				document.getElementById('adContainer').style.display = 'none';
+			});
+		</script>
     </body>
 </html>

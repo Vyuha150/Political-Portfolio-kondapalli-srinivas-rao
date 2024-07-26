@@ -45,64 +45,99 @@
             
         </style>
     </head>
-	<header class="header" >
-		<!-- New Container -->
-		<div class="image-container" >
-			<div class="container">
-				<div class="row">
-					<div class="col-2"><img src="img/moditopbar.jpg" alt="Image 1" class="round-image"></div>
-					<div class="col-2"><img src="img/SRI-NARA-CHANDRA-BABU-NAIDU-modified.png" alt="Image 2" class="round-image"></div>
-					<div class="col-2"><img src="img/Pawan K-modified.png" alt="Image 3" class="round-image"></div>
-					<div class="col-2"><img src="img/allaince.jpg" alt="Image 4" class="round-image"></div>
-					<div class="col-2"><img src="img/srntr.webp" alt="Image 5" class="round-image"></div>
-					<div class="col-2"><img src="img/Picture_of_nara_lokesh.png" alt="Image 6" class="round-image"></div>
-				</div>
-			</div>
-		</div>
 		<!-- End New Container -->
 	
 		<!-- Header Inner -->
-		<div class="header-inner">
-			<div class="container">
-				<div class="inner">
-					<div class="row">
-						<div class="col-lg-3 col-md-3 col-12">
-							<!-- Start Logo -->
-							<div class="logo">
-								<a href="index.html"><img src="img/TDPLogo.png" alt="#"></a>
-							</div>
-							<!-- End Logo -->
-							<!-- Mobile Nav -->
-							<div class="mobile-nav"></div>
-							<!-- End Mobile Nav -->
-						</div>
-						<div class="col-lg-7 col-md-9 col-12">
-							<!-- Main Menu -->
-							<div class="main-menu">
-								<nav class="navigation">
-									<ul class="nav menu">
-										<li><a href="index.html">Home </a>
-										</li>
-										<li class="active"><a href="#">Our Motive </a></li>
-										<li><a href="photogallary.html">Photo Gallery </a></li>
-										
-										<li><a href="contact.html">Contact Us </a>
-											<li><a href="blog-single.html">About me</a></li>
-										</li>
-									</ul>
-								</nav>
-							</div>
-							<!--/ End Main Menu -->
-						</div>
-						<div class="col-lg-2 col-12">
-							<div class="get-quote">
-								<a href="volunteer.html" class="btn">Join Volunteer</a>
-							</div>
-						</div>
-					</div>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			.header {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				background-color: rgb(4, 4, 4);
+				padding: 10px 20px;
+			}
+			.header .left-images img {
+				height: 50px;
+				margin-right: 10px;
+				border-radius: 50%;
+			}
+			.header .nav-links {
+				flex-grow: 1;
+				text-align: center;
+			}
+			.header .nav-links a {
+				margin: 0 15px;
+				text-decoration: none;
+				color: #e8e7e7;
+				position: relative; /* For dropdown positioning */
+			}
+			.header .nav-links .dropdown {
+				display: inline-block;
+				position: relative;
+			}
+			.header .nav-links .dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				z-index: 1;
+				text-align: left;
+				white-space: nowrap;
+			}
+			.header .nav-links .dropdown-content a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+		.header .nav-links .dropdown-content a:hover {
+			background-color: #a19e9e;
+		}
+		.header .nav-links .dropdown:hover .dropdown-content {
+			display: block;
+		}
+		.header .right-image img {
+			height: 50px;
+			border-radius: 50%;
+		}
+		.header .nav-links a:hover {
+            text-decoration: underline;
+			color: #f1e217;
+        }
+		</style>
+	
+	<div class="header">
+		<div class="left-images">
+			<img src="img/header/alliance3.png" alt="TDP" >
+			<img src="img/header/tdplogoll.png" alt="TDP">
+		</div>
+		<div class="nav-links">
+			<a href="index.html">Home</a>
+			<div class="dropdown">
+				<a href="outmotives.html">Our Initiatives</a>
+				<div class="dropdown-content">
+					<a href="#motive1">Major Projects</a>
+					<a href="#motive2">Our Motives</a>
 				</div>
 			</div>
+			<a href="photogallary.html">Photo Gallery</a>
+			<a href="contact.html">Contact Us</a>
+			<a href="blog-single.html">About me</a>
 		</div>
+		<div class="right-image">
+			<img src="img/header/srntr.png" alt="Sr NTR">
+			<img src="img/header/cbn.png" alt="Chandra Babu Naidu">
+			<img src="img/header/modi.png" alt="Modi">
+			<img src="img/header/pspk.png" alt="pspk">
+			<img src="img/header/lokesh.png" alt="Lokesh">
+			<img src="img/header/pmkheader.png" alt="PMK">
+		</div>
+	</div>
+	
 		<!--/ End Header Inner -->
         
         <style>
@@ -111,9 +146,8 @@
 }
 
 .column {
-  float: left;
   width: 33.33%;
-  padding: 5px;
+  padding: 30px;
 }
 
 /* Clearfix (clear floats) */
@@ -162,7 +196,7 @@
             <div class="row">
                 <div class="column">
                     <div class="containere">
-                        <img src="https://miro.medium.com/v2/da:true/resize:fit:1200/0*ODSQKgplHtULnrPG" alt="Women" class="imagee">
+                        <img src="img/om7.png" alt="Women" class="imagee">
                         <div class="overlaye">
                             <p>మహిళా శ్రేయస్సు:</p>
                             <span>Woman Empowerment</span>
@@ -172,7 +206,7 @@
                 </div>  
                 <div class="column">
                     <div class="containere">
-                        <img src="https://gunturtdp.com/wp-content/uploads/2023/01/Yuva-Galam-Blog-Image.jpg" alt="Yuva" class="imagee">
+                        <img src="img/om3.png" alt="Yuva" class="imagee">
                         <div class="overlaye">
                             <p>యువ శక్తి:</p>
                             <span>Youth Force</span>
@@ -182,7 +216,7 @@
                 </div>
                 <div class="column">
                     <div class="containere">
-                        <img src="https://miro.medium.com/v2/resize:fit:1400/0*c66U27Iom64xiLEf" alt="Basic eminities" class="imagee">
+                        <img src="img/om1.png" alt="Basic eminities" class="imagee">
                         <div class="overlaye">
                             <p>మౌలిక సదుపాయాల కల్పన</p>
                             <span>Basic eminities and infrastructure</span>
@@ -194,7 +228,7 @@
             <div class="row">
                 <div class="column">
                     <div class="containere">
-                        <img src="https://miro.medium.com/v2/resize:fit:1400/0*3qagrUIFOAFsip4v" alt="Farmer" class="imagee">
+                        <img src="img/om6.png" alt="Farmer" class="imagee">
                         <div class="overlaye">
                             <p>రైతన్నకు తోడు</p>
                             <span>Farmer Welfare</span>
@@ -204,7 +238,7 @@
                 </div>
                 <div class="column">
                     <div class="containere">
-                        <img src="https://miro.medium.com/v2/resize:fit:1400/0*0e34Q4JCOPXsx2IF" alt="welfare" class="imagee">
+                        <img src="img/om4.png" alt="welfare" class="imagee">
                         <div class="overlaye">
                             <p>అభివృద్ధి - సంక్షేమం సమతుల్యం:</p>
                             <span>Balancing development and welfare</span>
@@ -214,7 +248,7 @@
                 </div>
                 <div class="column">
                     <div class="containere">
-                        <img src="https://miro.medium.com/v2/resize:fit:1400/0*2w_xHizZVRdM_qg2" alt="Employment" class="imagee">
+                        <img src="img/om2.png" alt="Employment" class="imagee">
                         <div class="overlaye">
                             <p>ఉద్యోగ ఉపాధి</p>
                             <span>Employment creation</span>
@@ -226,7 +260,7 @@
             <div class="row">
                 <div class="column">
                     <div class="containere">
-                        <img src="https://miro.medium.com/v2/resize:fit:1400/0*0geVGFgajerkZUPU" alt="Entrepreneurship" class="imagee">
+                        <img src="img/om5.png" alt="Entrepreneurship" class="imagee">
                         <div class="overlaye">
                             <p>వ్యాపారాభివృద్ధి</p>
                             <span>Entrepreneurship</span>
