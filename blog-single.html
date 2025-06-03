@@ -1,453 +1,929 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
-    <head>
-        <!-- Meta Tags -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="keywords" content="Site keywords here">
-		<meta name="description" content="">
-		<meta name='copyright' content=''>
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		
-		<!-- Title -->
-        <title>Telugu Desam Party (TDP)</title>
-		
-		<!-- Favicon -->
-        <link rel="icon" href="img/TDPLogo.png">
-		
-		<!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Site keywords here" />
+    <meta name="description" content="" />
+    <meta name="copyright" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- Nice Select CSS -->
-		<link rel="stylesheet" href="css/nice-select.css">
-		<!-- Font Awesome CSS -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-		<!-- icofont CSS -->
-        <link rel="stylesheet" href="css/icofont.css">
-		<!-- Slicknav -->
-		<link rel="stylesheet" href="css/slicknav.min.css">
-		<!-- Owl Carousel CSS -->
-        <link rel="stylesheet" href="css/owl-carousel.css">
-		<!-- Datepicker CSS -->
-		<link rel="stylesheet" href="css/datepicker.css">
-		<!-- Animate CSS -->
-        <link rel="stylesheet" href="css/animate.min.css">
-		<!-- Magnific Popup CSS -->
-        <link rel="stylesheet" href="css/magnific-popup.css">
-		
-		<!-- Medipro CSS -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-		
-    </head>
+    <title>Telugu Desam Party (TDP)</title>
 
-	<!-- Header Inner -->
-	<style>
-		* {
-			box-sizing: border-box;
-		}
-		.header {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			background-color: rgb(4, 4, 4);
-			padding: 10px 20px;
-		}
-		.header .left-images img {
-			height: 50px;
-			margin-right: 10px;
-			margin-left: 30px;
-			border-radius: 50%;
-		}
-		.header .nav-links {
-			flex-grow: 1;
-			text-align: center;
-		}
-		.header .nav-links a {
-			margin: 0 15px;
-			text-decoration: none;
-			color: #e8e7e7;
-			position: relative; /* For dropdown positioning */
-		}
-		.header .nav-links .dropdown {
-			display: inline-block;
-			position: relative;
-		}
-		.header .nav-links .dropdown-content {
-			display: none;
-			position: absolute;
-			background-color: #f9f9f9;
-			min-width: 160px;
-			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-			z-index: 1;
-			text-align: left;
-			white-space: nowrap;
-		}
-		.header .nav-links .dropdown-content a {
-			color: black;
-			padding: 12px 16px;
-			text-decoration: none;
-			display: block;
-		}
-		.header .nav-links .dropdown-content a:hover {
-			background-color: #a19e9e;
-		}
-		.header .nav-links .dropdown:hover .dropdown-content {
-			display: block;
-		}
-		.header .right-image img {
-			height: 50px;
-			border-radius: 50%;
-		}
-		.header .nav-links a:hover {
-            text-decoration: underline;
-			color: #f1e217;
+    <link rel="icon" href="img/TDPLogo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/icofont.css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <link rel="stylesheet" href="css/owl-carousel.css" />
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <style>
+      :root {
+        --primary-color: #ffd700;
+        --secondary-color: #000000;
+        --text-color: #333;
+        --light-bg: #f9f9f9;
+        --dark-bg: #1a1a1a;
+        --header-bg: rgb(4, 4, 4);
+        --button-success: #28a745;
+        --button-success-hover: #218838;
+        --footer-copyright-bg: #111;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--light-bg);
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+      /* --- Header Styles --- */
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--header-bg);
+        padding: 10px 20px;
+        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        position: relative; /* Needed for absolute positioning of nav on mobile */
+      }
+
+      .header .left-images img {
+        height: 50px;
+        margin-right: 20px; /* Adjusted margin */
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .header .nav-links {
+        flex-grow: 1;
+        text-align: center;
+        display: flex; /* Use flex for nav links */
+        justify-content: center; /* Center nav links */
+        flex-wrap: wrap; /* Allow nav links to wrap */
+      }
+
+      .header .nav-links a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #e8e7e7;
+        position: relative;
+        padding: 5px 0; /* Add padding for better hit area */
+        transition: color 0.3s ease;
+      }
+
+      .header .nav-links a:hover {
+        color: var(--primary-color);
+        text-decoration: underline;
+      }
+
+      /* Dropdown specific styles (if you decide to add them back) */
+      .header .nav-links .dropdown {
+        display: inline-block;
+        position: relative;
+      }
+
+      .header .nav-links .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--light-bg);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 10; /* Ensure dropdown is above other content */
+        text-align: left;
+        white-space: nowrap;
+        border-radius: 5px;
+        overflow: hidden; /* For rounded corners on children */
+      }
+
+      .header .nav-links .dropdown-content a {
+        color: var(--secondary-color);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .header .nav-links .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .header .nav-links .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .header .right-image {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Space between images */
+        flex-wrap: wrap; /* Allow images to wrap */
+        justify-content: flex-end; /* Align right images to the right */
+      }
+
+      .header .right-image img {
+        height: 40px; /* Slightly smaller for better fit */
+        width: 40px; /* Ensure aspect ratio */
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+      }
+
+      /* Hamburger/Close menu for small screens */
+      .menu-toggle {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 10px;
+        position: relative; /* For animation */
+        z-index: 20; /* Ensure it's above the menu */
+      }
+
+      .menu-toggle span {
+        height: 3px;
+        width: 25px;
+        background-color: white;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      /* Active state for hamburger (transforms to X) */
+      .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+
+      /* --- Footer Styles --- */
+      .footer {
+        background-color: var(--light-bg);
+        color: #f0f0f0;
+        padding: 40px 0 0 0; /* Adjust padding to allow copyright to define its own top */
+        text-align: center; /* Center footer content */
+      }
+
+      .footer .footer-top .container {
+        padding-bottom: 20px; /* Add bottom padding to top section */
+      }
+
+      .footer .single-footer {
+        margin-bottom: 30px;
+        text-align: left; /* Align text left within columns */
+        padding: 0 15px; /* Padding for columns */
+      }
+
+      .footer .single-footer h2 {
+        color: var(--primary-color);
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 10px;
+      }
+
+      .footer .single-footer h2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50px;
+        height: 3px;
+        background-color: var(--primary-color);
+      }
+
+      .footer .single-footer p {
+        font-size: 0.95em;
+        line-height: 1.8;
+        color: #bbb; /* Lighter text for better contrast */
+      }
+
+      .footer .social {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+        display: flex;
+        gap: 15px;
+      }
+
+      .footer .social li a {
+        color: white;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 1.2em;
+        transition: background-color 0.3s ease;
+      }
+
+      .footer .social li a:hover {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+      }
+
+      .footer .f-link ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer .f-link ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer .f-link ul li a {
+        color: #bbb;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        display: flex;
+        align-items: center;
+      }
+
+      .footer .f-link ul li a .fa {
+        margin-right: 8px;
+        color: var(--primary-color);
+      }
+
+      .footer .f-link ul li a:hover {
+        color: var(--primary-color);
+      }
+
+      .footer .newsletter-inner {
+        display: flex;
+        margin-top: 20px;
+      }
+
+      .footer .newsletter-inner .common-input {
+        flex-grow: 1;
+        padding: 10px 15px;
+        border: 1px solid #555;
+        background-color: #333;
+        color: white;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+      }
+
+      .footer .newsletter-inner .common-input::placeholder {
+        color: #aaa;
+      }
+
+      .footer .newsletter-inner .button {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        border: none;
+        padding: 10px 15px;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .footer .newsletter-inner .button:hover {
+        background-color: #e6c200; /* Darker yellow on hover */
+      }
+
+      /* Enhanced Copyright Section */
+      .footer .copyright {
+        background-color: var(
+          --footer-copyright-bg
+        ); /* Slightly different dark shade */
+        padding: 20px 0; /* More vertical padding */
+        border-top: 1px solid #2a2a2a; /* Subtle border for separation */
+        text-align: center; /* Ensure copyright text is centered */
+      }
+
+      .footer .copyright-content p {
+        margin: 0;
+        font-size: 0.95em; /* Slightly larger font */
+        color: #ddd; /* Lighter color for better visibility */
+      }
+
+      /* --- Media Queries for Responsiveness --- */
+
+      /* Tablets and smaller desktops */
+      @media (max-width: 991px) {
+        .header {
+          justify-content: space-between;
+          flex-wrap: wrap;
+          padding: 10px 15px;
         }
-	</style>
-<div class="header">
-	<div class="left-images">
-		<img src="img/TDPLogo.png" alt="TDP">
-	</div>
-	<div class="nav-links">
-		<a href="index.html">Home</a>
-		<a href="outmotives.html">Our Initiatives</a>
-		<a href="photogallary.html">Photo Gallery</a>
-		<a href="contact.html">Contact Us</a>
-		<div class="dropdown">
-			<a href="#">About</a>
-			<div class="dropdown-content">
-				<a href="#">About Me</a>
-				<a href="initiative2.html">Our Leadership</a>
-			</div>
-		</div>
-		<a href="volunteer.html" style="display: inline-block; padding: 10px 20px; background-color: #ece00b; color: #000000; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;"> Join as Volunteer</a>
 
-	</div>
-	<div class="right-image">
-		<img src="img/header/alliance3.png" alt="TDP" >
-		<img src="img/header/srntr.png" alt="Sr NTR">
-		<img src="img/header/cbn.png" alt="Chandra Babu Naidu">
-		<img src="img/header/modi.png" alt="Modi">
-		<img src="img/header/pspk.png" alt="pspk">
-		<img src="img/header/lokesh.png" alt="Lokesh">
-		<img src="/public/vpr.png" alt="VPR">
-	</div>
-</div>
-		<!-- End Header Area -->
-		
-		<!-- Breadcrumbs -->
-		<div class="breadcrumbs overlay">
-			<div class="container">
-				
-			</div>
-		</div>
-		<!-- End Breadcrumbs -->
-		
-		<!-- Single News -->
-		<section class="news-single section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 col-12">
-						<div class="row">
-							<div class="col-12">
-								<div class="single-main">
-									<!-- News Head -->
-									<div class="news-head">
-										<img src="/public/vpr2.png" alt="#">
-									</div>
-									<!-- News Title -->
-									<h1 class="news-title"><a href="news-single.html">Vemireddy Prabhakar Reddy: A Committed Parliamentarian Driving Inclusive Growth</a></h1>
-									<!-- Meta -->
-									<div class="meta">
-										<div class="meta-left">
-											<span class="author"><a href="#"><img src="/public/vpr.png" alt="#">Vemireddy Prabhakar Reddy</a></span>
-											<span class="date"><i class="fa fa-clock-o"></i>12 Jun 2024</span>
-										</div>
-										<div class="meta-right">
-											<span class="comments"><a href="#"><i class="fa fa-comments"></i>766,202  Votes</a></span>
-											<span class="views"><i class="fa fa-eye"></i>245,902  Majority</span>
-										</div>
-									</div>
-									<!-- News Text -->
-									<div class="news-text">
-										<p>
-											An experienced and dynamic leader, Vemireddy Prabhakar Reddy has been elected as a Member of Parliament (M.P.) from the Nellore Lok Sabha constituency in the 2024 general elections, representing the Telugu Desam Party (TDP).
-										</p>
-										<p>He secured a decisive mandate with a resounding victory, winning by a majority of 2,45,902 votes, a remarkable achievement that signifies the trust and confidence reposed in him by the people of Nellore. This historic win marked a significant political shift in the region, previously a stronghold of the opposition.
-										</p>
-										<p>
-											With a steadfast commitment to public service and inclusive development, Vemireddy Prabhakar Reddy has long been associated with social welfare through his initiatives and charitable endeavors. As the founder of VPR Foundation, he has been actively engaged in promoting education, women empowerment, healthcare access, and agricultural development across Andhra Pradesh.
+        .header .left-images {
+          flex-basis: auto; /* Allow content to dictate width */
+          margin-bottom: 10px;
+        }
 
-Through the Foundation, he has undertaken projects such as:
+        .header .nav-links {
+          display: none; /* Hide by default on smaller screens */
+          flex-direction: column;
+          width: 100%;
+          background-color: var(--header-bg);
+          position: absolute;
+          top: 70px; /* Adjust based on header height */
+          left: 0;
+          padding: 10px 0;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          z-index: 9;
+        }
 
-Building and renovating schools in underserved rural areas,
+        .header .nav-links.active {
+          display: flex; /* Show when active */
+        }
 
-Launching health camps and distributing medicines in remote villages,
+        .header .nav-links a {
+          margin: 10px 0;
+          padding: 8px 20px;
+          text-align: center;
+          width: 100%;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .header .nav-links a:last-child {
+          border-bottom: none;
+        }
 
-Supporting farmers with modern tools and sustainable farming practices,
+        .header .nav-links .dropdown-content {
+          position: static; /* Make dropdown content flow with document */
+          width: 100%;
+          box-shadow: none;
+          background-color: #333; /* Darker background for nested dropdown */
+          border-radius: 0;
+        }
+        .header .nav-links .dropdown-content a {
+          padding-left: 40px; /* Indent dropdown items */
+          color: #e8e7e7;
+        }
+        .header .nav-links .dropdown-content a:hover {
+          background-color: #444;
+        }
 
-Offering scholarships to underprivileged students.
-											</p>
-											<p> He is also known for his proactive participation in relief efforts during natural calamities, ensuring timely aid and rehabilitation for affected communities.
+        .header .right-image {
+          flex-basis: 100%; /* Take full width below nav */
+          justify-content: center; /* Center images on small screens */
+          margin-top: 15px;
+        }
 
-Vemireddy Prabhakar Reddy’s vision is anchored in transformative governance, empowerment of youth, and holistic regional development. As a parliamentarian, he strives to be a bridge between grassroots aspirations and national policy, working tirelessly to uplift the lives of the people he represents.
-										
-											
-											</p>
-											<div class="image-gallery">
-											<div class="row">
-												<div class="col-lg-6 col-md-6 col-12">
-													<div class="single-image">
-														<img src="/public/vpr3.png"  style="width: 280 px" alt="#">
-													</div>
-												</div>
-												<div class="col-lg-6 col-md-6 col-12" >
-													<div class="single-image">
-														<img src="/public/vpr5.png" style="width:265px" alt="#">
-													</div>
-												</div>
-											</div>
-										</div>
-										<p>Vemireddy Prabhakar Reddy's dedication transcends the realm of politics and business, finding deep roots in meaningful social service. His impactful contributions through the VPR Foundation have transformed lives across the Nellore region, where he has championed projects that ensure access to clean drinking water, better sanitation, quality education, and improved healthcare facilities.
+        .menu-toggle {
+          display: flex; /* Show hamburger menu */
+        }
 
-In villages adopted under his guidance, infrastructure has seen a remarkable uplift—well-laid roads, solar-powered street lighting, and community centers stand as a testament to his hands-on leadership. His commitment to women empowerment, farmer support, and youth development showcases his vision for a society that uplifts everyone.
+        .form-container {
+          width: 95%;
+          margin: 30px auto;
+          padding: 25px;
+        }
 
-As a progressive and compassionate leader, Vemireddy Prabhakar Reddy remains deeply committed to sustainable development, grassroots innovation, and inclusive governance. Join us in acknowledging the enduring impact of Vemireddy Prabhakar Reddy—a visionary statesman shaping a brighter, more equitable future for Andhra Pradesh.
-										</p>
-										<blockquote class="overlay">
-										<h3>Early Life and Education</h3>	
-										<p>
-											Vemireddy Prabhakar Reddy was born in Nellore district, Andhra Pradesh, into a family known for its deep-rooted values and commitment to community service. A successful industrialist and philanthropist, he is the founder of the VPR Group and VPR Foundation, through which he has undertaken numerous social welfare initiatives across the state. With a vision to serve the people, he entered public life and served as a Member of Parliament in the Rajya Sabha representing the YSR Congress Party. His journey from a reputed entrepreneur to a dedicated public servant reflects his unwavering dedication to the betterment of society.</p>
-										</blockquote>
-									</div>
-									<div class="blog-bottom" >
-										<!-- Social Share -->
-										<ul class="social-share">
-											<li class="facebook"><a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
-											<li class="twitter"><a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
-											<li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-											<li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											<li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-12">
-							
-							</div>
-							
-						</div>
-					</div>
-					<div class="col-lg-4 col-12">
-						<div class="main-sidebar">
-							<!-- Single Widget -->
-							
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<div class="single-widget category">
-  <h3 class="title">Personal details</h3>
-  <ul class="categor-list">
-    <h5>Born:</h5>
-    <p>
-      15 November 1956 (age 68) <br />
-      Nellore, Andhra Pradesh, India
-    </p>
-    <h5>Political party:</h5>
-    <p>Telugu Desam Party</p>
-    <h5>Parents:</h5>
-    <p>
-      Not publicly documented
-    </p>
-    <h5>Education:</h5>
-    <p>
-      Bachelor's degree in Engineering (exact institution not publicly specified)
-    </p>
-  </ul>
-</div>
+        .footer .single-footer {
+          text-align: center; /* Center content in footer columns */
+        }
 
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<div class="single-widget recent-post">
-								<h3 class="title">Recent post</h3>
-								<!-- Single Post -->
-								<div class="single-post">
-									<div class="image">
-										<img src="/public/3.png" alt="#">
-									</div>
-									<div class="content">
-										<h5><a href="https://www.instagram.com/vprabhakarreddyofficial/reel/DGS8-chyXf2/?locale=zh-hans">Check new updates on instagram.</a></h5>
-										<ul class="comment">
-											<li><i class="fa fa-calendar" aria-hidden="true"></i>2024</li>
-											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>35</li>
-										</ul>
-									</div>
-								</div>
-								<!-- End Single Post -->
-								<!-- End Single Post -->
-							</div>
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-<!-- 
-							<style>
-								.thumbnail-container {
-									text-align: center;
-									margin-top: 20px;
-								}
-						
-								.thumbnail-container img {
-									width: 100%;
-									max-width: 560px; /* Set maximum width to maintain aspect ratio */
-									height: auto; /* Maintain aspect ratio */
-									border: 1px solid #ddd; /* Optional: border around thumbnail */
-									border-radius: 8px; /* Optional: rounded corners */
-								}
-							</style> -->
-<!-- 
-<div class="thumbnail-container">
-	<img id="thumbnail" src="" alt="YouTube Thumbnail">
-</div> -->
-				
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--/ End Single News -->
-		
-		<!-- Footer Area -->
-		<footer id="footer" class="footer" >
-			<div style=" justify-content: center;">
-				<footer id="footer" class="footer">
-				  <!-- Footer Top -->
-				  <div class="footer-top">
-					<div class="container">
-					  <div class="row">
-						<div class="col-lg-3 col-md-6 col-12 order-lg-1 order-md-1 order-2">
-						  <div class="single-footer">
-							<h2>About Us</h2>
-							<p>We are committed to making a positive impact on society through our objectives and initiatives. Join us in our mission for a better tomorrow.</p>
-							<!-- Social -->
-							<ul class="social">
-							  <li><a href="#"><i class="icofont-facebook"></i></a></li>
-							  <li><a href="#"><i class="icofont-google-plus"></i></a></li>
-							  <li><a href="#"><i class="icofont-twitter"></i></a></li>
-							  <li><a href="#"><i class="icofont-vimeo"></i></a></li>
-							  <li><a href="#"><i class="icofont-pinterest"></i></a></li>
-							</ul>
-							<!-- End Social -->
-						  </div>
-						</div>
-						<div class="col-lg-3 col-md-6 col-12 order-lg-2 order-md-2 order-1">
-						  <div class="single-footer f-link">
-							<h2>Quick Links</h2>
-							<div class="row">
-							  <div class="col-lg-6 col-md-6 col-12">
-								<ul>
-									<li><a href="index.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
-									<li><a href="contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
-									<li><a href="outmotives.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Motive</a></li>
-								  </ul>
-							  </div>
-							</div>
-						  </div>
-						</div>
-						<div class="col-lg-3 col-md-6 col-12 order-lg-3 order-md-3 order-3">
-						  <div class="single-footer">
-							<h2>Newsletter</h2>
-							<p>Subscribe to our newsletter for the latest updates and news.</p>
-							<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-							  <input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
-								onblur="this.placeholder = 'Your email address'" required="" type="email">
-							  <button class="button"><i class="icofont icofont-paper-plane"></i></button>
-							</form>
-						  </div>
-						</div>
-					  </div>
-					</div>
-				  </div>
-				  <!--/ End Footer Top -->
-				  <!-- Copyright -->
-				  <div class="copyright">
-					<div class="container">
-					  <div class="row">
-						<div class="col-lg-12 col-md-12 col-12">
-						  <div class="copyright-content">
-							<p>© Copyright 2024 | All Rights Reserved by Vemireddy Prabhakar Reddy</a></p>
-						  </div>
-						</div>
-					  </div>
-					</div>
-				  </div>
-				  <!--/ End Copyright -->
-				</footer>
-			  </div>
-			<!--/ End Copyright -->
-		</footer>
-		<!--/ End Footer Area -->
-		
-		<!-- jquery Min JS -->
-        <script src="js/jquery.min.js"></script>
-		<!-- jquery Migrate JS -->
-		<script src="js/jquery-migrate-3.0.0.js"></script>
-		<!-- jquery Ui JS -->
-		<script src="js/jquery-ui.min.js"></script>
-		<!-- Easing JS -->
-        <script src="js/easing.js"></script>
-		<!-- Color JS -->
-		<script src="js/colors.js"></script>
-		<!-- Popper JS -->
-		<script src="js/popper.min.js"></script>
-		<!-- Bootstrap Datepicker JS -->
-		<script src="js/bootstrap-datepicker.js"></script>
-		<!-- Jquery Nav JS -->
-        <script src="js/jquery.nav.js"></script>
-		<!-- Slicknav JS -->
-		<script src="js/slicknav.min.js"></script>
-		<!-- ScrollUp JS -->
-        <script src="js/jquery.scrollUp.min.js"></script>
-		<!-- Niceselect JS -->
-		<script src="js/niceselect.js"></script>
-		<!-- Tilt Jquery JS -->
-		<script src="js/tilt.jquery.min.js"></script>
-		<!-- Owl Carousel JS -->
-        <script src="js/owl-carousel.js"></script>
-		<!-- counterup JS -->
-		<script src="js/jquery.counterup.min.js"></script>
-		<!-- Steller JS -->
-		<script src="js/steller.js"></script>
-		<!-- Wow JS -->
-		<script src="js/wow.min.js"></script>
-		<!-- Magnific Popup JS -->
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<!-- Counter Up CDN JS -->
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-		<!-- Bootstrap JS -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- Main JS -->
-		<script src="js/main.js"></script>
+        .footer .single-footer h2::after {
+          left: 50%;
+          transform: translateX(-50%);
+        }
 
-		<script>
-			function getYouTubeThumbnail(url) {
-				// Extract video ID from URL
-				const videoIdMatch = url.match(/(?:youtube\.com\/(?:embed\/|v\/|v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
-				if (videoIdMatch) {
-					return `https://img.youtube.com/vi/${videoIdMatch[1]}/hqdefault.jpg`;
-				}
-				return '';
-			}
-	
-			// YouTube video URL
-			const youtubeUrl = 'https://www.youtube.com/watch?v=kN7W7taFK_E'; 
-	
-			// Get the thumbnail URL and set it as the src of the image
-			const thumbnailUrl = getYouTubeThumbnail(youtubeUrl);
-			document.getElementById('thumbnail').src = thumbnailUrl;
-		</script>
-    </body>
+        .footer .social {
+          justify-content: center; /* Center social icons */
+        }
+
+        .footer .newsletter-inner {
+          justify-content: center;
+        }
+      }
+
+      /* Mobile phones */
+      @media (max-width: 576px) {
+        .header {
+          padding: 10px;
+          flex-direction: column;
+          align-items: flex-start; /* Align header items to start */
+        }
+
+        .header .left-images {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        .header .left-images img {
+          margin: 0 10px;
+        }
+
+        .header .nav-links {
+          top: 60px; /* Adjust for smaller header height */
+        }
+
+        .header .right-image {
+          width: 100%;
+          justify-content: center;
+          margin-top: 10px;
+        }
+        .header .right-image img {
+          height: 35px;
+          width: 35px;
+        }
+
+        .form-container {
+          margin: 20px auto;
+          padding: 20px;
+        }
+
+        .form-container h2 {
+          font-size: 1.7em;
+        }
+
+        .footer .col-lg-3,
+        .footer .col-md-6 {
+          flex: 0 0 100%; /* Full width for footer columns */
+          max-width: 100%;
+        }
+
+        .footer .single-footer {
+          margin-bottom: 25px;
+        }
+
+        .footer .newsletter-inner {
+          flex-direction: column; /* Stack newsletter elements */
+          align-items: center;
+        }
+
+        .footer .newsletter-inner .common-input {
+          width: 90%;
+          border-radius: 5px; /* Full border radius for stacked input */
+          margin-bottom: 10px;
+        }
+
+        .footer .newsletter-inner .button {
+          width: 90%;
+          border-radius: 5px; /* Full border radius for stacked button */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <div class="header">
+      <div class="left-images">
+        <img src="img/TDPLogo.png" alt="TDP" />
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav-links" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="outmotives.html">Our Initiatives</a>
+        <a href="photogallary.html">Photo Gallery</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="blog-single.html">About</a>
+      </nav>
+      <div class="right-image">
+        <img src="img/header/alliance3.png" alt="Alliance" />
+        <img src="img/header/srntr.png" alt="Sr NTR" />
+        <img src="img/header/cbn.png" alt="Chandra Babu Naidu" />
+        <img src="img/header/modi.png" alt="Modi" />
+        <img src="img/header/pspk.png" alt="Pawan Kalyan" />
+        <img src="img/header/lokesh.png" alt="Lokesh" />
+        <img src="/public/vpr4.png" alt="VPR" />
+      </div>
+    </div>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+      <div class="container"></div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Single News -->
+    <section class="news-single section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-12">
+            <div class="row">
+              <div class="col-12">
+                <div class="single-main">
+                  <!-- News Head -->
+                  <div class="news-head">
+                    <img src="/public/vpr2.png" alt="#" />
+                  </div>
+                  <!-- News Title -->
+                  <h1 class="news-title">
+                    <a href="news-single.html"
+                      >Vemireddy Prabhakar Reddy: A Committed Parliamentarian
+                      Driving Inclusive Growth</a
+                    >
+                  </h1>
+                  <!-- Meta -->
+                  <div class="meta">
+                    <div class="meta-left">
+                      <span class="author"
+                        ><a href="#"
+                          ><img src="/public/vpr.png" alt="#" />Vemireddy
+                          Prabhakar Reddy</a
+                        ></span
+                      >
+                      <span class="date"
+                        ><i class="fa fa-clock-o"></i>12 Jun 2024</span
+                      >
+                    </div>
+                    <div class="meta-right">
+                      <span class="comments"
+                        ><a href="#"
+                          ><i class="fa fa-comments"></i>766,202 Votes</a
+                        ></span
+                      >
+                      <span class="views"
+                        ><i class="fa fa-eye"></i>245,902 Majority</span
+                      >
+                    </div>
+                  </div>
+                  <!-- News Text -->
+                  <div class="news-text">
+                    <p>
+                      An experienced and dynamic leader, Vemireddy Prabhakar
+                      Reddy has been elected as a Member of Parliament (M.P.)
+                      from the Nellore Lok Sabha constituency in the 2024
+                      general elections, representing the Telugu Desam Party
+                      (TDP).
+                    </p>
+                    <p>
+                      He secured a decisive mandate with a resounding victory,
+                      winning by a majority of 2,45,902 votes, a remarkable
+                      achievement that signifies the trust and confidence
+                      reposed in him by the people of Nellore. This historic win
+                      marked a significant political shift in the region,
+                      previously a stronghold of the opposition.
+                    </p>
+                    <p>
+                      With a steadfast commitment to public service and
+                      inclusive development, Vemireddy Prabhakar Reddy has long
+                      been associated with social welfare through his
+                      initiatives and charitable endeavors. As the founder of
+                      VPR Foundation, he has been actively engaged in promoting
+                      education, women empowerment, healthcare access, and
+                      agricultural development across Andhra Pradesh.
+                      <br /><br />
+                      Through the Foundation, he has undertaken projects such
+                      as:
+                      <br />
+                      Building and renovating schools in underserved rural
+                      areas,
+                      <br />
+                      Launching health camps and distributing medicines in
+                      remote villages,
+                      <br />
+                      Supporting farmers with modern tools and sustainable
+                      farming practices,
+                      <br />
+                      Offering scholarships to underprivileged students.
+                    </p>
+                    <p>
+                      He is also known for his proactive participation in relief
+                      efforts during natural calamities, ensuring timely aid and
+                      rehabilitation for affected communities.
+                      <br /><br />
+                      Vemireddy Prabhakar Reddy’s vision is anchored in
+                      transformative governance, empowerment of youth, and
+                      holistic regional development. As a parliamentarian, he
+                      strives to be a bridge between grassroots aspirations and
+                      national policy, working tirelessly to uplift the lives of
+                      the people he represents.
+                    </p>
+                    <div class="image-gallery">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <div class="single-image">
+                            <img
+                              src="/public/vpr3.png"
+                              style="width: 100%"
+                              alt="#"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <div class="single-image">
+                            <img
+                              src="/public/vpr5.png"
+                              style="width: 100%"
+                              alt="#"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      Vemireddy Prabhakar Reddy's dedication transcends the
+                      realm of politics and business, finding deep roots in
+                      meaningful social service. His impactful contributions
+                      through the VPR Foundation have transformed lives across
+                      the Nellore region, where he has championed projects that
+                      ensure access to clean drinking water, better sanitation,
+                      quality education, and improved healthcare facilities.
+                      <br /><br />
+                      In villages adopted under his guidance, infrastructure has
+                      seen a remarkable uplift—well-laid roads, solar-powered
+                      street lighting, and community centers stand as a
+                      testament to his hands-on leadership. His commitment to
+                      women empowerment, farmer support, and youth development
+                      showcases his vision for a society that uplifts everyone.
+                      <br /><br />
+                      As a progressive and compassionate leader, Vemireddy
+                      Prabhakar Reddy remains deeply committed to sustainable
+                      development, grassroots innovation, and inclusive
+                      governance. Join us in acknowledging the enduring impact
+                      of Vemireddy Prabhakar Reddy—a visionary statesman shaping
+                      a brighter, more equitable future for Andhra Pradesh.
+                    </p>
+                    <blockquote class="overlay">
+                      <h3>Early Life and Education</h3>
+                      <p>
+                        Vemireddy Prabhakar Reddy was born in Nellore district,
+                        Andhra Pradesh, into a family known for its deep-rooted
+                        values and commitment to community service. A successful
+                        industrialist and philanthropist, he is the founder of
+                        the VPR Group and VPR Foundation, through which he has
+                        undertaken numerous social welfare initiatives across
+                        the state. With a vision to serve the people, he entered
+                        public life and served as a Member of Parliament in the
+                        Rajya Sabha representing the YSR Congress Party. His
+                        journey from a reputed entrepreneur to a dedicated
+                        public servant reflects his unwavering dedication to the
+                        betterment of society.
+                      </p>
+                    </blockquote>
+                  </div>
+                  <div class="blog-bottom">
+                    <!-- Social Share -->
+                    <ul class="social-share">
+                      <li class="facebook">
+                        <a href="#"
+                          ><i class="fa fa-facebook"></i
+                          ><span>Facebook</span></a
+                        >
+                      </li>
+                      <li class="twitter">
+                        <a href="#"
+                          ><i class="fa fa-twitter"></i><span>Twitter</span></a
+                        >
+                      </li>
+                      <li class="google-plus">
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                      </li>
+                      <li class="linkedin">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                      <li class="pinterest">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="main-sidebar">
+              <!-- Single Widget -->
+              <div class="single-widget category">
+                <h3 class="title">Personal details</h3>
+                <ul class="categor-list">
+                  <h5>Born:</h5>
+                  <p>
+                    15 November 1956 (age 68) <br />
+                    Nellore, Andhra Pradesh, India
+                  </p>
+                  <h5>Political party:</h5>
+                  <p>Telugu Desam Party</p>
+                  <h5>Parents:</h5>
+                  <p>Not publicly documented</p>
+                  <h5>Education:</h5>
+                  <p>
+                    Bachelor's degree in Engineering (exact institution not
+                    publicly specified)
+                  </p>
+                </ul>
+              </div>
+              <!--/ End Single Widget -->
+              <!-- Single Widget -->
+              <div class="single-widget recent-post">
+                <h3 class="title">Recent post</h3>
+                <!-- Single Post -->
+                <div class="single-post">
+                  <div class="image">
+                    <img src="/public/3.png" alt="#" />
+                  </div>
+                  <div class="content">
+                    <h5>
+                      <a
+                        href="https://www.instagram.com/vprabhakarreddyofficial/reel/DGS8-chyXf2/?locale=zh-hans"
+                        >Check new updates on instagram.</a
+                      >
+                    </h5>
+                    <ul class="comment">
+                      <li>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>2024
+                      </li>
+                      <li>
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i>35
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End Single Post -->
+              </div>
+              <!--/ End Single Widget -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ End Single News -->
+
+    <!-- Footer Area -->
+    <footer id="footer" class="footer">
+      <div style="justify-content: center">
+        <footer id="footer" class="footer">
+          <!-- Footer Top -->
+          <div class="footer-top">
+            <div class="container">
+              <div class="row">
+                <div
+                  class="col-lg-3 col-md-6 col-12 order-lg-1 order-md-1 order-2"
+                >
+                  <div class="single-footer">
+                    <h2>About Us</h2>
+                    <p>
+                      We are committed to making a positive impact on society
+                      through our objectives and initiatives. Join us in our
+                      mission for a better tomorrow.
+                    </p>
+                    <!-- Social -->
+                    <ul class="social">
+                      <li>
+                        <a href="#"><i class="icofont-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="icofont-google-plus"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="icofont-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="icofont-vimeo"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="icofont-pinterest"></i></a>
+                      </li>
+                    </ul>
+                    <!-- End Social -->
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-6 col-12 order-lg-2 order-md-2 order-1"
+                >
+                  <div class="single-footer f-link">
+                    <h2>Quick Links</h2>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-12">
+                        <ul>
+                          <li>
+                            <a href="index.html"
+                              ><i
+                                class="fa fa-caret-right"
+                                aria-hidden="true"
+                              ></i
+                              >Home</a
+                            >
+                          </li>
+                          <li>
+                            <a href="contact.html"
+                              ><i
+                                class="fa fa-caret-right"
+                                aria-hidden="true"
+                              ></i
+                              >About Us</a
+                            >
+                          </li>
+                          <li>
+                            <a href="outmotives.html"
+                              ><i
+                                class="fa fa-caret-right"
+                                aria-hidden="true"
+                              ></i
+                              >Motive</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-6 col-12 order-lg-3 order-md-3 order-3"
+                >
+                  <div class="single-footer">
+                    <h2>Newsletter</h2>
+                    <p>
+                      Subscribe to our newsletter for the latest updates and
+                      news.
+                    </p>
+                    <form
+                      action="mail/mail.php"
+                      method="get"
+                      target="_blank"
+                      class="newsletter-inner"
+                    >
+                      <input
+                        name="email"
+                        placeholder="Email Address"
+                        class="common-input"
+                        onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Your email address'"
+                        required=""
+                        type="email"
+                      />
+                      <button class="button">
+                        <i class="icofont icofont-paper-plane"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/ End Footer Top -->
+          <!-- Copyright -->
+          <div class="copyright">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div class="copyright-content">
+                    <p>
+                      © Copyright 2024 | All Rights Reserved by Vemireddy
+                      Prabhakar Reddy
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/ End Copyright -->
+        </footer>
+      </div>
+      <!--/ End Copyright -->
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/colors.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/slicknav.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/niceselect.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <script src="js/owl-carousel.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/steller.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      // JavaScript for the mobile menu toggle
+      document
+        .getElementById("mobile-menu")
+        .addEventListener("click", function () {
+          var nav = document.getElementById("main-nav");
+          this.classList.toggle("active");
+          nav.classList.toggle("active");
+        });
+    </script>
+  </body>
 </html>
