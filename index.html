@@ -205,7 +205,7 @@
         width: 40px; /* Ensure aspect ratio */
         border-radius: 50%;
         object-fit: cover;
-        border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+        border: 2px solid green /* Subtle border */
       }
 
       /* Hamburger/Close menu for small screens */
@@ -555,12 +555,15 @@
       <nav class="nav-links" id="main-nav">
         <a href="index.html">Home</a>
         <a href="outmotives.html">Our Initiatives</a>
-        <a href="photogallary.html">Photo Gallery</a>
+        <a href="photogallary.html">Media</a>
         <a href="contact.html">Contact Us</a>
         <a href="blog-single.html">About</a>
+        <a href="grievances.html">Grievances</a>
+        <a href="volunteer.html">Join</a>
+
       </nav>
       <div class="right-image">
-        <img src="img/header/alliance3.png" alt="Alliance" />
+        <img src="img/header/alliance3.png" alt="Alliance" style="width: 60px; height: 40px;" />
         <img src="img/header/srntr.png" alt="Sr NTR" />
         <img src="img/header/cbn.png" alt="Chandra Babu Naidu" />
         <img src="img/header/modi.png" alt="Modi" />
@@ -595,20 +598,19 @@
 		<section class="slider">
 			<div class="hero-slider">
 				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('/public/index1.png')">
+				<div class="single-slider" style="background-image:url('/public/21.png')">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
-								<div class="text">
+								<div class="text" style="text-align: start; padding-top: 0; margin-top: 0; margin-left: 5px; padding-left: 0;">
 							<h1><span>Vemireddy Prabhakar Reddy</span><br><span class="text-white">Member of Parliament Nellore</span></h1>
-								    
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				
-				<div class="single-slider" style="background-image:url('/public/17.png')">
+				<div class="single-slider" style="background-image:url('/public/index1.png')">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
@@ -624,7 +626,7 @@
 				<div class="single-slider" style="background-image:url('/public/index6.png')">
 				
 				</div>
-				<div class="single-slider" style="background-image:url('img/tdppkbg.jpg')">
+				<!-- <div class="single-slider" style="background-image:url('img/tdppkbg.jpg')">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
@@ -636,7 +638,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				
@@ -652,14 +654,14 @@
 			</div>
 		</section>
 		<section class="video-section">
-  <!-- <div id="fun-facts1" class="fun-facts section overlay">
-    <video width="100%" height="400" autoplay loop muted controls>
-      <source src="your-video.mp4" type="video/mp4">
+  <div id="fun-facts1" class="fun-facts section overlay" >
+    <video width="100%" height="100%" style="margin-bottom: 25px;" autoplay loop muted controls>
+      <source src="/public/indexVideo.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <!-- ...rest of your content... -->
+    <!-- ...rest of your content...
   </div> -->
-  <div class="container">
+  <div class="container" style="overflow: hidden; padding: 25px;">
     <div class="row">
       <div class="col-lg-3 col-md-6 col-12">
         <!-- Start Single Fun -->
@@ -667,7 +669,7 @@
           <i class="icofont icofont-home"></i>
           <div class="content">
             <span class="counter">7,46,351 </span>
-            <h3>Votes</h3>
+            <h2>Votes</h2>
           </div>
         </div>
         <!-- End Single Fun -->
@@ -689,7 +691,7 @@
           <i class="icofont-simple-smile"></i>
           <div class="content">
             <span class="counter">379</span>
-            <p><h2>Events</h2></p>
+            <h2>Events</h2>
           </div>
         </div>
         <!-- End Single Fun -->
@@ -700,7 +702,7 @@
           <i class="icofont icofont-table"></i>
           <div class="content">
             <span class="counter">7</span>
-            <p><h3>Constituencies</h3></p>
+            <h2>Constituencies</h2>
           </div>
         </div>
         <!-- End Single Fun -->
@@ -758,13 +760,6 @@
         }
 
     </style>
-	
-	<div class="left-side-ad" id="adContainer">
-        <button class="close-btn" id="closeBtn"></button>
-        <a href="https://forms.gle/45URE1q2jKe2HHsCA">
-            <img src="/public/18.png" alt="Advertisement">
-    </div>
-
 	
 		<!-- Start Schedule Area -->
 
