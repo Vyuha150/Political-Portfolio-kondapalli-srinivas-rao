@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="keywords"
-      content="Telugu Desam Party, TDP, Volunteer, Andhra Pradesh"
+      content="Public Grievance, Redressal, Nellore, TDP, Support, Government Schemes"
     />
     <meta
       name="description"
-      content="Join the Telugu Desam Party (TDP) as a volunteer and contribute to a better Andhra Pradesh."
+      content="Submit your grievance for redressal. Our team will connect you to the relevant officials for support."
     />
     <meta name="copyright" content="Vemireddy Prabhakar Reddy" />
     <meta
@@ -17,7 +17,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <title>Telugu Desam Party (TDP) - Volunteer</title>
+    <title>Public Grievance Redressal Form</title>
 
     <link rel="icon" href="img/TDPLogo.png" />
 
@@ -50,48 +50,67 @@
         line-height: 1.6;
         color: var(--text-color);
       }
-
-      /* --- Volunteer Form Styles --- */
       .form-container {
         background-color: var(--primary-color);
-        padding: 30px; /* More padding */
-        border-radius: 12px; /* More rounded corners */
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
-        width: 90%; /* Responsive width */
-        max-width: 550px; /* Increased max-width */
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        width: 90%;
+        max-width: 650px;
         margin: 40px auto;
         text-align: center;
-        box-sizing: border-box; /* Include padding in width */
+        box-sizing: border-box;
       }
-
       .form-container h2 {
-        margin-bottom: 25px; /* More space */
+        margin-bottom: 10px;
         color: var(--secondary-color);
-        font-size: 2em; /* Larger heading */
+        font-size: 2em;
         font-weight: 700;
       }
-
+      .form-container .explanation {
+        font-size: 1.1em;
+        color: var(--text-color);
+        margin-bottom: 25px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 8px;
+        padding: 10px 15px;
+      }
+      .form-container label {
+        display: block;
+        text-align: left;
+        margin: 8px 0 4px 2px;
+        font-weight: 500;
+      }
       .form-container input,
       .form-container textarea,
       .form-container select {
-        width: 100%; /* Full width within container */
-        padding: 12px 15px; /* More padding */
-        margin: 10px 0;
+        width: 100%;
+        padding: 12px 15px;
+        margin: 8px 0 16px 0;
         border: 1px solid #ccc;
-        border-radius: 8px; /* Slightly more rounded */
+        border-radius: 8px;
         font-size: 1em;
-        box-sizing: border-box; /* Crucial for responsiveness */
+        box-sizing: border-box;
       }
-
       .form-container textarea {
-        resize: vertical; /* Allow vertical resizing */
-        min-height: 100px; /* Minimum height */
+        resize: vertical;
+        min-height: 80px;
       }
-
+      .form-container .checkbox-group,
+      .form-container .radio-group {
+        text-align: left;
+        margin-bottom: 16px;
+      }
+      .form-container .checkbox-group label,
+      .form-container .radio-group label {
+        display: inline-block;
+        margin-right: 15px;
+        font-weight: 400;
+      }
       .form-container button {
         background-color: var(--button-success);
         color: white;
-        padding: 12px 25px; /* More padding */
+        padding: 12px 25px;
         border: none;
         border-radius: 8px;
         cursor: pointer;
@@ -100,7 +119,6 @@
         transition: background-color 0.3s ease;
         margin-top: 15px;
       }
-
       .form-container button:hover {
         background-color: var(--button-success-hover);
       }
@@ -141,29 +159,154 @@
     </div>
 
     <div class="form-container">
-      <h2>Join as a Volunteer</h2>
-      <form action="index.html" method="post">
-        <input type="text" name="name" placeholder="Full Name" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <input type="tel" name="phone" placeholder="Phone Number" required />
+      <h2>Public Grievance Redressal Form</h2>
+      <div class="explanation">
+        "If you are facing any difficulty, injustice, or need support from
+        government schemes or departments, please fill out the grievance form.
+        Our team will assess the issue and connect you to the relevant
+        officials."
+      </div>
+      <form action="index.html" method="post" enctype="multipart/form-data">
+        <!-- A. Complainant Details -->
+        <label for="fullname">Full Name</label>
+        <input type="text" name="fullname" id="fullname" required />
 
-        <select name="constituency" required>
-          <option value="" disabled selected>Select Constituency</option>
-          <option value="chintalapudi">Chintalapudi</option>
-          <option value="denduluru">Denduluru</option>
-          <option value="eluru">Eluru</option>
-          <option value="kaikalur">Kaikalur</option>
-          <option value="nuzvid">Nuzvid</option>
-          <option value="polavaram">Polavaram</option>
-          <option value="unguturu">Unguturu</option>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="1" max="120" required />
+
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender" required>
+          <option value="" disabled selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
         </select>
 
-        <textarea
-          name="message"
-          rows="4"
-          placeholder="Why do you want to volunteer?"
-          required
-        ></textarea>
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" name="mobile" id="mobile" required />
+
+        <label for="email">Email ID (Optional)</label>
+        <input type="email" name="email" id="email" />
+
+        <label for="address">Address (Full with Mandal and Pin Code)</label>
+        <input type="text" name="address" id="address" required />
+
+        <label for="caste">Caste</label>
+        <select name="caste" id="caste" required>
+          <option value="" disabled selected>Select Caste</option>
+          <option value="SC">SC</option>
+          <option value="ST">ST</option>
+          <option value="BC">BC</option>
+          <option value="OC">OC</option>
+          <option value="Minority">Minority</option>
+        </select>
+
+        <label for="aadhaar">Aadhaar Number (Optional)</label>
+        <input type="text" name="aadhaar" id="aadhaar" maxlength="12" />
+
+        <!-- B. Nature of Grievance -->
+        <label for="grievance">Nature of Grievance</label>
+        <select name="grievance" id="grievance" required>
+          <option value="" disabled selected>Select Grievance</option>
+          <option value="Pension Issues">Pension Issues</option>
+          <option value="Ration Card / Food Security">
+            Ration Card / Food Security
+          </option>
+          <option value="Road/Drainage Infrastructure">
+            Road/Drainage Infrastructure
+          </option>
+          <option value="Electricity / Water Supply">
+            Electricity / Water Supply
+          </option>
+          <option value="Housing">Housing (PMAY, YSR Housing, etc.)</option>
+          <option value="Education">
+            Education (Scholarships, School Issues)
+          </option>
+          <option value="Health">Health (PHCs, Hospitals, Aarogyasri)</option>
+          <option value="Employment">
+            Employment (Job Cards, Unemployment Allowance)
+          </option>
+          <option value="Social Security">
+            Social Security (Widow, Disabled, Senior Citizens)
+          </option>
+          <option value="SC/ST/BC Welfare">SC/ST/BC Welfare</option>
+          <option value="Women Protection">
+            Women Protection (Domestic Violence, Dowry, etc.)
+          </option>
+          <option value="Corruption / Harassment by Officials">
+            Corruption / Harassment by Officials
+          </option>
+          <option value="Police-related Issues">Police-related Issues</option>
+          <option value="Land and Property Issues">
+            Land and Property Issues
+          </option>
+          <option value="Issues with Government Departments">
+            Issues with Government Departments
+          </option>
+          <option value="Others">Others (please specify below)</option>
+        </select>
+        <input
+          type="text"
+          name="grievance_other"
+          placeholder="Others (please specify)"
+        />
+
+        <!-- C. Details of the Problem -->
+        <label for="details">Details of the Problem</label>
+        <textarea name="details" id="details" rows="4" required></textarea>
+
+        <label for="attachments">Attachments/Proof (Images/PDF)</label>
+        <input
+          type="file"
+          name="attachments"
+          id="attachments"
+          accept=".jpg,.jpeg,.png,.pdf"
+          multiple
+        />
+
+        <!-- D. Is it Political Sensitive? -->
+        <label>Is it Politically Sensitive?</label>
+        <div class="radio-group">
+          <label
+            ><input
+              type="radio"
+              name="political_sensitive"
+              value="Yes"
+              required
+            />
+            Yes</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="political_sensitive"
+              value="No"
+              required
+            />
+            No</label
+          >
+        </div>
+
+        <div id="political-details" style="display: none">
+          <label for="parties">If Yes, Are both parties involved?</label>
+          <select name="parties" id="parties">
+            <option value="" disabled selected>Select Party</option>
+            <option value="YSRCP">YSRCP</option>
+            <option value="TDP">TDP</option>
+            <option value="JSP">JSP</option>
+            <option value="INC">INC</option>
+            <option value="Others">Others</option>
+          </select>
+
+          <label>Do you want it to be handled anonymously?</label>
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="anonymous" value="Yes" /> Yes</label
+            >
+            <label><input type="radio" name="anonymous" value="No" /> No</label>
+          </div>
+        </div>
+
         <button type="submit">Submit</button>
       </form>
     </div>
@@ -296,9 +439,24 @@
         .getElementById("mobile-menu")
         .addEventListener("click", function () {
           var nav = document.getElementById("main-nav");
-          this.classList.toggle("active"); // Toggles the 'active' class on the menu-toggle div
-          nav.classList.toggle("active"); // Toggles the 'active' class on the nav-links
+          this.classList.toggle("active");
+          nav.classList.toggle("active");
         });
+
+      // Show/hide political details
+      document.addEventListener("DOMContentLoaded", function () {
+        var radios = document.getElementsByName("political_sensitive");
+        var details = document.getElementById("political-details");
+        radios.forEach(function (radio) {
+          radio.addEventListener("change", function () {
+            if (this.value === "Yes") {
+              details.style.display = "block";
+            } else {
+              details.style.display = "none";
+            }
+          });
+        });
+      });
     </script>
   </body>
 </html>

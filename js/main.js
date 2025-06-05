@@ -333,6 +333,6 @@ Version:	1.1
   $(window).on("load", function () {
     setTimeout(function () {
       $(".preloader").addClass("preloader-deactivate");
-    }, 3000); // 3000ms = 3 seconds
+    }, 2000);
   });
 })(jQuery);

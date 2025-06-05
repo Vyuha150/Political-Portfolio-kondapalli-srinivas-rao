@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="keywords"
+      content="Scheme Eligibility, Government Schemes, Andhra Pradesh, TDP"
+    />
+    <meta
+      name="description"
+      content="Check your eligibility for government schemes. Fill the form and discover opportunities."
+    />
+    <meta name="copyright" content="Vemireddy Prabhakar Reddy" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Scheme Eligibility Checker</title>
+
+    <link rel="icon" href="img/TDPLogo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/icofont.css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <link rel="stylesheet" href="css/owl-carousel.css" />
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--light-bg);
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: var(--text-color);
+      }
+      .form-container {
+        background-color: var(--primary-color);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        width: 90%;
+        max-width: 650px;
+        margin: 40px auto;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      .form-container h2 {
+        margin-bottom: 10px;
+        color: var(--secondary-color);
+        font-size: 2em;
+        font-weight: 700;
+      }
+      .form-container .explanation {
+        font-size: 1.1em;
+        color: var(--text-color);
+        margin-bottom: 25px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 8px;
+        padding: 10px 15px;
+      }
+      .form-container label {
+        display: block;
+        text-align: left;
+        margin: 8px 0 4px 2px;
+        font-weight: 500;
+      }
+      .form-container input,
+      .form-container textarea,
+      .form-container select {
+        width: 100%;
+        padding: 12px 15px;
+        margin: 8px 0 16px 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1em;
+        box-sizing: border-box;
+      }
+      .form-container textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+      .form-container .checkbox-group,
+      .form-container .radio-group {
+        text-align: left;
+        margin-bottom: 16px;
+      }
+      .form-container .checkbox-group label,
+      .form-container .radio-group label {
+        display: inline-block;
+        margin-right: 15px;
+        font-weight: 400;
+      }
+      .form-container button {
+        background-color: var(--button-success);
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1.1em;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+        margin-top: 15px;
+      }
+      .form-container button:hover {
+        background-color: var(--button-success-hover);
+      }
+      .eligible-schemes {
+        background: #fff;
+        border-radius: 8px;
+        margin-top: 20px;
+        padding: 18px 12px;
+        color: #222;
+        text-align: left;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        display: none;
+      }
+      .eligible-schemes h3 {
+        color: var(--secondary-color);
+        margin-bottom: 10px;
+      }
+      .eligible-schemes ul {
+        margin: 0 0 0 18px;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-images">
+        <img src="img/TDPLogo.png" alt="TDP" />
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav-links" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="outmotives.html">Our Initiatives</a>
+        <a href="photogallary.html">Media</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="blog-single.html">About</a>
+        <a href="grievances.html">Grievances</a>
+        <a href="volunteer.html">Join</a>
+      </nav>
+      <div class="right-image">
+        <img
+          src="img/header/alliance3.png"
+          alt="Alliance"
+          style="width: 60px; height: 40px"
+        />
+        <img src="img/header/srntr.png" alt="Sr NTR" />
+        <img src="img/header/cbn.png" alt="Chandra Babu Naidu" />
+        <img src="img/header/modi.png" alt="Modi" />
+        <img src="img/header/pspk.png" alt="Pawan Kalyan" />
+        <img src="img/header/lokesh.png" alt="Lokesh" />
+        <img src="/public/vpr4.png" alt="VPR" />
+      </div>
+    </div>
+
+    <div class="form-container">
+      <h2>Scheme Eligibility Checker</h2>
+      <div class="explanation">
+        "Find out what government schemes you are eligible for based on your
+        profile. Fill the form below and discover opportunities that you may not
+        be aware of."
+      </div>
+      <form id="eligibilityForm" autocomplete="off">
+        <!-- A. Personal Details -->
+        <label for="fullname">Full Name</label>
+        <input type="text" name="fullname" id="fullname" required />
+
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="1" max="120" required />
+
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender" required>
+          <option value="" disabled selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" name="mobile" id="mobile" required />
+
+        <label for="aadhaar">Aadhaar Number (Optional)</label>
+        <input type="text" name="aadhaar" id="aadhaar" maxlength="12" />
+
+        <!-- B. Social Background -->
+        <label for="caste">Caste Category</label>
+        <select name="caste" id="caste" required>
+          <option value="" disabled selected>Select Caste</option>
+          <option value="SC">SC</option>
+          <option value="ST">ST</option>
+          <option value="BC">BC</option>
+          <option value="OC">OC</option>
+          <option value="Minority">Minority</option>
+        </select>
+
+        <label for="marital">Marital Status</label>
+        <select name="marital" id="marital" required>
+          <option value="" disabled selected>Select Status</option>
+          <option value="Single">Single</option>
+          <option value="Married">Married</option>
+          <option value="Widowed">Widowed</option>
+          <option value="Divorced">Divorced</option>
+        </select>
+
+        <label>Disability</label>
+        <div class="radio-group">
+          <label
+            ><input type="radio" name="disability" value="No" checked />
+            No</label
+          >
+          <label
+            ><input type="radio" name="disability" value="Yes" /> Yes</label
+          >
+        </div>
+        <input
+          type="text"
+          name="disability_details"
+          id="disability_details"
+          placeholder="If Yes, specify"
+          style="display: none"
+        />
+
+        <label for="income">Family Annual Income</label>
+        <select name="income" id="income" required>
+          <option value="" disabled selected>Select Income</option>
+          <option value="Below 1L">Below 1L</option>
+          <option value="1-2.5L">1-2.5L</option>
+          <option value="2.5-5L">2.5-5L</option>
+          <option value="Above 5L">Above 5L</option>
+        </select>
+
+        <!-- C. Education & Employment -->
+        <label for="education">Highest Education</label>
+        <select name="education" id="education" required>
+          <option value="" disabled selected>Select Education</option>
+          <option value="10th">10th</option>
+          <option value="Inter">Intermediate</option>
+          <option value="Degree">Degree</option>
+          <option value="PG">Post Graduation</option>
+          <option value="PhD">PhD</option>
+        </select>
+
+        <label for="employment">Employment Status</label>
+        <select name="employment" id="employment" required>
+          <option value="" disabled selected>Select Status</option>
+          <option value="Student">Student</option>
+          <option value="Unemployed">Unemployed</option>
+          <option value="Employed">Employed</option>
+          <option value="Govt Employee">Govt Employee</option>
+          <option value="Farmer">Farmer</option>
+          <option value="Entrepreneur">Entrepreneur</option>
+        </select>
+
+        <label>Skill Training Completed?</label>
+        <div class="radio-group">
+          <label
+            ><input type="radio" name="skill_training" value="No" checked />
+            No</label
+          >
+          <label
+            ><input type="radio" name="skill_training" value="Yes" /> Yes</label
+          >
+        </div>
+        <input
+          type="text"
+          name="skill_training_details"
+          id="skill_training_details"
+          placeholder="If Yes, details"
+          style="display: none"
+        />
+
+        <!-- D. Initiatives Taken -->
+        <label>Involved in any social service?</label>
+        <div class="radio-group">
+          <label
+            ><input type="radio" name="social_service" value="No" checked />
+            No</label
+          >
+          <label
+            ><input type="radio" name="social_service" value="Yes" /> Yes</label
+          >
+        </div>
+        <input
+          type="text"
+          name="social_service_details"
+          id="social_service_details"
+          placeholder="If Yes, details"
+          style="display: none"
+        />
+
+        <label>Member of any welfare board or union?</label>
+        <div class="radio-group">
+          <label
+            ><input type="radio" name="welfare_member" value="No" checked />
+            No</label
+          >
+          <label
+            ><input type="radio" name="welfare_member" value="Yes" /> Yes</label
+          >
+        </div>
+
+        <!-- E. Schemes You Are Interested In -->
+        <label for="schemes">Schemes You Are Interested In</label>
+        <select name="schemes" id="schemes" required>
+          <option value="" disabled selected>Select a Scheme</option>
+          <option value="Aadabidda Nidhi Scheme (Women’s Economic Empowerment)">
+            Aadabidda Nidhi Scheme (Women’s Economic Empowerment)
+          </option>
+          <option
+            value="Talliki Vandanam Scheme (Support for School-Going Children)"
+          >
+            Talliki Vandanam Scheme (Support for School-Going Children)
+          </option>
+          <option value="Annadata Scheme (Farmer Income Support)">
+            Annadata Scheme (Farmer Income Support)
+          </option>
+          <option value="Chandranna Pelli Kanuka Scheme (Marriage Assistance)">
+            Chandranna Pelli Kanuka Scheme (Marriage Assistance)
+          </option>
+          <option
+            value="AP Free Power Supply Scheme (Agricultural Power Subsidy)"
+          >
+            AP Free Power Supply Scheme (Agricultural Power Subsidy)
+          </option>
+          <option value="APSRTC Free Bus Scheme (Women’s Public Transport)">
+            APSRTC Free Bus Scheme (Women’s Public Transport)
+          </option>
+          <option
+            value="YSR Bharosa Pension (Senior Citizens, Widows, Weavers, Transgender)"
+          >
+            YSR Bharosa Pension (Senior Citizens, Widows, Weavers, Transgender)
+          </option>
+          <option value="Disability Assistance (Six Guarantee)">
+            Disability Assistance (Six Guarantee)
+          </option>
+        </select>
+
+        <button type="submit">Check Eligibility</button>
+      </form>
+
+      <div class="eligible-schemes" id="eligibleSchemes">
+        <h3>Eligible Schemes</h3>
+        <ul id="schemesList">
+          <!-- Results will appear here -->
+        </ul>
+      </div>
+    </div>
+
+    <footer id="footer" class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12 order-lg-1 order-md-1 order-2">
+              <div class="single-footer">
+                <h2>About Us</h2>
+                <p>
+                  We are committed to making a positive impact on society
+                  through our objectives and initiatives. Join us in our mission
+                  for a better tomorrow.
+                </p>
+                <ul class="social">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/vemireddyprabhakarreddy"
+                      target="_blank"
+                      ><i class="icofont-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/vemireddyprabhakarreddy"
+                      target="_blank"
+                      ><i class="icofont-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://x.com/VemireddyVpr" target="_blank"
+                      ><i class="icofont-twitter"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 order-lg-2 order-md-2 order-1">
+              <div class="single-footer f-link">
+                <h2>Quick Links</h2>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <ul>
+                      <li>
+                        <a href="index.html"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >Home</a
+                        >
+                      </li>
+                      <li>
+                        <a href="contact.html"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >About Us</a
+                        >
+                      </li>
+                      <li>
+                        <a href="outmotives.html"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i
+                          >Motive</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 order-lg-3 order-md-3 order-3">
+              <div class="single-footer">
+                <h2>Newsletter</h2>
+                <p>
+                  Subscribe to our newsletter for the latest updates and news.
+                </p>
+                <form
+                  action="mail/mail.php"
+                  method="get"
+                  target="_blank"
+                  class="newsletter-inner"
+                >
+                  <input
+                    name="email"
+                    placeholder="Email Address"
+                    class="common-input"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Your email address'"
+                    required=""
+                    type="email"
+                  />
+                  <button type="submit" class="button">
+                    <i class="icofont icofont-paper-plane"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="copyright-content">
+                <p>
+                  © Copyright 2024 | All Rights Reserved by Vemireddy Prabhakar
+                  Reddy
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slicknav.min.js"></script>
+    <script src="js/owl-carousel.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/pagescroll.min.js"></script>
+    <script src="js/active.js"></script>
+
+    <script>
+      // Mobile menu toggle
+      document
+        .getElementById("mobile-menu")
+        .addEventListener("click", function () {
+          var nav = document.getElementById("main-nav");
+          this.classList.toggle("active");
+          nav.classList.toggle("active");
+        });
+
+      // Show/hide disability details
+      document
+        .querySelectorAll('input[name="disability"]')
+        .forEach(function (el) {
+          el.addEventListener("change", function () {
+            document.getElementById("disability_details").style.display =
+              this.value === "Yes" ? "block" : "none";
+          });
+        });
+
+      // Show/hide skill training details
+      document
+        .querySelectorAll('input[name="skill_training"]')
+        .forEach(function (el) {
+          el.addEventListener("change", function () {
+            document.getElementById("skill_training_details").style.display =
+              this.value === "Yes" ? "block" : "none";
+          });
+        });
+
+      // Show/hide social service details
+      document
+        .querySelectorAll('input[name="social_service"]')
+        .forEach(function (el) {
+          el.addEventListener("change", function () {
+            document.getElementById("social_service_details").style.display =
+              this.value === "Yes" ? "block" : "none";
+          });
+        });
+
+      // Eligibility logic (basic demo)
+      document
+        .getElementById("eligibilityForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          // Map for scheme info
+          const schemeInfo = {
+            "Aadabidda Nidhi Scheme (Women’s Economic Empowerment)":
+              "Monthly ₹1,500 direct transfer to women (18–59 years) from vulnerable households. <a href='https://pmgovtschemehub.com' target='_blank'>More info</a>",
+            "Talliki Vandanam Scheme (Support for School-Going Children)":
+              "₹15,000/year for students (Class 1–12) from disadvantaged families for education expenses. <a href='https://business-standard.com' target='_blank'>More info</a>",
+            "Annadata Scheme (Farmer Income Support)":
+              "₹20,000/year to registered farmers in installments, supplementing PM Kisan. <a href='https://pmgovtschemehub.com' target='_blank'>More info</a>",
+            "Chandranna Pelli Kanuka Scheme (Marriage Assistance)":
+              "₹1,00,000 for eligible couples, especially SC/ST/OBC/inter-caste marriages. <a href='https://pmgovtschemehub.com' target='_blank'>More info</a>",
+            "AP Free Power Supply Scheme (Agricultural Power Subsidy)":
+              "Up to 9 hours/day free electricity for registered agricultural consumers. <a href='https://pmgovtschemehub.com' target='_blank'>More info</a>",
+            "APSRTC Free Bus Scheme (Women’s Public Transport)":
+              "Free APSRTC bus travel for all women aged 18+ in Andhra Pradesh. <a href='https://pmgovtschemehub.com' target='_blank'>More info</a>",
+            "YSR Bharosa Pension (Senior Citizens, Widows, Weavers, Transgender)":
+              "Pension increased to ₹4,000/month for eligible groups. <a href='https://pmgovtschemehub.com' target='_blank'>More info</a>",
+            "Disability Assistance (Six Guarantee)":
+              "₹15,000/year for disabled persons for medical and rehabilitation support. <a href='https://pmgovtschemehub.com' target='_blank'>More info</a>",
+          };
+          var selected = Array.from(
+            document.getElementById("schemes").selectedOptions
+          ).map((o) => o.value);
+          var list = document.getElementById("schemesList");
+          list.innerHTML = "";
+          if (selected.length) {
+            selected.forEach(function (scheme) {
+              var li = document.createElement("li");
+              li.innerHTML = schemeInfo[scheme] || scheme;
+              list.appendChild(li);
+            });
+            document.getElementById("eligibleSchemes").style.display = "block";
+          } else {
+            document.getElementById("eligibleSchemes").style.display = "none";
+          }
+        });
+    </script>
+  </body>
+</html>
