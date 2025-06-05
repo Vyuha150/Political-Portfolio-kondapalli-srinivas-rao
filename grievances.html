@@ -122,6 +122,17 @@
       .form-container button:hover {
         background-color: var(--button-success-hover);
       }
+      .vpr-image-container {
+        text-align: center;
+        margin-top: 30px;
+      }
+      .vpr-image-container img {
+        max-width: 160px;
+        width: 100%;
+        border-radius: 50%;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+        margin-bottom: 18px;
+      }
     </style>
   </head>
   <body>
@@ -141,7 +152,15 @@
         <a href="contact.html">Contact Us</a>
         <a href="blog-single.html">About</a>
         <a href="grievances.html">Grievances</a>
-        <a href="volunteer.html">Join</a>
+        <div class="dropdown-nav">
+          <a href="#" class="dropdown-toggle" onclick="return false;">Join </a>
+          <div class="dropdown-content">
+            <a href="yuva-shakthi.html">Yuva Shakthi Member</a>
+            <a href="PMK.html">Complaint Form</a>
+            <a href="scheme-eligibility.html">Schemes & Eligibility Form</a>
+            <a href="yuvaform.html">Social media warriors</a>
+          </div>
+        </div>
       </nav>
       <div class="right-image">
         <img
@@ -156,6 +175,10 @@
         <img src="img/header/lokesh.png" alt="Lokesh" />
         <img src="/public/vpr4.png" alt="VPR" />
       </div>
+    </div>
+
+    <div class="vpr-image-container">
+      <img src="/public/vpr4.png" alt="Vemireddy Prabhakar Reddy" />
     </div>
 
     <div class="form-container">

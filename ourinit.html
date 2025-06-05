@@ -159,7 +159,15 @@
         <a href="contact.html">Contact Us</a>
         <a href="blog-single.html">About</a>
         <a href="grievances.html">Grievances</a>
-        <a href="volunteer.html">Join</a>
+        <div class="dropdown-nav">
+          <a href="#" class="dropdown-toggle" onclick="return false;">Join </a>
+          <div class="dropdown-content">
+            <a href="yuva-shakthi.html">Yuva Shakthi Member</a>
+            <a href="PMK.html">Complaint Form</a>
+            <a href="scheme-eligibility.html">Schemes & Eligibility Form</a>
+            <a href="yuvaform.html">Social media warriors</a>
+          </div>
+        </div>
       </nav>
       <div class="right-image">
         <img
@@ -251,6 +259,15 @@
 
     <!-- Linking custom script -->
     <script>
+      // JavaScript for the mobile menu toggle
+      document
+        .getElementById("mobile-menu")
+        .addEventListener("click", function () {
+          var nav = document.getElementById("main-nav");
+          this.classList.toggle("active");
+          nav.classList.toggle("active");
+        });
+
       const swiper = new Swiper(".slider-wrapper", {
         loop: true,
         grabCursor: true,

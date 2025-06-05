@@ -159,7 +159,15 @@
         <a href="contact.html">Contact Us</a>
         <a href="blog-single.html">About</a>
         <a href="grievances.html">Grievances</a>
-        <a href="volunteer.html">Join</a>
+        <div class="dropdown-nav">
+          <a href="#" class="dropdown-toggle" onclick="return false;">Join </a>
+          <div class="dropdown-content">
+            <a href="yuva-shakthi.html">Yuva Shakthi Member</a>
+            <a href="PMK.html">Complaint Form</a>
+            <a href="scheme-eligibility.html">Schemes & Eligibility Form</a>
+            <a href="yuvaform.html">Social media warriors</a>
+          </div>
+        </div>
       </nav>
       <div class="right-image">
         <img
@@ -492,15 +500,6 @@
     <script src="js/active.js"></script>
 
     <script>
-      // Mobile menu toggle
-      document
-        .getElementById("mobile-menu")
-        .addEventListener("click", function () {
-          var nav = document.getElementById("main-nav");
-          this.classList.toggle("active");
-          nav.classList.toggle("active");
-        });
-
       // Show/hide disability details
       document
         .querySelectorAll('input[name="disability"]')
@@ -529,6 +528,15 @@
             document.getElementById("social_service_details").style.display =
               this.value === "Yes" ? "block" : "none";
           });
+        });
+
+      // JavaScript for the mobile menu toggle
+      document
+        .getElementById("mobile-menu")
+        .addEventListener("click", function () {
+          var nav = document.getElementById("main-nav");
+          this.classList.toggle("active");
+          nav.classList.toggle("active");
         });
 
       // Eligibility logic (basic demo)

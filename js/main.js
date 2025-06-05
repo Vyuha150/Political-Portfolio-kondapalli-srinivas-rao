@@ -325,6 +325,12 @@ Version:	1.1
         content: "<p>welcome to Medipro</p>",
       },
     });
+
+    // Hamburger menu toggle for custom nav
+    $(".menu-toggle").on("click", function () {
+      $(this).toggleClass("active");
+      $(".header .nav-links").toggleClass("active");
+    });
   });
 
   /*====================

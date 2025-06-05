@@ -206,6 +206,15 @@
           // Redirect to index.html
           window.location.href = "index.html";
         });
+
+      // JavaScript for the mobile menu toggle
+      document
+        .getElementById("mobile-menu")
+        .addEventListener("click", function () {
+          var nav = document.getElementById("main-nav");
+          this.classList.toggle("active");
+          nav.classList.toggle("active");
+        });
     </script>
   </body>
 </html>

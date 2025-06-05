@@ -55,6 +55,49 @@
     * {
       box-sizing: border-box;
     }
+    .left-side-ad {
+      display: none; /* Initially hide the ad */
+      position: fixed;
+      top: 80%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 256px; /* Fixed width */
+      height: 256px; /* Fixed height */
+      background-color: #f1f1f1;
+      border-right: 2px solid #ccc;
+      z-index: 1000;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Shadow based on fixed size */
+    }
+
+    .left-side-ad img {
+      width: 100%; /* Image fits container */
+      height: 100%; /* Adjust height as needed to fit text */
+      object-fit: cover; /* Ensures the image covers the container */
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      font-size: 16px;
+      line-height: 24px;
+      color: #333;
+    }
+
+    .close-btn:before {
+      content: "×"; /* Close icon */
+      display: block;
+      text-align: center;
+    }
   </style>
   <div class="header">
     <div class="left-images">
@@ -72,7 +115,15 @@
       <a href="contact.html">Contact Us</a>
       <a href="blog-single.html">About</a>
       <a href="grievances.html">Grievances</a>
-      <a href="volunteer.html">Join</a>
+      <div class="dropdown-nav">
+        <a href="#" class="dropdown-toggle" onclick="return false;">Join </a>
+        <div class="dropdown-content">
+          <a href="yuva-shakthi.html">Yuva Shakthi Member</a>
+          <a href="PMK.html">Complaint Form</a>
+          <a href="scheme-eligibility.html">Schemes & Eligibility Form</a>
+          <a href="yuvaform.html">Social media warriors</a>
+        </div>
+      </div>
     </nav>
     <div class="right-image">
       <img
@@ -231,52 +282,6 @@
       </div>
     </section>
 
-    <style>
-      .left-side-ad {
-        display: none; /* Initially hide the ad */
-        position: fixed;
-        top: 80%;
-        left: 0;
-        transform: translateY(-50%);
-        width: 256px; /* Fixed width */
-        height: 256px; /* Fixed height */
-        background-color: #f1f1f1;
-        border-right: 2px solid #ccc;
-        z-index: 1000;
-        padding: 10px;
-        text-align: center;
-        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Shadow based on fixed size */
-      }
-
-      .left-side-ad img {
-        width: 100%; /* Image fits container */
-        height: 100%; /* Adjust height as needed to fit text */
-        object-fit: cover; /* Ensures the image covers the container */
-      }
-
-      .close-btn {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background: #fff;
-        border: none;
-        border-radius: 50%;
-        width: 24px;
-        height: 24px;
-        cursor: pointer;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        font-size: 16px;
-        line-height: 24px;
-        color: #333;
-      }
-
-      .close-btn:before {
-        content: "×"; /* Close icon */
-        display: block;
-        text-align: center;
-      }
-    </style>
-
     <!-- Start Schedule Area -->
 
     <!--/End Start schedule Area -->
@@ -329,7 +334,7 @@
                   src="img/TDPLogo.png"
                   alt="#"
                   class="feature-img"
-                  style="width: 200px"
+                  style="width: 150px"
                 />
               </div>
               <h3>Telugu Desam Party</h3>
@@ -583,7 +588,7 @@
                 <div class="date">June 2024</div>
                 <h2 style="font-size: 1.1em; margin: 8px 0">
                   <a
-                    href="https://www.news18.com/elections/eluru-election-result-2024-live-updates-highlights-lok-sabha-winner-loser-leading-trailing-mp-margin-8916807.html"
+                    href="https://www.news18.com/elections/nellore-election-result-2024-live-updates-highlights-lok-sabha-winner-loser-leading-trailing-mp-margin-8917121.html"
                     target="_blank"
                     >News 18</a
                   >
@@ -891,6 +896,15 @@
     <script src="formDisplay/app.js"></script>
 
     <script>
+      // JavaScript for the mobile menu toggle
+      document
+        .getElementById("mobile-menu")
+        .addEventListener("click", function () {
+          var nav = document.getElementById("main-nav");
+          this.classList.toggle("active");
+          nav.classList.toggle("active");
+        });
+
       document.addEventListener("DOMContentLoaded", function () {
         setTimeout(function () {
           document.getElementById("adContainer").style.display = "flex";

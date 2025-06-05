@@ -77,165 +77,6 @@
         box-sizing: border-box;
       }
 
-      /* --- Media Queries for Responsiveness --- */
-
-      /* Tablets and smaller desktops */
-      @media (max-width: 991px) {
-        .header {
-          justify-content: space-between;
-          flex-wrap: wrap;
-          padding: 10px 15px;
-        }
-
-        .header .left-images {
-          flex-basis: auto; /* Allow content to dictate width */
-          margin-bottom: 10px;
-        }
-
-        .header .nav-links {
-          display: none; /* Hide by default on smaller screens */
-          flex-direction: column;
-          width: 100%;
-          background-color: var(--header-bg);
-          position: absolute;
-          top: 70px; /* Adjust based on header height */
-          left: 0;
-          padding: 10px 0;
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-          z-index: 9;
-        }
-
-        .header .nav-links.active {
-          display: flex; /* Show when active */
-        }
-
-        .header .nav-links a {
-          margin: 10px 0;
-          padding: 8px 20px;
-          text-align: center;
-          width: 100%;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .header .nav-links a:last-child {
-          border-bottom: none;
-        }
-
-        .header .nav-links .dropdown-content {
-          position: static; /* Make dropdown content flow with document */
-          width: 100%;
-          box-shadow: none;
-          background-color: #333; /* Darker background for nested dropdown */
-          border-radius: 0;
-        }
-        .header .nav-links .dropdown-content a {
-          padding-left: 40px; /* Indent dropdown items */
-          color: #e8e7e7;
-        }
-        .header .nav-links .dropdown-content a:hover {
-          background-color: #444;
-        }
-
-        .header .right-image {
-          flex-basis: 100%; /* Take full width below nav */
-          justify-content: center; /* Center images on small screens */
-          margin-top: 15px;
-        }
-
-        .menu-toggle {
-          display: flex; /* Show hamburger menu */
-        }
-
-        .form-container {
-          width: 95%;
-          margin: 30px auto;
-          padding: 25px;
-        }
-
-        .footer .single-footer {
-          text-align: center; /* Center content in footer columns */
-        }
-
-        .footer .single-footer h2::after {
-          left: 50%;
-          transform: translateX(-50%);
-        }
-
-        .footer .social {
-          justify-content: center; /* Center social icons */
-        }
-
-        .footer .newsletter-inner {
-          justify-content: center;
-        }
-      }
-
-      /* Mobile phones */
-      @media (max-width: 576px) {
-        .header {
-          padding: 10px;
-          flex-direction: column;
-          align-items: flex-start; /* Align header items to start */
-        }
-
-        .header .left-images {
-          width: 100%;
-          text-align: center;
-          margin-bottom: 10px;
-        }
-        .header .left-images img {
-          margin: 0 10px;
-        }
-
-        .header .nav-links {
-          top: 60px; /* Adjust for smaller header height */
-        }
-
-        .header .right-image {
-          width: 100%;
-          justify-content: center;
-          margin-top: 10px;
-        }
-        .header .right-image img {
-          height: 35px;
-          width: 35px;
-        }
-
-        .form-container {
-          margin: 20px auto;
-          padding: 20px;
-        }
-
-        .form-container h2 {
-          font-size: 1.7em;
-        }
-
-        .footer .col-lg-3,
-        .footer .col-md-6 {
-          flex: 0 0 100%; /* Full width for footer columns */
-          max-width: 100%;
-        }
-
-        .footer .single-footer {
-          margin-bottom: 25px;
-        }
-
-        .footer .newsletter-inner {
-          flex-direction: column; /* Stack newsletter elements */
-          align-items: center;
-        }
-
-        .footer .newsletter-inner .common-input {
-          width: 90%;
-          border-radius: 5px; /* Full border radius for stacked input */
-          margin-bottom: 10px;
-        }
-
-        .footer .newsletter-inner .button {
-          width: 90%;
-          border-radius: 5px; /* Full border radius for stacked button */
-        }
-      }
-
       /* Add this to your <style> section or in style.css for gallery enhancements */
       .portfolio-slider .single-pf {
         display: flex;
@@ -289,7 +130,7 @@
       }
 
       @media (max-width: 991px) {
-        .portfolio-slider .single-pf,
+        /* .portfolio-slider .single-pf,
         .portfolio-slider .single-pf img {
           height: 160px;
           min-height: 160px;
@@ -297,11 +138,11 @@
         }
         .portfolio-slider .single-pf img {
           height: 140px;
-        }
+        } */
       }
 
       @media (max-width: 576px) {
-        .portfolio-slider .single-pf,
+        /* .portfolio-slider .single-pf,
         .portfolio-slider .single-pf img {
           height: 120px;
           min-height: 120px;
@@ -309,7 +150,7 @@
         }
         .portfolio-slider .single-pf img {
           height: 100px;
-        }
+        } */
         .section-title h2 {
           font-size: 1.3em;
         }
@@ -363,7 +204,15 @@
         <a href="contact.html">Contact Us</a>
         <a href="blog-single.html">About</a>
         <a href="grievances.html">Grievances</a>
-        <a href="volunteer.html">Join</a>
+        <div class="dropdown-nav">
+          <a href="#" class="dropdown-toggle" onclick="return false;">Join </a>
+          <div class="dropdown-content">
+            <a href="yuva-shakthi.html">Yuva Shakthi Member</a>
+            <a href="PMK.html">Complaint Form</a>
+            <a href="scheme-eligibility.html">Schemes & Eligibility Form</a>
+            <a href="yuvaform.html">Social media warriors</a>
+          </div>
+        </div>
       </nav>
       <div class="right-image">
         <img
@@ -382,128 +231,6 @@
     <!--/ End Header Inner -->
 
     <!-- Add this Recent Activities section just above the gallery section -->
-    <section class="portfolio section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section-title" style="margin-bottom: 0">
-              <h2>Portfolio of Activities – Vemireddy Prabhakar Reddy</h2>
-            </div>
-            <div
-              class="recent-activities"
-              style="
-                background: #fffbe7;
-                border-radius: 14px;
-                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
-                padding: 30px 24px;
-                margin-bottom: 30px;
-              "
-            >
-              <ol style="font-size: 1.08em; color: #333; padding-left: 20px">
-                <li>
-                  <b>Political Leadership & Governance</b><br />
-                  <span style="color: #666"
-                    >Elected Member of Parliament (Nellore), Member, Committee
-                    on Public Undertakings</span
-                  ><br />
-                  <i
-                    >Demonstrates active legislative engagement, overseeing
-                    public sector enterprises and contributing to policy
-                    discussions at the national level.</i
-                  >
-                </li>
-                <li style="margin-top: 12px">
-                  <b>Organizing Employment Opportunities</b><br />
-                  <span style="color: #666"
-                    >Event: Mega Job Fair, Nellore | Organizer: VPR
-                    Foundation</span
-                  ><br />
-                  <i
-                    >Connected job seekers with employers and skill resources.
-                    Hundreds registered for interviews; new campus-to-corporate
-                    linkages established.</i
-                  >
-                </li>
-                <li style="margin-top: 12px">
-                  <b>Disaster Relief & Philanthropy</b><br />
-                  <span style="color: #666"
-                    >Donation to Chief Minister’s Flood Relief Fund (Sep 3,
-                    2024)</span
-                  ><br />
-                  <i
-                    >Mobilized relief materials and supported rehabilitation for
-                    flood-affected families.</i
-                  >
-                </li>
-                <li style="margin-top: 12px">
-                  <b>Ration Supply Distribution</b><br />
-                  <span style="color: #666"
-                    >Venue: 102nd Ration Depot, Nellore | Collaborator: Minister
-                    Narayana</span
-                  ><br />
-                  <i
-                    >Thousands of ration kits distributed to underprivileged
-                    households, strengthening food security.</i
-                  >
-                </li>
-                <li style="margin-top: 12px">
-                  <b>Ration Card Enrollment Services</b><br />
-                  <i
-                    >Six new services launched for applications, updates, and
-                    corrections. 40% increase in timely registrations.</i
-                  >
-                </li>
-                <li style="margin-top: 12px">
-                  <b>Party Convention Participation</b><br />
-                  <span style="color: #666"
-                    >Event: TDP MahaNadu 2025 | #మహానాడు2025</span
-                  ><br />
-                  <i
-                    >Key participant and speaker, focusing on rural development,
-                    employment, and grassroots outreach.</i
-                  >
-                </li>
-                <li style="margin-top: 12px">
-                  <b>Infrastructure & Cultural Initiatives</b><br />
-                  <i
-                    >Proposed Buckingham Canal Bridge for better connectivity.
-                    Sponsored Ram Navami celebrations, reinforcing cultural
-                    unity.</i
-                  >
-                </li>
-                <li style="margin-top: 12px">
-                  <b>Additional Humanitarian Contribution</b><br />
-                  <i
-                    >Donated funds and distributed essentials to over 500
-                    flood-affected families, with ongoing rehabilitation
-                    monitoring.</i
-                  >
-                </li>
-              </ol>
-              <div style="margin-top: 18px; font-size: 1.08em">
-                <b>Contact & Reference:</b>
-                <a
-                  href="https://www.instagram.com/vprabhakarreddyofficial/"
-                  target="_blank"
-                  style="
-                    color: #e1306c;
-                    font-weight: 600;
-                    text-decoration: underline;
-                  "
-                >
-                  @vprabhakarreddyofficial (Instagram)
-                </a>
-                <br />
-                <span style="font-size: 0.98em; color: #555"
-                  >For more detailed photo galleries and real-time updates,
-                  visit the Instagram account.</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="portfolio section">
       <div class="container">
@@ -658,8 +385,205 @@
     <br />
     <br />
 
-    <!-- Footer Area -->
-    <!-- Footer Area -->
+    <!-- Update the activity cards grid for better responsiveness and equal sizing -->
+
+    <section class="portfolio section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title" style="margin-bottom: 0">
+              <h2>Portfolio of Activities – Vemireddy Prabhakar Reddy</h2>
+            </div>
+          </div>
+        </div>
+        <div class="activity-card-grid">
+          <!-- Card 1 -->
+          <div class="activity-card">
+            <div class="activity-card-inner">
+              <h4>Political Leadership & Governance</h4>
+              <p>
+                <b
+                  >Elected Member of Parliament (Nellore), Member, Committee on
+                  Public Undertakings</b
+                ><br />
+                Demonstrates active legislative engagement, overseeing public
+                sector enterprises and contributing to policy discussions at the
+                national level.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="activity-card">
+            <div class="activity-card-inner">
+              <h4>Organizing Employment Opportunities</h4>
+              <p>
+                <b>Event: Mega Job Fair, Nellore | Organizer: VPR Foundation</b
+                ><br />
+                Connected job seekers with employers and skill resources.
+                Hundreds registered for interviews; new campus-to-corporate
+                linkages established.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="activity-card">
+            <div class="activity-card-inner">
+              <h4>Disaster Relief & Philanthropy</h4>
+              <p>
+                <b
+                  >Donation to Chief Minister’s Flood Relief Fund (Sep 3,
+                  2024)</b
+                ><br />
+                Mobilized relief materials and supported rehabilitation for
+                flood-affected families.
+              </p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="activity-card">
+            <div class="activity-card-inner">
+              <h4>Ration Supply Distribution</h4>
+              <p>
+                <b
+                  >Venue: 102nd Ration Depot, Nellore | Collaborator: Minister
+                  Narayana</b
+                ><br />
+                Thousands of ration kits distributed to underprivileged
+                households, strengthening food security.
+              </p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="activity-card">
+            <div class="activity-card-inner">
+              <h4>Ration Card Enrollment Services</h4>
+              <p>
+                Six new services launched for applications, updates, and
+                corrections. 40% increase in timely registrations.
+              </p>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="activity-card">
+            <div class="activity-card-inner">
+              <h4>Party Convention Participation</h4>
+              <p>
+                <b>Event: TDP MahaNadu 2025 | #మహానాడు2025</b><br />
+                Key participant and speaker, focusing on rural development,
+                employment, and grassroots outreach.
+              </p>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="activity-card">
+            <div class="activity-card-inner">
+              <h4>Infrastructure & Cultural Initiatives</h4>
+              <p>
+                Proposed Buckingham Canal Bridge for better connectivity.
+                Sponsored Ram Navami celebrations, reinforcing cultural unity.
+              </p>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="activity-card">
+            <div class="activity-card-inner">
+              <h4>Additional Humanitarian Contribution</h4>
+              <p>
+                Donated funds and distributed essentials to over 500
+                flood-affected families, with ongoing rehabilitation monitoring.
+              </p>
+            </div>
+          </div>
+          <!-- Contact Card -->
+          <div class="activity-card">
+            <div class="activity-card-inner" style="text-align: center">
+              <h4>Contact & Reference</h4>
+              <a
+                href="https://www.instagram.com/vprabhakarreddyofficial/"
+                target="_blank"
+                style="
+                  color: #e1306c;
+                  font-weight: 600;
+                  text-decoration: underline;
+                "
+              >
+                @vprabhakarreddyofficial (Instagram)
+              </a>
+              <p style="font-size: 0.98em; color: #555; margin-top: 8px">
+                For more detailed photo galleries and real-time updates, visit
+                the Instagram account.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      /* Responsive grid for activity cards */
+      .activity-card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 24px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+      }
+      .activity-card {
+        display: flex;
+        height: 100%;
+      }
+      .activity-card-inner {
+        background: #ffe600;
+        border-radius: 16px;
+        box-shadow: 0 2px 12px rgba(255, 215, 0, 0.1);
+        padding: 24px 18px 18px 18px;
+        color: #222;
+        width: 100%;
+        min-height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: box-shadow 0.18s, transform 0.18s;
+        height: 100%;
+      }
+      .activity-card-inner h4 {
+        font-size: 1.18em;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #17408b;
+      }
+      .activity-card-inner p {
+        font-size: 1em;
+        margin-bottom: 0;
+      }
+      .activity-card-inner a:hover {
+        color: #17408b;
+      }
+      .activity-card-inner:hover {
+        box-shadow: 0 8px 32px rgba(255, 215, 0, 0.18);
+        transform: translateY(-4px) scale(1.02);
+      }
+      @media (max-width: 991px) {
+        .activity-card-inner {
+          padding: 16px 10px 12px 10px;
+          min-height: 120px;
+        }
+      }
+      @media (max-width: 767px) {
+        .activity-card-grid {
+          grid-template-columns: 1fr;
+          gap: 16px;
+        }
+        .activity-card {
+          margin-bottom: 0;
+        }
+        .activity-card-inner {
+          padding: 12px 6px 10px 6px;
+          min-height: unset;
+        }
+      }
+    </style>
+
     <!-- Footer Area -->
     <footer id="footer" class="footer">
       <div style="justify-content: center">
@@ -682,66 +606,21 @@
                     <ul class="social">
                       <li>
                         <a
-                          href="https://youtube.com/@telugudesampartyofficial?si=puYTnLvrKprLsTHM"
+                          href="https://www.facebook.com/vemireddyprabhakarreddy"
                           target="_blank"
-                          title="TDP Official YouTube"
-                          ><i class="icofont-youtube"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.instagram.com/ncbn.official/"
-                          target="_blank"
-                          title="NCBN Instagram"
-                          ><i class="icofont-instagram"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.instagram.com/jai_tdp/"
-                          target="_blank"
-                          title="Jai TDP Instagram"
-                          ><i class="icofont-instagram"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://x.com/ncbn"
-                          target="_blank"
-                          title="NCBN Twitter"
-                          ><i class="icofont-twitter"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.facebook.com/TDP.Official/"
-                          target="_blank"
-                          title="TDP Official Facebook"
                           ><i class="icofont-facebook"></i
                         ></a>
                       </li>
                       <li>
                         <a
-                          href="https://www.facebook.com/tdp.ncbn.official/"
+                          href="https://www.instagram.com/vemireddyprabhakarreddy"
                           target="_blank"
-                          title="NCBN Official Facebook"
-                          ><i class="icofont-facebook"></i
+                          ><i class="icofont-instagram"></i
                         ></a>
                       </li>
                       <li>
-                        <a
-                          href="https://x.com/JaiTDP"
-                          target="_blank"
-                          title="Jai TDP Twitter"
+                        <a href="https://x.com/VemireddyVpr" target="_blank"
                           ><i class="icofont-twitter"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.linkedin.com/company/telugu-desam-party"
-                          target="_blank"
-                          title="TDP LinkedIn"
-                          ><i class="icofont-linkedin"></i
                         ></a>
                       </li>
                     </ul>
@@ -883,5 +762,15 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
+    <script>
+      // JavaScript for the mobile menu toggle
+      document
+        .getElementById("mobile-menu")
+        .addEventListener("click", function () {
+          var nav = document.getElementById("main-nav");
+          this.classList.toggle("active");
+          nav.classList.toggle("active");
+        });
+    </script>
   </body>
 </html>
