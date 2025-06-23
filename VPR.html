@@ -137,26 +137,78 @@
             <label for="constituency"
               ><strong>Constituency</strong> / నియోజకవర్గం</label
             >
-            <select class="form-control" id="constituency" required>
-              <option>Eluru / ఏలూరు</option>
-              <option>Denduluru / డెందులూరు</option>
-              <option>Unguturu / ఉంగుటూరు</option>
-              <option>Polavaram / పోలవరం</option>
-              <option>Chintalapudi / చింతలపూడి</option>
-              <option>Nuzvid / నూజివీడు</option>
-              <option>Gopalapuram / గోపాలపురం</option>
+            <select
+              class="form-control"
+              name="constituency"
+              id="constituency"
+              required
+            >
+              <option value="" disabled selected>
+                Select Constituency / నియోజకవర్గం ఎంచుకోండి
+              </option>
+              <option value="Nellore City">Nellore City / నెల్లూరు సిటీ</option>
+              <option value="Nellore Rural">
+                Nellore Rural / నెల్లూరు రూరల్
+              </option>
+              <option value="Kovur">Kovur / కోవూరు</option>
+              <option value="Atmakur">Atmakur / ఆత్మకూరు</option>
+              <option value="Kavali">Kavali / కావలి</option>
+              <option value="Udayagiri">Udayagiri / ఉదయగిరి</option>
+              <option value="Sarvepalli">Sarvepalli / సర్వేపల్లి</option>
+              <option value="Sullurpet">Sullurpet / సుల్లూరుపేట</option>
+              <option value="Gudur">Gudur / గూడూరు</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="mandalVillage"
-              ><strong>Mandal/Village</strong> / మండలం/గ్రామం</label
-            >
-            <input
-              type="text"
+            <label for="mandal"><strong>Mandal</strong> / మండలం</label>
+            <select
               class="form-control"
+              name="mandal"
               id="mandalVillage"
               required
-            />
+            >
+              <option value="" disabled selected>
+                Select Mandal / మండలం ఎంచుకోండి
+              </option>
+              <option value="Atmakur">Atmakur / ఆత్మకూరు</option>
+              <option value="Ananthasagaram">Ananthasagaram / అనంతసాగరం</option>
+              <option value="Bogole">Bogole / బోగోలు</option>
+              <option value="Buchireddypalem">
+                Buchireddypalem / బుచ్చిరెడ్డిపాలెం
+              </option>
+              <option value="Chejerla">Chejerla / చేజర్ల</option>
+              <option value="Dagadarthi">Dagadarthi / దగదర్తి</option>
+              <option value="Duttalur">Duttalur / దుత్తలూరు</option>
+              <option value="Indukurpet">Indukurpet / ఇందుకూరుపేట</option>
+              <option value="Jaladanki">Jaladanki / జలదంకి</option>
+              <option value="Kaligiri">Kaligiri / కలిగిరి</option>
+              <option value="Kavali">Kavali / కావలి</option>
+              <option value="Kodavalur">Kodavalur / కొడవలూరు</option>
+              <option value="Kondapuram">Kondapuram / కొండపురం</option>
+              <option value="Kovur">Kovur / కోవూరు</option>
+              <option value="Marripadu">Marripadu / మరిపాడు</option>
+              <option value="Muthukur">Muthukur / ముత్తుకూరు</option>
+              <option value="Nellore Rural">
+                Nellore Rural / నెల్లూరు రూరల్
+              </option>
+              <option value="Nellore Urban">
+                Nellore Urban / నెల్లూరు అర్బన్
+              </option>
+              <option value="Podalakur">Podalakur / పొదలకూరు</option>
+              <option value="Rapur">Rapur / రాపూరు</option>
+              <option value="Saidapuram">Saidapuram / సైదాపురం</option>
+              <option value="Sangam">Sangam / సంగం</option>
+              <option value="SPSR Nellore">
+                SPSR Nellore / ఎస్పీఎస్ఆర్ నెల్లూరు
+              </option>
+              <option value="Thotapalligudur">
+                Thotapalligudur / తోటపల్లిగూడూరు
+              </option>
+              <option value="Udayagiri">Udayagiri / ఉదయగిరి</option>
+              <option value="Venkatachalam">Venkatachalam / వెంకటాచలం</option>
+              <option value="Vidavalur">Vidavalur / విడవలూరు</option>
+              <option value="Vinjamur">Vinjamur / విన్జమూరు</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="location"
@@ -322,6 +374,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="scripts.js"></script>
+    <script type="module" src="js/supabaseClient.js"></script>
+    <script type="module" src="js/complaint.js"></script>
   </body>
 </html>

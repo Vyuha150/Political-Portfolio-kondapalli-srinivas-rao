@@ -98,30 +98,76 @@
       display: block;
       text-align: center;
     }
+    .title-img {
+      transition: transform 0.3s ease;
+    }
+
+    .title-img:hover {
+      transform: scale(1.05);
+    }
+    .feature-img {
+      transition: transform 0.3s ease;
+    }
+
+    .feature-img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Add this to your style.css */
+    .single-table {
+      transition: transform 0.3s ease;
+    }
+
+    .single-table:hover {
+      transform: scale(1.05);
+    }
   </style>
   <div class="header">
-    <div class="left-images">
-      <img src="img/TDPLogo.png" alt="TDP" />
-    </div>
-    <div class="menu-toggle" id="mobile-menu">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="mobile-header">
+      <div class="left-images">
+        <img src="img/TDPLogo.png" alt="TDP" />
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <nav class="nav-links" id="main-nav">
-      <a href="index.html">Home</a>
-      <a href="outmotives.html">Our Initiatives</a>
-      <a href="photogallary.html">Media</a>
-      <a href="contact.html">Contact Us</a>
-      <a href="blog-single.html">About</a>
-      <a href="grievances.html">Grievances</a>
+      <a href="index.html" data-i18n="home">Home</a>
+      <a href="outmotives.html" data-i18n="our_initiatives">Our Initiatives</a>
+      <a href="photogallary.html" data-i18n="media">Media</a>
+      <a href="contact.html" data-i18n="contact_us">Contact Us</a>
+      <a href="blog-single.html" data-i18n="about">About</a>
+      <a href="grievances.html" data-i18n="grievances">Grievances</a>
       <div class="dropdown-nav">
-        <a href="#" class="dropdown-toggle" onclick="return false;">Join </a>
+        <a
+          href="#"
+          class="dropdown-toggle"
+          onclick="return false;"
+          data-i18n="join"
+          >Join</a
+        >
         <div class="dropdown-content">
-          <a href="yuva-shakthi.html">Yuva Shakthi Member</a>
-          <a href="PMK.html">Complaint Form</a>
-          <a href="scheme-eligibility.html">Schemes & Eligibility Form</a>
-          <a href="yuvaform.html">Social media warriors</a>
+          <a href="yuva-shakthi.html" data-i18n="yuva_shakthi_member"
+            >Yuva Shakthi Member</a
+          >
+          <a href="scheme-eligibility.html" data-i18n="schemes_eligibility_form"
+            >Schemes & Eligibility Form</a
+          >
+          <a href="volunteer.html" data-i18n="join_volunteer"
+            >Join as a Volunteer</a
+          >
+          <a
+            href="mahila-shakti-grievance.html"
+            data-i18n="mahila_shakti_grievance"
+            >Mahila Shakti Grievance</a
+          >
+          <a
+            href="social-media-grievance.html"
+            data-i18n="social_media_warriors"
+            >Social Media Warriors</a
+          >
         </div>
       </div>
     </nav>
@@ -169,6 +215,17 @@
 
         <div
           class="single-slider"
+          style="background-image: url('/public/26.png')"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7"></div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="single-slider"
           style="background-image: url('/public/index1.png')"
         >
           <div class="container">
@@ -183,26 +240,6 @@
                     "
                     class="text-orange"
                   ></h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="single-slider"
-          style="background-image: url('/public/21.png')"
-        >
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-7">
-                <div class="text">
-                  <h1>
-                    <span>Vemireddy Prabhakar Reddy</span><br /><span
-                      class="text-white"
-                      >Member of Parliament Nellore</span
-                    >
-                  </h1>
                 </div>
               </div>
             </div>
@@ -294,9 +331,11 @@
             <div class="section-title">
               <br />
               <br />
-              <h1>Our Alliance for welfare of Andhra Pradesh</h1>
+              <h1 data-i18n="home_heading">
+                Our Alliance for welfare of Andhra Pradesh
+              </h1>
               <img src="img/allaince.jpg" alt="#" class="title-img" />
-              <p>
+              <p data-i18n="home_para1">
                 The alliance of the Telugu Desam Party (TDP), Bharatiya Janata
                 Party (BJP), and Jana Sena Party (JSP) for the 2024 elections in
                 Andhra Pradesh is a strategic move aimed at promoting the
@@ -316,8 +355,8 @@
               <div class="single-icon">
                 <img src="img/pklogo.jpg" alt="#" class="feature-img" />
               </div>
-              <h3>Jana Sena Party</h3>
-              <p class="text-muted">
+              <h3 data-i18n="features_jsp_title">Jana Sena Party</h3>
+              <p class="text-muted" data-i18n="features_jsp_desc">
                 The Jana Sena Party is an Indian regional political party in the
                 states of Andhra Pradesh and Telangana. It was founded by the
                 actor-politician Pawan Kalyan at the International Convention
@@ -337,8 +376,8 @@
                   style="width: 150px"
                 />
               </div>
-              <h3>Telugu Desam Party</h3>
-              <p class="text-muted">
+              <h3 data-i18n="features_tdp_title">Telugu Desam Party</h3>
+              <p class="text-muted" data-i18n="features_tdp_desc">
                 The Telugu Desam Party is an Indian Telugu regionalist political
                 party with influence in the states of Andhra Pradesh and
                 Telangana.[15] It was founded by the former chief minister of
@@ -353,8 +392,8 @@
               <div class="single-icon">
                 <img src="img/bjp logomain.jpg" alt="#" class="feature-img" />
               </div>
-              <h3>Bharatiya Janata Party</h3>
-              <p class="text-muted">
+              <h3 data-i18n="features_bjp_title">Bharatiya Janata Party</h3>
+              <p class="text-muted" data-i18n="features_bjp_desc">
                 The Bharatiya Janata Party is a political party in India and one
                 of the two major Indian political parties alongside the Indian
                 National Congress.[35] Since 2014, it has been the ruling
@@ -381,7 +420,9 @@
     <!-- Start Why choose -->
     <section class="pricing-table section" style="background-color: white">
       <div class="container">
-        <h1 style="color: black; text-align: center">Our Programs</h1>
+        <h1 style="color: black; text-align: center" data-i18n="our_programs">
+          Our Programs
+        </h1>
         <br />
 
         <div class="row">
@@ -393,25 +434,35 @@
                 <div class="icon">
                   <img src="img/form1.png" style="width: 70px" />
                 </div>
-                <h4 class="title">Join YuvaShakti</h4>
+                <h4 class="title" data-i18n="join_yuvashakti">
+                  Join YuvaShakti
+                </h4>
               </div>
               <!-- Table List -->
               <ul class="table-list">
                 <li>
-                  <i class="icofont icofont-ui-check"></i>Passionate about
-                  social service.
+                  <i class="icofont icofont-ui-check"></i
+                  ><span data-i18n="join_yuvashakti_1"
+                    >Passionate about social service.</span
+                  >
                 </li>
                 <li>
-                  <i class="icofont icofont-ui-check"></i>Passionate to work for
-                  TDP.
+                  <i class="icofont icofont-ui-check"></i
+                  ><span data-i18n="join_yuvashakti_2"
+                    >Passionate to work for TDP.</span
+                  >
                 </li>
                 <li>
-                  <i class="icofont icofont-ui-check"></i>Interested to solve
-                  Real-World Problems.
+                  <i class="icofont icofont-ui-check"></i
+                  ><span data-i18n="join_yuvashakti_3"
+                    >Interested to solve Real-World Problems.</span
+                  >
                 </li>
               </ul>
               <div class="table-bottom">
-                <a class="btn" href="yuva-shakthi.html">Join Now</a>
+                <a class="btn" href="yuva-shakthi.html" data-i18n="join_now"
+                  >Join Now</a
+                >
               </div>
               <!-- Table Bottom -->
             </div>
@@ -428,24 +479,32 @@
                     style="width: 75px"
                   />
                 </div>
-                <h4 class="title">Raise a Complaint</h4>
+                <h4 class="title" data-i18n="raise_complaint">
+                  Raise a Complaint
+                </h4>
               </div>
               <!-- Table List -->
               <ul class="table-list">
                 <li>
-                  <i class="icofont icofont-ui-check"></i>Facing an issue.
+                  <i class="icofont icofont-ui-check"></i
+                  ><span data-i18n="raise_complaint_1">Facing an issue.</span>
                 </li>
                 <li>
-                  <i class="icofont icofont-ui-check"></i>Require some HELP!
+                  <i class="icofont icofont-ui-check"></i
+                  ><span data-i18n="raise_complaint_2">Require some HELP!</span>
                 </li>
                 <li>
-                  <i class="icofont icofont-ui-check"></i>Ready to explain the
-                  Problem and get solution.
+                  <i class="icofont icofont-ui-check"></i
+                  ><span data-i18n="raise_complaint_3"
+                    >Ready to explain the Problem and get solution.</span
+                  >
                 </li>
               </ul>
               <div class="table-bottom">
                 <div class="get-quote text-right">
-                  <a href="PMK.html" class="btn">Complaint Now</a>
+                  <a href="PMK.html" class="btn" data-i18n="complaint_now"
+                    >Complaint Now</a
+                  >
                 </div>
               </div>
 
@@ -464,25 +523,38 @@
                     style="width: 60px"
                   />
                 </div>
-                <h4 class="title">Schemes And Eligibility</h4>
+                <h4 class="title" data-i18n="schemes_eligibility">
+                  Schemes And Eligibility
+                </h4>
               </div>
               <!-- Table List -->
               <ul class="table-list">
                 <li>
-                  <i class="icofont icofont-ui-check"></i>Explore availability
-                  of Schemes.
+                  <i class="icofont icofont-ui-check"></i
+                  ><span data-i18n="schemes_eligibility_1"
+                    >Explore availability of Schemes.</span
+                  >
                 </li>
                 <li>
-                  <i class="icofont icofont-ui-check"></i>Understand the
-                  Manifesto.
+                  <i class="icofont icofont-ui-check"></i
+                  ><span data-i18n="schemes_eligibility_2"
+                    >Understand the Manifesto.</span
+                  >
                 </li>
                 <li>
-                  <i class="icofont icofont-ui-check"></i>Check your eligible
-                  Schemes and apply.
+                  <i class="icofont icofont-ui-check"></i
+                  ><span data-i18n="schemes_eligibility_3"
+                    >Check your eligible Schemes and apply.</span
+                  >
                 </li>
               </ul>
               <div class="table-bottom">
-                <a class="btn" href="scheme-eligibility.html">Check Now</a>
+                <a
+                  class="btn"
+                  href="scheme-eligibility.html"
+                  data-i18n="check_now"
+                  >Check Now</a
+                >
               </div>
               <!-- Table Bottom -->
             </div>
@@ -503,7 +575,10 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="section-title" style="text-align: center">
-              <h2 style="color: black; font-weight: 700">
+              <h2
+                style="color: black; font-weight: 700"
+                data-i18n="blog_updates"
+              >
                 Keep up with Our Upcoming Updates.
               </h2>
             </div>
@@ -515,7 +590,9 @@
             <div class="info-card flex-fill">
               <div class="info-card-header">
                 <span class="info-card-icon"><i class="icofont-bolt"></i></span>
-                <span class="info-card-title">Powering Progress</span>
+                <span class="info-card-title" data-i18n="info_card1_title"
+                  >Powering Progress</span
+                >
               </div>
               <img
                 src="/public/5.png"
@@ -531,7 +608,11 @@
                     >Hindusthan Times</a
                   >
                 </h2>
-                <p class="text" style="color: black">
+                <p
+                  class="text"
+                  style="color: black"
+                  data-i18n="info_card1_desc"
+                >
                   Andhra Pradesh government contemplating overhaul of volunteers
                   system introduced by YSRCP
                 </p>
@@ -546,7 +627,9 @@
                 <span class="info-card-icon"
                   ><i class="icofont-newspaper"></i
                 ></span>
-                <span class="info-card-title">TDP in the News</span>
+                <span class="info-card-title" data-i18n="info_card2_title"
+                  >TDP in the News</span
+                >
               </div>
               <img
                 src="https://static.toiimg.com/thumb/msid-111565583,imgsize-1131999,width-400,height-225,resizemode-72/111565583.jpg"
@@ -562,7 +645,11 @@
                     >Times of India</a
                   >
                 </h2>
-                <p class="text" style="color: black">
+                <p
+                  class="text"
+                  style="color: black"
+                  data-i18n="info_card2_desc"
+                >
                   TDP will regain past glory in Telangana, party revamp soon: N
                   Chandrababu Naidu Garu
                 </p>
@@ -577,7 +664,9 @@
                 <span class="info-card-icon"
                   ><i class="icofont-trophy"></i
                 ></span>
-                <span class="info-card-title">Recent Victory</span>
+                <span class="info-card-title" data-i18n="info_card3_title"
+                  >Recent Victory</span
+                >
               </div>
               <img
                 src="/public/nellore.png"
@@ -593,7 +682,11 @@
                     >News 18</a
                   >
                 </h2>
-                <p class="text" style="color: black">
+                <p
+                  class="text"
+                  style="color: black"
+                  data-i18n="info_card3_desc"
+                >
                   Nellore Election Result 2024 LIVE Updates Highlights released:
                   Vemireddy Prabhakar Reddy of TDP Wins
                 </p>
@@ -727,8 +820,8 @@
                   class="col-lg-3 col-md-6 col-12 order-lg-1 order-md-1 order-2"
                 >
                   <div class="single-footer">
-                    <h2>About Us</h2>
-                    <p>
+                    <h2 data-i18n="about_us">About Us</h2>
+                    <p data-i18n="about_us_desc">
                       We are committed to making a positive impact on society
                       through our objectives and initiatives. Join us in our
                       mission for a better tomorrow.
@@ -762,7 +855,7 @@
                   class="col-lg-3 col-md-6 col-12 order-lg-2 order-md-2 order-1"
                 >
                   <div class="single-footer f-link">
-                    <h2>Quick Links</h2>
+                    <h2 data-i18n="quick_links">Quick Links</h2>
                     <div class="row">
                       <div class="col-lg-6 col-md-6 col-12">
                         <ul>
@@ -771,6 +864,7 @@
                               ><i
                                 class="fa fa-caret-right"
                                 aria-hidden="true"
+                                data-i18n="home"
                               ></i
                               >Home</a
                             >
@@ -780,6 +874,7 @@
                               ><i
                                 class="fa fa-caret-right"
                                 aria-hidden="true"
+                                data-i18n="about_us_link"
                               ></i
                               >About Us</a
                             >
@@ -789,6 +884,7 @@
                               ><i
                                 class="fa fa-caret-right"
                                 aria-hidden="true"
+                                data-i18n="motive"
                               ></i
                               >Motive</a
                             >
@@ -802,8 +898,8 @@
                   class="col-lg-3 col-md-6 col-12 order-lg-3 order-md-3 order-3"
                 >
                   <div class="single-footer">
-                    <h2>Newsletter</h2>
-                    <p>
+                    <h2 data-i18n="newsletter">Newsletter</h2>
+                    <p data-i18n="newsletter_desc">
                       Subscribe to our newsletter for the latest updates and
                       news.
                     </p>
@@ -838,9 +934,12 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-12">
                   <div class="copyright-content">
-                    <p>
-                      © Copyright 2024 | All Rights Reserved by Vemireddy
-                      Prabhakar Reddy
+                    <p data-i18n="copyright">
+                      © Copyright 2024 |
+                      <a href="privacy-policy.html" target="_blank"
+                        >Privacy Policy</a
+                      >
+                      | All Rights Reserved by Vemireddy Prabhakar Reddy
                     </p>
                   </div>
                 </div>
@@ -916,6 +1015,107 @@
         .addEventListener("click", function () {
           document.getElementById("adContainer").style.display = "none";
         });
+    </script>
+
+    <!-- Language Selection Popup -->
+    <div
+      id="language-popup"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div
+        style="
+          background: #fffbe6;
+          padding: 32px 24px;
+          border-radius: 16px;
+          box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+          text-align: center;
+          max-width: 90vw;
+        "
+      >
+        <h2 style="margin-bottom: 18px">
+          Please select your language<br /><span style="font-size: 1.1em"
+            >దయచేసి మీ భాషను ఎంచుకోండి</span
+          >
+        </h2>
+        <button
+          id="lang-en"
+          style="
+            margin: 10px 18px 0 0;
+            padding: 10px 28px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            border: none;
+            background: #ffd600;
+            color: #222;
+            font-weight: 600;
+            cursor: pointer;
+          "
+        >
+          English
+        </button>
+        <button
+          id="lang-te"
+          style="
+            margin: 10px 0 0 0;
+            padding: 10px 28px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            border: none;
+            background: #ffd600;
+            color: #222;
+            font-weight: 600;
+            cursor: pointer;
+          "
+        >
+          తెలుగు
+        </button>
+      </div>
+    </div>
+
+    <script type="module">
+      import { translations } from "./js/translations.js";
+
+      function setLanguage(lang) {
+        sessionStorage.setItem("lang", lang);
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (translations[lang][key]) {
+            el.innerHTML = translations[lang][key];
+          }
+        });
+      }
+
+      // Show popup only if language not set
+      document.addEventListener("DOMContentLoaded", () => {
+        const lang = sessionStorage.getItem("lang");
+        if (!lang) {
+          document.getElementById("language-popup").style.display = "flex";
+        } else {
+          document.getElementById("language-popup").style.display = "none";
+          setLanguage(lang);
+        }
+      });
+
+      // Handle language selection
+      document.getElementById("lang-en").onclick = () => {
+        setLanguage("en");
+        document.getElementById("language-popup").style.display = "none";
+      };
+      document.getElementById("lang-te").onclick = () => {
+        setLanguage("te");
+        document.getElementById("language-popup").style.display = "none";
+      };
     </script>
   </body>
 </html>

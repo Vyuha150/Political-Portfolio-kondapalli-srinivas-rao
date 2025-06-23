@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="keywords"
-      content="YUVA SHAKTHI, Youth Force, Nellore, Volunteer, Membership, Vemi Reddy Prabhakar Reddy"
+      content="Mahila Shakti, Grievance, Women Empowerment, TDP, Support, Engagement"
     />
     <meta
       name="description"
-      content="Join YUVA SHAKTHI, a youth force platform by MP Vemi Reddy Prabhakar Reddy garu, and contribute to a better Nellore."
+      content="Submit your grievance or suggestion to Mahila Shakti. Empowering voices, addressing concerns, and bridging the gap."
     />
     <meta name="copyright" content="Vemireddy Prabhakar Reddy" />
     <meta
@@ -17,7 +17,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <title>YUVA SHAKTHI: Youth Force Membership</title>
+    <title>Mahila Shakti Grievance & Engagement Form</title>
 
     <link rel="icon" href="img/TDPLogo.png" />
 
@@ -96,11 +96,13 @@
         resize: vertical;
         min-height: 80px;
       }
-      .form-container .checkbox-group {
+      .form-container .checkbox-group,
+      .form-container .radio-group {
         text-align: left;
         margin-bottom: 16px;
       }
-      .form-container .checkbox-group label {
+      .form-container .checkbox-group label,
+      .form-container .radio-group label {
         display: inline-block;
         margin-right: 15px;
         font-weight: 400;
@@ -111,14 +113,38 @@
         padding: 12px 25px;
         border: none;
         border-radius: 8px;
-        cursor: pointer;
         font-size: 1.1em;
         font-weight: 600;
         transition: background-color 0.3s ease;
         margin-top: 15px;
       }
+      .form-container button[type="reset"] {
+        background-color: #aaa;
+        color: #fff;
+        margin-left: 10px;
+      }
       .form-container button:hover {
         background-color: var(--button-success-hover);
+      }
+      .vpr-image-container {
+        text-align: center;
+        margin-top: 30px;
+      }
+      .vpr-image-container img {
+        max-width: 160px;
+        width: 100%;
+        border-radius: 50%;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+        margin-bottom: 18px;
+      }
+      @media (max-width: 600px) {
+        .form-container {
+          padding: 10px;
+        }
+      }
+      .te-txt {
+        color: #4b2e06 !important;
+        font-family: inherit;
       }
     </style>
   </head>
@@ -191,279 +217,359 @@
       </div>
     </div>
 
+    <div class="vpr-image-container">
+      <img src="/public/vpr4.png" alt="Vemireddy Prabhakar Reddy" />
+    </div>
+
     <div class="form-container">
-      <h2>
-        YUVA SHAKTHI: Youth Force Membership / యువ శక్తి: యువ ఫోర్స్ సభ్యత్వం
-      </h2>
+      <h2>Mahila Shakti Grievance & Engagement Form</h2>
       <div class="explanation">
-        "YUVA SHAKTHI is a transformative platform initiated by MP Vemi Reddy
-        Prabhakar Reddy garu to involve youth in governance, policy shaping, and
-        public service. / యువ శక్తి అనేది ఎంపీ వేమిరెడ్డి ప్రభాకర్ రెడ్డి గారు
-        ప్రారంభించిన యువత కోసం మార్గదర్శక వేదిక, పాలన, విధాన రూపకల్పన, ప్రజా
-        సేవలో యువతను భాగస్వామ్యంగా మార్చడమే లక్ష్యం."
+        Empowering Voices. Addressing Concerns. Bridging the Gap.
       </div>
-      <form action="index.html" method="post">
-        <!-- A. Personal Details -->
-        <label for="fullname">Full Name / పూర్తి పేరు</label>
-        <input type="text" name="fullname" id="fullname" required />
-
-        <label for="parentname"
-          >Father's/Mother's Name / తండ్రి/తల్లి పేరు</label
+      <form action="#" method="post" enctype="multipart/form-data">
+        <!-- Personal Information -->
+        <h4 style="color: black">
+          🔹 Personal Information /
+          <span class="te-txt">వ్యక్తిగత సమాచారం</span>
+        </h4>
+        <small
+          >(Your details will be kept confidential unless you consent to share /
+          <span class="te-txt"
+            >మీ వివరాలు మీ అనుమతి లేకుండా గోప్యంగా ఉంచబడతాయి</span
+          >)</small
         >
-        <input type="text" name="parentname" id="parentname" required />
 
-        <label for="dob">Date of Birth / జన్మ తేదీ</label>
-        <input type="date" name="dob" id="dob" required />
-
-        <label for="gender">Gender / లింగం</label>
-        <select name="gender" id="gender" required>
-          <option value="" disabled selected>
-            Select Gender / లింగాన్ని ఎంచుకోండి
-          </option>
-          <option value="male">Male / పురుషుడు</option>
-          <option value="female">Female / మహిళ</option>
-          <option value="other">Other / ఇతరులు</option>
-        </select>
-
-        <label for="phone"
-          >Phone Number (WhatsApp preferred) / ఫోన్ నంబర్ (వాట్సాప్
-          ప్రిఫర్డ్)</label
+        <label for="ms_fullname"
+          >Full Name / <span class="te-txt">పూర్తి పేరు</span></label
         >
-        <input type="tel" name="phone" id="phone" required />
+        <input type="text" name="ms_fullname" id="ms_fullname" required />
 
-        <label for="email">Email Address / ఇమెయిల్ చిరునామా</label>
-        <input type="email" name="email" id="email" required />
-
-        <!-- B. Address Details -->
-        <label for="address"
-          >House Number / Street / Landmark / ఇంటి నంబర్ / వీధి /
-          గుర్తింపు</label
-        >
-        <input type="text" name="address" id="address" required />
-
-        <label for="village">Village / Town / గ్రామం / పట్టణం</label>
-        <input type="text" name="village" id="village" required />
-
-        <label for="mandal">Mandal / మండలం</label>
-        <select name="mandal" id="mandal" required>
-          <option value="" disabled selected>
-            Select Mandal / మండలాన్ని ఎంచుకోండి
-          </option>
-          <option value="Atmakur">Atmakur / ఆత్మకూరు</option>
-          <option value="Ananthasagaram">Ananthasagaram / అనంతసాగరం</option>
-          <option value="Bogole">Bogole / బోగోలు</option>
-          <option value="Buchireddypalem">
-            Buchireddypalem / బుచ్చిరెడ్డిపాలెం
-          </option>
-          <option value="Chejerla">Chejerla / చేజర్ల</option>
-          <option value="Dagadarthi">Dagadarthi / దగదర్తి</option>
-          <option value="Duttalur">Duttalur / దుత్తలూరు</option>
-          <option value="Indukurpet">Indukurpet / ఇందుకూరుపేట</option>
-          <option value="Jaladanki">Jaladanki / జలదంకి</option>
-          <option value="Kaligiri">Kaligiri / కలిగిరి</option>
-          <option value="Kavali">Kavali / కవలి</option>
-          <option value="Kodavalur">Kodavalur / కొడవలూరు</option>
-          <option value="Kondapuram">Kondapuram / కొండపురం</option>
-          <option value="Kovur">Kovur / కోవూరు</option>
-          <option value="Marripadu">Marripadu / మర్రిపాడు</option>
-          <option value="Muthukur">Muthukur / ముత్తుకూరు</option>
-          <option value="Nellore Rural">
-            Nellore Rural / నెల్లూరు గ్రామీణ
-          </option>
-          <option value="Nellore Urban">Nellore Urban / నెల్లూరు అర్బన్</option>
-          <option value="Podalakur">Podalakur / పొడలకూరు</option>
-          <option value="Rapur">Rapur / రాపూర్</option>
-          <option value="Saidapuram">Saidapuram / సైదాపురం</option>
-          <option value="Sangam">Sangam / సంగం</option>
-          <option value="SPSR Nellore">
-            SPSR Nellore / ఎస్పిఎస్ఆర్ నెల్లూరు
-          </option>
-          <option value="Thotapalligudur">
-            Thotapalligudur / తొటపల్లిగూడూరు
-          </option>
-          <option value="Udayagiri">Udayagiri / ఉదయగిరి</option>
-          <option value="Venkatachalam">Venkatachalam / వెంకటాచలం</option>
-          <option value="Vidavalur">Vidavalur / విడవలూరు</option>
-          <option value="Vinjamur">Vinjamur / విన్జమూరు</option>
-        </select>
-
-        <label for="constituency">Constituency / నియోజకవర్గం</label>
-        <select name="constituency" id="constituency" required>
-          <option value="" disabled selected>
-            Select Constituency / నియోజకవర్గాన్ని ఎంచుకోండి
-          </option>
-          <option value="Nellore City">Nellore City / నెల్లూరు నగరం</option>
-          <option value="Nellore Rural">
-            Nellore Rural / నెల్లూరు గ్రామీణ
-          </option>
-          <option value="Kovur">Kovur / కోవూరు</option>
-          <option value="Atmakur">Atmakur / ఆత్మకూరు</option>
-          <option value="Kavali">Kavali / కవలి</option>
-          <option value="Udayagiri">Udayagiri / ఉదయగిరి</option>
-          <option value="Sarvepalli">Sarvepalli / సర్వేపల్లి</option>
-          <option value="Sullurpet">Sullurpet / సుల్లూరుపేట</option>
-          <option value="Gudur">Gudur / గూడూరు</option>
-        </select>
-
-        <label for="district">District / జిల్లా</label>
+        <label for="ms_age">Age / <span class="te-txt">వయస్సు</span></label>
         <input
-          type="text"
-          name="district"
-          id="district"
-          value="SPSR Nellore / ఎస్పిఎస్ఆర్ నెల్లూరు"
+          type="number"
+          name="ms_age"
+          id="ms_age"
+          min="10"
+          max="120"
           required
         />
 
-        <!-- C. Educational & Professional Details -->
-        <label for="education"
-          >Current Education Level / ప్రస్తుత విద్యా స్థాయి</label
-        >
-        <select name="education" id="education" required>
-          <option value="" disabled selected>
-            Select Education Level / విద్యా స్థాయిని ఎంచుకోండి
-          </option>
-          <option value="10th">10th / పదవ తరగతి</option>
-          <option value="Inter">Intermediate / ఇంటర్మీడియట్</option>
-          <option value="Degree">Degree / డిగ్రీ</option>
-          <option value="PG">Post Graduation / పీజీ</option>
-          <option value="PhD">PhD / పీహెచ్.డి</option>
-        </select>
-
-        <label for="stream">Stream / విభాగం</label>
-        <select name="stream" id="stream" required>
-          <option value="" disabled selected>
-            Select Stream / విభాగాన్ని ఎంచుకోండి
-          </option>
-          <option value="Science">Science / సైన్స్</option>
-          <option value="Commerce">Commerce / కామర్స్</option>
-          <option value="Arts">Arts / ఆర్ట్స్</option>
-          <option value="Other">Other / ఇతర</option>
-        </select>
-
-        <label for="occupation">Occupation / వృత్తి</label>
-        <select name="occupation" id="occupation" required>
-          <option value="" disabled selected>
-            Select Occupation / వృత్తిని ఎంచుకోండి
-          </option>
-          <option value="Student">Student / విద్యార్థి</option>
-          <option value="Employed">Employed / ఉద్యోగి</option>
-          <option value="Unemployed">Unemployed / నిరుద్యోగి</option>
-          <option value="Entrepreneur">Entrepreneur / వ్యాపారవేత్త</option>
-          <option value="Others">Others / ఇతరులు</option>
-        </select>
-
-        <label for="skills"
-          >Skills & Certifications / నైపుణ్యాలు & సర్టిఫికేషన్లు</label
-        >
-        <input
-          type="text"
-          name="skills"
-          id="skills"
-          placeholder="List your skills/certifications / మీ నైపుణ్యాలు/సర్టిఫికేషన్లు నమోదు చేయండి"
-        />
-
-        <!-- D. Area of Interest in Volunteering -->
-        <label
-          >Area of Interest in Volunteering / వాలంటీరింగ్‌లో ఆసక్తి ఉన్న
-          విభాగం</label
-        >
-        <div class="checkbox-group">
+        <label>Gender / <span class="te-txt">లింగం</span></label>
+        <div class="radio-group">
           <label
-            ><input type="checkbox" name="interest[]" value="Administration" />
-            Administration / పరిపాలన</label
+            ><input type="radio" name="ms_gender" value="Female" required />
+            Female / <span class="te-txt">మహిళ</span></label
           >
           <label
-            ><input
-              type="checkbox"
-              name="interest[]"
-              value="Disaster Response & Management"
-            />
-            Disaster Response & Management / విపత్తు స్పందన & నిర్వహణ</label
+            ><input type="radio" name="ms_gender" value="Other" /> Other /
+            <span class="te-txt">ఇతరులు</span></label
           >
           <label
-            ><input
-              type="checkbox"
-              name="interest[]"
-              value="Social Media & Digital Communication"
-            />
-            Social Media & Digital Communication / సోషల్ మీడియా & డిజిటల్
-            కమ్యూనికేషన్</label
-          >
-          <label
-            ><input type="checkbox" name="interest[]" value="Education" />
-            Education / విద్య</label
-          >
-          <label
-            ><input
-              type="checkbox"
-              name="interest[]"
-              value="Health & Wellness"
-            />
-            Health & Wellness / ఆరోగ్యం & సంక్షేమం</label
-          >
-          <label
-            ><input
-              type="checkbox"
-              name="interest[]"
-              value="Infrastructure & Public Works"
-            />
-            Infrastructure & Public Works / మౌలిక వసతులు & ప్రజా పనులు</label
-          >
-          <label
-            ><input
-              type="checkbox"
-              name="interest[]"
-              value="Rural Development"
-            />
-            Rural Development / గ్రామీణ అభివృద్ధి</label
-          >
-          <label
-            ><input
-              type="checkbox"
-              name="interest[]"
-              value="Environmental Protection"
-            />
-            Environmental Protection / పర్యావరణ పరిరక్షణ</label
-          >
-          <label
-            ><input
-              type="checkbox"
-              name="interest[]"
-              value="Survey and Data Collection"
-            />
-            Survey and Data Collection / సర్వే & డేటా సేకరణ</label
-          >
-          <label
-            ><input
-              type="checkbox"
-              name="interest[]"
-              value="Event Management"
-            />
-            Event Management / ఈవెంట్ నిర్వహణ</label
-          >
-          <label
-            ><input
-              type="checkbox"
-              name="interest[]"
-              value="Women Empowerment"
-            />
-            Women Empowerment / మహిళా సాధికారత</label
+            ><input type="radio" name="ms_gender" value="Prefer not to say" />
+            Prefer not to say / <span class="te-txt">చెప్పకూడదు</span></label
           >
         </div>
+
+        <label for="ms_mobile"
+          >Mobile Number / <span class="te-txt">మొబైల్ నంబర్</span></label
+        >
+        <input type="tel" name="ms_mobile" id="ms_mobile" required />
+
+        <label for="ms_email"
+          >Email Address (optional) /
+          <span class="te-txt">ఇమెయిల్ (ఐచ్ఛికం)</span></label
+        >
+        <input type="email" name="ms_email" id="ms_email" />
+
+        <label for="ms_district"
+          >District / <span class="te-txt">జిల్లా</span></label
+        >
+        <select name="ms_district" id="ms_district" required>
+          <option value="" disabled selected>
+            Select District / <span class="te-txt">జిల్లాను ఎంచుకోండి</span>
+          </option>
+          <option value="SPSR Nellore">
+            SPSR Nellore / <span class="te-txt">నెల్లూరు</span>
+          </option>
+        </select>
+
+        <label for="ms_constituency"
+          >Constituency / <span class="te-txt">నియోజకవర్గం</span></label
+        >
+        <select name="ms_constituency" id="ms_constituency" required>
+          <option value="" disabled selected>
+            Select Constituency /
+            <span class="te-txt">నియోజకవర్గాన్ని ఎంచుకోండి</span>
+          </option>
+          <option value="Nellore City">
+            Nellore City / <span class="te-txt">నెల్లూరు నగరం</span>
+          </option>
+          <option value="Nellore Rural">
+            Nellore Rural / <span class="te-txt">నెల్లూరు గ్రామీణ</span>
+          </option>
+          <option value="Kovur">
+            Kovur / <span class="te-txt">కోవూరు</span>
+          </option>
+          <option value="Atmakur">
+            Atmakur / <span class="te-txt">ఆత్మకూరు</span>
+          </option>
+          <option value="Kavali">
+            Kavali / <span class="te-txt">కవలి</span>
+          </option>
+          <option value="Udayagiri">
+            Udayagiri / <span class="te-txt">ఉదయగిరి</span>
+          </option>
+          <option value="Sarvepalli">
+            Sarvepalli / <span class="te-txt">సర్వేపల్లి</span>
+          </option>
+          <option value="Sullurpet">
+            Sullurpet / <span class="te-txt">సుల్లూరుపేట</span>
+          </option>
+          <option value="Gudur">
+            Gudur / <span class="te-txt">గూడూరు</span>
+          </option>
+        </select>
+
+        <label for="ms_mandal"
+          >Mandal / <span class="te-txt">మండలం</span></label
+        >
+        <select name="ms_mandal" id="ms_mandal" required>
+          <option value="" disabled selected>
+            Select Mandal / <span class="te-txt">మండలాన్ని ఎంచుకోండి</span>
+          </option>
+          <!-- Repeat for each mandal -->
+          <option value="Atmakur">
+            Atmakur / <span class="te-txt">ఆత్మకూరు</span>
+          </option>
+          <!-- ...other options... -->
+        </select>
+
+        <label for="ms_ward"
+          >Ward / Local Area /
+          <span class="te-txt">వార్డు / ప్రాంతం</span></label
+        >
+        <input type="text" name="ms_ward" id="ms_ward" required />
+
+        <!-- Type of Grievance / Concern -->
+        <h4 style="color: black">
+          🔹 Type of Grievance / Concern /
+          <span class="te-txt">ఫిర్యాదు / సమస్య రకం</span>
+        </h4>
+        <div class="checkbox-group">
+          <label
+            ><input
+              type="checkbox"
+              name="ms_grievance_type"
+              value="Safety & Security"
+            />
+            Safety & Security / <span class="te-txt">భద్రత & రక్షణ</span></label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="ms_grievance_type"
+              value="Domestic Violence"
+            />
+            Domestic Violence / <span class="te-txt">గృహ హింస</span></label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="ms_grievance_type"
+              value="Education & Skills"
+            />
+            Education & Skills /
+            <span class="te-txt">విద్య & నైపుణ్యాలు</span></label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="ms_grievance_type"
+              value="Employment / Livelihood"
+            />
+            Employment / Livelihood /
+            <span class="te-txt">ఉపాధి / జీవనోపాధి</span></label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="ms_grievance_type"
+              value="Health & Sanitation"
+            />
+            Health & Sanitation /
+            <span class="te-txt">ఆరోగ్యం & పారిశుధ్యం</span></label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="ms_grievance_type"
+              value="Infrastructure"
+            />
+            Infrastructure (roads, water, electricity) /
+            <span class="te-txt"
+              >మౌలిక వసతులు (రోడ్లు, నీరు, విద్యుత్)</span
+            ></label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="ms_grievance_type"
+              value="Harassment / Discrimination"
+            />
+            Harassment / Discrimination /
+            <span class="te-txt">వేధింపులు / వివక్ష</span></label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="ms_grievance_type"
+              value="Government Schemes / Entitlements"
+            />
+            Government Schemes / Entitlements /
+            <span class="te-txt">ప్రభుత్వ పథకాలు / హక్కులు</span></label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="ms_grievance_type"
+              value="Political Representation / Participation"
+            />
+            Political Representation / Participation /
+            <span class="te-txt">రాజకీయ ప్రాతినిధ్యం / పాల్గొనడం</span></label
+          >
+          <label
+            ><input type="checkbox" name="ms_grievance_type" value="Other" />
+            Other / <span class="te-txt">ఇతర</span>:
+            <input
+              type="text"
+              name="ms_grievance_other"
+              style="width: 150px; display: inline-block"
+            />
+          </label>
+        </div>
+
+        <!-- Describe Grievance -->
+        <label for="ms_description"
+          >🔹 Describe Your Grievance or Suggestion /
+          <span class="te-txt">మీ ఫిర్యాదు లేదా సూచన వివరించండి</span></label
+        >
+        <textarea
+          name="ms_description"
+          id="ms_description"
+          rows="5"
+          required
+          placeholder="Clearly mention the issue, location, and any actions taken so far / సమస్య, ప్రాంతం, తీసుకున్న చర్యలు వివరించండి"
+        ></textarea>
+
+        <!-- Attachments -->
+        <label for="ms_attachments"
+          >🔹 Attach Supporting Documents / Photos (optional) /
+          <span class="te-txt"
+            >సంబంధిత డాక్యుమెంట్లు / ఫోటోలు జత చేయండి (ఐచ్ఛికం)</span
+          ></label
+        >
         <input
-          type="text"
-          name="interest_other"
-          placeholder="Any Other (please specify) / ఇతర (దయచేసి వివరించండి)"
+          type="file"
+          name="ms_attachments"
+          id="ms_attachments"
+          accept="image/*,application/pdf,audio/*"
+          multiple
         />
 
-        <!-- E. Why do you want to join Yuva Shakthi? -->
-        <label for="why"
-          >Why do you want to join Yuva Shakthi? / మీరు యువ శక్తిలో ఎందుకు
-          చేరాలనుకుంటున్నారు?</label
-        >
-        <textarea name="why" id="why" rows="3" required></textarea>
+        <!-- Preferred Mode of Response -->
+        <h4 style="color: black">
+          🔹 Preferred Mode of Response /
+          <span class="te-txt">ప్రత్యుత్తరం కోసం ఇష్టమైన విధానం</span>
+        </h4>
+        <div class="checkbox-group">
+          <label
+            ><input
+              type="checkbox"
+              name="ms_response_mode"
+              value="Phone Call"
+            />
+            Phone Call / <span class="te-txt">ఫోన్ కాల్</span></label
+          >
+          <label
+            ><input type="checkbox" name="ms_response_mode" value="WhatsApp" />
+            WhatsApp / <span class="te-txt">వాట్సాప్</span></label
+          >
+          <label
+            ><input type="checkbox" name="ms_response_mode" value="Email" />
+            Email / <span class="te-txt">ఇమెయిల్</span></label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="ms_response_mode"
+              value="In-person meeting"
+            />
+            In-person meeting with Mahila Shakti representative /
+            <span class="te-txt"
+              >మహిళా శక్తి ప్రతినిధితో ప్రత్యక్ష సమావేశం</span
+            ></label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="ms_response_mode"
+              value="No response needed"
+            />
+            No response needed – I just want to report /
+            <span class="te-txt"
+              >ప్రత్యుత్తరం అవసరం లేదు – నేను కేవలం
+              నివేదించాలనుకుంటున్నాను</span
+            ></label
+          >
+        </div>
 
-        <button type="submit">Submit / సమర్పించండి</button>
+        <!-- Volunteer -->
+        <h4 style="color: black">
+          🔹 Would You Like to Volunteer or Join Mahila Shakti Initiatives? /
+          <span class="te-txt"
+            >మీరు మహిళా శక్తి కార్యక్రమాల్లో వాలంటీర్‌గా
+            పాల్గొనాలనుకుంటున్నారా?</span
+          >
+        </h4>
+        <div class="radio-group">
+          <label
+            ><input type="radio" name="ms_volunteer" value="Yes" required />
+            Yes, I want to be involved /
+            <span class="te-txt"
+              >అవును, నేను పాల్గొనాలనుకుంటున్నాను</span
+            ></label
+          >
+          <label
+            ><input type="radio" name="ms_volunteer" value="Maybe" /> Maybe – I
+            want more information /
+            <span class="te-txt">బహుశా – నాకు మరింత సమాచారం కావాలి</span></label
+          >
+          <label
+            ><input type="radio" name="ms_volunteer" value="No" /> No, not at
+            this time / <span class="te-txt">ఇప్పుడు కాదు</span></label
+          >
+        </div>
+
+        <!-- Declaration -->
+        <div class="checkbox-group" style="margin-top: 20px">
+          <label>
+            <input type="checkbox" name="ms_declaration" required />
+            I confirm that the information provided is true to the best of my
+            knowledge. I agree to be contacted for follow-up if needed. /
+            <span class="te-txt"
+              >నేను ఇచ్చిన సమాచారం నా తెలిసినంతవరకు నిజమని నిర్ధారిస్తున్నాను.
+              అవసరమైతే ఫాలో-అప్ కోసం నన్ను సంప్రదించడానికి నేను
+              అంగీకరిస్తున్నాను.</span
+            >
+          </label>
+        </div>
+
+        <button type="submit">
+          Submit Grievance / <span class="te-txt">ఫిర్యాదు సమర్పించండి</span>
+        </button>
+        <button type="reset">
+          Reset Form / <span class="te-txt">ఫారం రీసెట్ చేయండి</span>
+        </button>
       </form>
     </div>
 
@@ -621,7 +727,7 @@
     <script src="js/pagescroll.min.js"></script>
     <script src="js/active.js"></script>
     <script type="module" src="js/supabaseClient.js"></script>
-    <script type="module" src="js/yuva-shakthi.js"></script>
+    <script type="module" src="js/mahila-shakti-grievance.js"></script>
 
     <script>
       // JavaScript for the mobile menu toggle
@@ -629,7 +735,6 @@
         .getElementById("mobile-menu")
         .addEventListener("click", function () {
           var nav = document.getElementById("main-nav");
-          this.classList.toggle("active");
           nav.classList.toggle("active");
         });
     </script>

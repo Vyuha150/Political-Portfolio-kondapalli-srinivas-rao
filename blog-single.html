@@ -43,28 +43,22 @@
         padding: 0;
         line-height: 1.6;
       }
-
-      /* Mobile phones */
       @media (max-width: 576px) {
         .header {
           padding: 10px;
           flex-direction: column;
-          align-items: flex-start; /* Align header items to start */
+          align-items: flex-start;
         }
-
         .header .left-images {
-          width: 100%;
           text-align: center;
           margin-bottom: 10px;
         }
         .header .left-images img {
           margin: 0 10px;
         }
-
         .header .nav-links {
-          top: 60px; /* Adjust for smaller header height */
+          top: 60px;
         }
-
         .header .right-image {
           width: 100%;
           justify-content: center;
@@ -74,69 +68,133 @@
           height: 35px;
           width: 35px;
         }
-
         .form-container {
           margin: 20px auto;
           padding: 20px;
         }
-
         .form-container h2 {
           font-size: 1.7em;
         }
-
         .footer .col-lg-3,
         .footer .col-md-6 {
-          flex: 0 0 100%; /* Full width for footer columns */
+          flex: 0 0 100%;
           max-width: 100%;
         }
-
         .footer .single-footer {
           margin-bottom: 25px;
         }
-
         .footer .newsletter-inner {
-          flex-direction: column; /* Stack newsletter elements */
+          flex-direction: column;
           align-items: center;
         }
-
         .footer .newsletter-inner .common-input {
           width: 90%;
-          border-radius: 5px; /* Full border radius for stacked input */
+          border-radius: 5px;
           margin-bottom: 10px;
         }
-
         .footer .newsletter-inner .button {
           width: 90%;
-          border-radius: 5px; /* Full border radius for stacked button */
+          border-radius: 5px;
         }
+      }
+      /* Language Popup */
+      #language-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #language-popup-inner {
+        background: #fffbe6;
+        padding: 32px 24px;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+        text-align: center;
+        max-width: 90vw;
+      }
+      #language-popup button {
+        margin: 10px 18px 0 0;
+        padding: 10px 28px;
+        font-size: 1.1em;
+        border-radius: 8px;
+        border: none;
+        background: #ffd600;
+        color: #222;
+        font-weight: 600;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
+    <!-- Language Selection Popup -->
+    <div id="language-popup">
+      <div id="language-popup-inner">
+        <h2 style="margin-bottom: 18px" data-i18n="select_language_popup">
+          Please select your language<br /><span style="font-size: 1.1em"
+            >దయచేసి మీ భాషను ఎంచుకోండి</span
+          >
+        </h2>
+        <button id="lang-en">English</button>
+        <button id="lang-te">తెలుగు</button>
+      </div>
+    </div>
     <!-- Header Start -->
     <div class="header">
-      <div class="left-images">
-        <img src="img/TDPLogo.png" alt="TDP" />
-      </div>
-      <div class="menu-toggle" id="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="mobile-header">
+        <div class="left-images">
+          <img src="img/TDPLogo.png" alt="TDP" />
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       <nav class="nav-links" id="main-nav">
-        <a href="index.html">Home</a>
-        <a href="outmotives.html">Our Initiatives</a>
-        <a href="photogallary.html">Media</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="blog-single.html">About</a>
-        <a href="grievances.html">Grievances</a>
+        <a href="index.html" data-i18n="home">Home</a>
+        <a href="outmotives.html" data-i18n="our_initiatives"
+          >Our Initiatives</a
+        >
+        <a href="photogallary.html" data-i18n="media">Media</a>
+        <a href="contact.html" data-i18n="contact_us">Contact Us</a>
+        <a href="blog-single.html" data-i18n="about">About</a>
+        <a href="grievances.html" data-i18n="grievances">Grievances</a>
         <div class="dropdown-nav">
-          <a href="#" class="dropdown-toggle" onclick="return false;">Join </a>
+          <a
+            href="#"
+            class="dropdown-toggle"
+            onclick="return false;"
+            data-i18n="join"
+            >Join</a
+          >
           <div class="dropdown-content">
-            <a href="yuva-shakthi.html">Yuva Shakthi Member</a>
-            <a href="PMK.html">Complaint Form</a>
-            <a href="scheme-eligibility.html">Schemes & Eligibility Form</a>
-            <a href="yuvaform.html">Social media warriors</a>
+            <a href="yuva-shakthi.html" data-i18n="yuva_shakthi_member"
+              >Yuva Shakthi Member</a
+            >
+            <a
+              href="scheme-eligibility.html"
+              data-i18n="schemes_eligibility_form"
+              >Schemes & Eligibility Form</a
+            >
+            <a href="volunteer.html" data-i18n="join_volunteer"
+              >Join as a Volunteer</a
+            >
+            <a
+              href="mahila-shakti-grievance.html"
+              data-i18n="mahila_shakti_grievance"
+              >Mahila Shakti Grievance</a
+            >
+            <a
+              href="social-media-grievance.html"
+              data-i18n="social_media_warriors"
+              >Social Media Warriors</a
+            >
           </div>
         </div>
       </nav>
@@ -174,46 +232,51 @@
                     <img src="/public/20.png" alt="#" />
                   </div>
                   <!-- News Title -->
-                  <h1 class="news-title">
-                    <a href="news-single.html"
-                      >Vemireddy Prabhakar Reddy: A Committed Parliamentarian
-                      Driving Inclusive Growth</a
-                    >
+                  <h1 class="news-title" data-i18n="blog_title">
+                    <a href="news-single.html">
+                      Vemireddy Prabhakar Reddy: A Committed Parliamentarian
+                      Driving Inclusive Growth
+                    </a>
                   </h1>
                   <!-- Meta -->
                   <div class="meta">
                     <div class="meta-left">
-                      <span class="author"
-                        ><a href="#"
-                          ><img src="/public/vpr4.png" alt="#" />Vemireddy
-                          Prabhakar Reddy</a
-                        ></span
-                      >
-                      <span class="date"
-                        ><i class="fa fa-clock-o"></i>12 Jun 2024</span
-                      >
+                      <span class="author">
+                        <a href="#">
+                          <img src="/public/vpr4.png" alt="#" />
+                          <span data-i18n="vpr_name"
+                            >Vemireddy Prabhakar Reddy</span
+                          >
+                        </a>
+                      </span>
+                      <span class="date">
+                        <i class="fa fa-clock-o"></i>
+                        <span data-i18n="blog_date">12 Jun 2024</span>
+                      </span>
                     </div>
                     <div class="meta-right">
-                      <span class="comments"
-                        ><a href="#"
-                          ><i class="fa fa-comments"></i>766,202 Votes</a
-                        ></span
-                      >
-                      <span class="views"
-                        ><i class="fa fa-eye"></i>245,902 Majority</span
-                      >
+                      <span class="comments">
+                        <a href="#">
+                          <i class="fa fa-comments"></i>
+                          <span data-i18n="votes">766,202 Votes</span>
+                        </a>
+                      </span>
+                      <span class="views">
+                        <i class="fa fa-eye"></i>
+                        <span data-i18n="majority">245,902 Majority</span>
+                      </span>
                     </div>
                   </div>
                   <!-- News Text -->
                   <div class="news-text">
-                    <p>
+                    <p data-i18n="blog_para1">
                       An experienced and dynamic leader, Vemireddy Prabhakar
                       Reddy has been elected as a Member of Parliament (M.P.)
                       from the Nellore Lok Sabha constituency in the 2024
                       general elections, representing the Telugu Desam Party
                       (TDP).
                     </p>
-                    <p>
+                    <p data-i18n="blog_para2">
                       He secured a decisive mandate with a resounding victory,
                       winning by a majority of 2,45,902 votes, a remarkable
                       achievement that signifies the trust and confidence
@@ -221,7 +284,7 @@
                       marked a significant political shift in the region,
                       previously a stronghold of the opposition.
                     </p>
-                    <p>
+                    <p data-i18n="blog_para3">
                       With a steadfast commitment to public service and
                       inclusive development, Vemireddy Prabhakar Reddy has long
                       been associated with social welfare through his
@@ -244,7 +307,7 @@
                       <br />
                       Offering scholarships to underprivileged students.
                     </p>
-                    <p>
+                    <p data-i18n="blog_para4">
                       He is also known for his proactive participation in relief
                       efforts during natural calamities, ensuring timely aid and
                       rehabilitation for affected communities.
@@ -278,7 +341,7 @@
                         </div>
                       </div>
                     </div>
-                    <p>
+                    <p data-i18n="blog_para5">
                       Vemireddy Prabhakar Reddy's dedication transcends the
                       realm of politics and business, finding deep roots in
                       meaningful social service. His impactful contributions
@@ -302,8 +365,10 @@
                       a brighter, more equitable future for Andhra Pradesh.
                     </p>
                     <blockquote class="overlay">
-                      <h3>Early Life and Education</h3>
-                      <p>
+                      <h3 data-i18n="early_life_title">
+                        Early Life and Education
+                      </h3>
+                      <p data-i18n="early_life_para">
                         Vemireddy Prabhakar Reddy was born in Nellore district,
                         Andhra Pradesh, into a family known for its deep-rooted
                         values and commitment to community service. A successful
@@ -325,12 +390,13 @@
                       <li class="facebook">
                         <a href="#"
                           ><i class="fa fa-facebook"></i
-                          ><span>Facebook</span></a
+                          ><span data-i18n="facebook">Facebook</span></a
                         >
                       </li>
                       <li class="twitter">
                         <a href="#"
-                          ><i class="fa fa-twitter"></i><span>Twitter</span></a
+                          ><i class="fa fa-twitter"></i
+                          ><span data-i18n="twitter">Twitter</span></a
                         >
                       </li>
                       <li class="google-plus">
@@ -353,19 +419,21 @@
             <div class="main-sidebar">
               <!-- Single Widget -->
               <div class="single-widget category">
-                <h3 class="title">Personal details</h3>
+                <h3 class="title" data-i18n="personal_details">
+                  Personal details
+                </h3>
                 <ul class="categor-list">
-                  <h5>Born:</h5>
-                  <p>
+                  <h5 data-i18n="born">Born:</h5>
+                  <p data-i18n="born_details">
                     15 November 1956 (age 68) <br />
                     Nellore, Andhra Pradesh, India
                   </p>
-                  <h5>Political party:</h5>
-                  <p>Telugu Desam Party</p>
-                  <h5>Parents:</h5>
-                  <p>Not publicly documented</p>
-                  <h5>Education:</h5>
-                  <p>
+                  <h5 data-i18n="political_party">Political party:</h5>
+                  <p data-i18n="political_party_name">Telugu Desam Party</p>
+                  <h5 data-i18n="parents">Parents:</h5>
+                  <p data-i18n="parents_details">Not publicly documented</p>
+                  <h5 data-i18n="education">Education:</h5>
+                  <p data-i18n="education_details">
                     Bachelor's degree in Engineering (exact institution not
                     publicly specified)
                   </p>
@@ -374,7 +442,7 @@
               <!--/ End Single Widget -->
               <!-- Single Widget -->
               <div class="single-widget recent-post">
-                <h3 class="title">Recent post</h3>
+                <h3 class="title" data-i18n="recent_post">Recent post</h3>
                 <!-- Single Post -->
                 <div class="single-post">
                   <div class="image">
@@ -384,15 +452,19 @@
                     <h5>
                       <a
                         href="https://www.instagram.com/vprabhakarreddyofficial/reel/DGS8-chyXf2/?locale=zh-hans"
-                        >Check new updates on instagram.</a
+                        data-i18n="check_instagram"
                       >
+                        Check new updates on instagram.
+                      </a>
                     </h5>
                     <ul class="comment">
                       <li>
-                        <i class="fa fa-calendar" aria-hidden="true"></i>2024
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span data-i18n="year_2024">2024</span>
                       </li>
                       <li>
-                        <i class="fa fa-commenting-o" aria-hidden="true"></i>35
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                        <span data-i18n="comments_35">35</span>
                       </li>
                     </ul>
                   </div>
@@ -419,8 +491,8 @@
                   class="col-lg-3 col-md-6 col-12 order-lg-1 order-md-1 order-2"
                 >
                   <div class="single-footer">
-                    <h2>About Us</h2>
-                    <p>
+                    <h2 data-i18n="about_us">About Us</h2>
+                    <p data-i18n="about_us_desc">
                       We are committed to making a positive impact on society
                       through our objectives and initiatives. Join us in our
                       mission for a better tomorrow.
@@ -454,7 +526,7 @@
                   class="col-lg-3 col-md-6 col-12 order-lg-2 order-md-2 order-1"
                 >
                   <div class="single-footer f-link">
-                    <h2>Quick Links</h2>
+                    <h2 data-i18n="quick_links">Quick Links</h2>
                     <div class="row">
                       <div class="col-lg-6 col-md-6 col-12">
                         <ul>
@@ -464,7 +536,7 @@
                                 class="fa fa-caret-right"
                                 aria-hidden="true"
                               ></i
-                              >Home</a
+                              ><span data-i18n="home">Home</span></a
                             >
                           </li>
                           <li>
@@ -473,7 +545,9 @@
                                 class="fa fa-caret-right"
                                 aria-hidden="true"
                               ></i
-                              >About Us</a
+                              ><span data-i18n="about_us_link"
+                                >About Us</span
+                              ></a
                             >
                           </li>
                           <li>
@@ -482,7 +556,7 @@
                                 class="fa fa-caret-right"
                                 aria-hidden="true"
                               ></i
-                              >Motive</a
+                              ><span data-i18n="motive">Motive</span></a
                             >
                           </li>
                         </ul>
@@ -494,8 +568,8 @@
                   class="col-lg-3 col-md-6 col-12 order-lg-3 order-md-3 order-3"
                 >
                   <div class="single-footer">
-                    <h2>Newsletter</h2>
-                    <p>
+                    <h2 data-i18n="newsletter">Newsletter</h2>
+                    <p data-i18n="newsletter_desc">
                       Subscribe to our newsletter for the latest updates and
                       news.
                     </p>
@@ -530,9 +604,15 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-12">
                   <div class="copyright-content">
-                    <p>
-                      © Copyright 2024 | All Rights Reserved by Vemireddy
-                      Prabhakar Reddy
+                    <p data-i18n="copyright">
+                      © Copyright 2024 |
+                      <a
+                        href="privacy-policy.html"
+                        target="_blank"
+                        data-i18n="privacy_policy"
+                        >Privacy Policy</a
+                      >
+                      | All Rights Reserved by Vemireddy Prabhakar Reddy
                     </p>
                   </div>
                 </div>
@@ -567,8 +647,37 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-      // JavaScript for the mobile menu toggle
+    <script type="module" src="js/translations.js"></script>
+    <script type="module">
+      import { translations } from "./js/translations.js";
+      function setLanguage(lang) {
+        sessionStorage.setItem("lang", lang);
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (translations[lang][key]) {
+            el.textContent = translations[lang][key];
+          }
+        });
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        const lang = sessionStorage.getItem("lang");
+        if (!lang) {
+          document.getElementById("language-popup").style.display = "flex";
+        } else {
+          document.getElementById("language-popup").style.display = "none";
+          setLanguage(lang);
+        }
+      });
+      document.getElementById("lang-en").onclick = () => {
+        setLanguage("en");
+        document.getElementById("language-popup").style.display = "none";
+      };
+      document.getElementById("lang-te").onclick = () => {
+        setLanguage("te");
+        document.getElementById("language-popup").style.display = "none";
+      };
+
+      // Mobile menu toggle
       document
         .getElementById("mobile-menu")
         .addEventListener("click", function () {

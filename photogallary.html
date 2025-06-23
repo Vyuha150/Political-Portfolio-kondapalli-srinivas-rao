@@ -48,30 +48,6 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="custom.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-  </head>
-  <body>
-    <!-- Preloader -->
-    <div class="preloader">
-      <div class="loader">
-        <div class="loader-outter"></div>
-        <div class="loader-inner"></div>
-
-        <div class="indicator">
-          <svg width="16px" height="12px">
-            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-            <polyline
-              id="front"
-              points="1 6 4 6 6 11 10 1 12 6 15 6"
-            ></polyline>
-          </svg>
-        </div>
-      </div>
-    </div>
-    <!-- End Preloader -->
-
-    <!-- Header Area -->
-
-    <!-- Header Inner -->
     <style>
       * {
         box-sizing: border-box;
@@ -189,28 +165,55 @@
       }
     </style>
     <div class="header">
-      <div class="left-images">
-        <img src="img/TDPLogo.png" alt="TDP" />
-      </div>
-      <div class="menu-toggle" id="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="mobile-header">
+        <div class="left-images">
+          <img src="img/TDPLogo.png" alt="TDP" />
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       <nav class="nav-links" id="main-nav">
-        <a href="index.html">Home</a>
-        <a href="outmotives.html">Our Initiatives</a>
-        <a href="photogallary.html">Media</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="blog-single.html">About</a>
-        <a href="grievances.html">Grievances</a>
+        <a href="index.html" data-i18n="home">Home</a>
+        <a href="outmotives.html" data-i18n="our_initiatives"
+          >Our Initiatives</a
+        >
+        <a href="photogallary.html" data-i18n="media">Media</a>
+        <a href="contact.html" data-i18n="contact_us">Contact Us</a>
+        <a href="blog-single.html" data-i18n="about">About</a>
+        <a href="grievances.html" data-i18n="grievances">Grievances</a>
         <div class="dropdown-nav">
-          <a href="#" class="dropdown-toggle" onclick="return false;">Join </a>
+          <a
+            href="#"
+            class="dropdown-toggle"
+            onclick="return false;"
+            data-i18n="join"
+            >Join</a
+          >
           <div class="dropdown-content">
-            <a href="yuva-shakthi.html">Yuva Shakthi Member</a>
-            <a href="PMK.html">Complaint Form</a>
-            <a href="scheme-eligibility.html">Schemes & Eligibility Form</a>
-            <a href="yuvaform.html">Social media warriors</a>
+            <a href="yuva-shakthi.html" data-i18n="yuva_shakthi_member"
+              >Yuva Shakthi Member</a
+            >
+            <a
+              href="scheme-eligibility.html"
+              data-i18n="schemes_eligibility_form"
+              >Schemes & Eligibility Form</a
+            >
+            <a href="volunteer.html" data-i18n="join_volunteer"
+              >Join as a Volunteer</a
+            >
+            <a
+              href="mahila-shakti-grievance.html"
+              data-i18n="mahila_shakti_grievance"
+              >Mahila Shakti Grievance</a
+            >
+            <a
+              href="social-media-grievance.html"
+              data-i18n="social_media_warriors"
+              >Social Media Warriors</a
+            >
           </div>
         </div>
       </nav>
@@ -237,7 +240,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="section-title">
-              <h2>Photo Gallary</h2>
+              <h2 data-i18n="photo_gallery"></h2>
               <br />
             </div>
           </div>
@@ -392,7 +395,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="section-title" style="margin-bottom: 0">
-              <h2>Portfolio of Activities – Vemireddy Prabhakar Reddy</h2>
+              <h2 data-i18n="portfolio_activities"></h2>
             </div>
           </div>
         </div>
@@ -400,119 +403,67 @@
           <!-- Card 1 -->
           <div class="activity-card">
             <div class="activity-card-inner">
-              <h4>Political Leadership & Governance</h4>
-              <p>
-                <b
-                  >Elected Member of Parliament (Nellore), Member, Committee on
-                  Public Undertakings</b
-                ><br />
-                Demonstrates active legislative engagement, overseeing public
-                sector enterprises and contributing to policy discussions at the
-                national level.
-              </p>
+              <h4 data-i18n="activity1_title"></h4>
+              <p data-i18n="activity1_desc"></p>
             </div>
           </div>
           <!-- Card 2 -->
           <div class="activity-card">
             <div class="activity-card-inner">
-              <h4>Organizing Employment Opportunities</h4>
-              <p>
-                <b>Event: Mega Job Fair, Nellore | Organizer: VPR Foundation</b
-                ><br />
-                Connected job seekers with employers and skill resources.
-                Hundreds registered for interviews; new campus-to-corporate
-                linkages established.
-              </p>
+              <h4 data-i18n="activity2_title"></h4>
+              <p data-i18n="activity2_desc"></p>
             </div>
           </div>
           <!-- Card 3 -->
           <div class="activity-card">
             <div class="activity-card-inner">
-              <h4>Disaster Relief & Philanthropy</h4>
-              <p>
-                <b
-                  >Donation to Chief Minister’s Flood Relief Fund (Sep 3,
-                  2024)</b
-                ><br />
-                Mobilized relief materials and supported rehabilitation for
-                flood-affected families.
-              </p>
+              <h4 data-i18n="activity3_title"></h4>
+              <p data-i18n="activity3_desc"></p>
             </div>
           </div>
           <!-- Card 4 -->
           <div class="activity-card">
             <div class="activity-card-inner">
-              <h4>Ration Supply Distribution</h4>
-              <p>
-                <b
-                  >Venue: 102nd Ration Depot, Nellore | Collaborator: Minister
-                  Narayana</b
-                ><br />
-                Thousands of ration kits distributed to underprivileged
-                households, strengthening food security.
-              </p>
+              <h4 data-i18n="activity4_title"></h4>
+              <p data-i18n="activity4_desc"></p>
             </div>
           </div>
           <!-- Card 5 -->
           <div class="activity-card">
             <div class="activity-card-inner">
-              <h4>Ration Card Enrollment Services</h4>
-              <p>
-                Six new services launched for applications, updates, and
-                corrections. 40% increase in timely registrations.
-              </p>
+              <h4 data-i18n="activity5_title"></h4>
+              <p data-i18n="activity5_desc"></p>
             </div>
           </div>
           <!-- Card 6 -->
           <div class="activity-card">
             <div class="activity-card-inner">
-              <h4>Party Convention Participation</h4>
-              <p>
-                <b>Event: TDP MahaNadu 2025 | #మహానాడు2025</b><br />
-                Key participant and speaker, focusing on rural development,
-                employment, and grassroots outreach.
-              </p>
+              <h4 data-i18n="activity6_title"></h4>
+              <p data-i18n="activity6_desc"></p>
             </div>
           </div>
           <!-- Card 7 -->
           <div class="activity-card">
             <div class="activity-card-inner">
-              <h4>Infrastructure & Cultural Initiatives</h4>
-              <p>
-                Proposed Buckingham Canal Bridge for better connectivity.
-                Sponsored Ram Navami celebrations, reinforcing cultural unity.
-              </p>
+              <h4 data-i18n="activity7_title"></h4>
+              <p data-i18n="activity7_desc"></p>
             </div>
           </div>
           <!-- Card 8 -->
           <div class="activity-card">
             <div class="activity-card-inner">
-              <h4>Additional Humanitarian Contribution</h4>
-              <p>
-                Donated funds and distributed essentials to over 500
-                flood-affected families, with ongoing rehabilitation monitoring.
-              </p>
+              <h4 data-i18n="activity8_title"></h4>
+              <p data-i18n="activity8_desc"></p>
             </div>
           </div>
           <!-- Contact Card -->
           <div class="activity-card">
             <div class="activity-card-inner" style="text-align: center">
-              <h4>Contact & Reference</h4>
-              <a
-                href="https://www.instagram.com/vprabhakarreddyofficial/"
-                target="_blank"
-                style="
-                  color: #e1306c;
-                  font-weight: 600;
-                  text-decoration: underline;
-                "
-              >
+              <h4 data-i18n="activity_contact_title"></h4>
+              <a href="https://www.instagram.com/vprabhakarreddyofficial/" target="_blank" style="color: #e1306c; font-weight: 600; text-decoration: underline;">
                 @vprabhakarreddyofficial (Instagram)
               </a>
-              <p style="font-size: 0.98em; color: #555; margin-top: 8px">
-                For more detailed photo galleries and real-time updates, visit
-                the Instagram account.
-              </p>
+              <p style="font-size: 0.98em; color: #555; margin-top: 8px" data-i18n="activity_contact_desc"></p>
             </div>
           </div>
         </div>
@@ -596,12 +547,8 @@
                   class="col-lg-3 col-md-6 col-12 order-lg-1 order-md-1 order-2"
                 >
                   <div class="single-footer">
-                    <h2>About Us</h2>
-                    <p>
-                      We are committed to making a positive impact on society
-                      through our objectives and initiatives. Join us in our
-                      mission for a better tomorrow.
-                    </p>
+                    <h2 data-i18n="about_us"></h2>
+                    <p data-i18n="about_us_desc"></p>
                     <!-- Social -->
                     <ul class="social">
                       <li>
@@ -631,36 +578,18 @@
                   class="col-lg-3 col-md-6 col-12 order-lg-2 order-md-2 order-1"
                 >
                   <div class="single-footer f-link">
-                    <h2>Quick Links</h2>
+                    <h2 data-i18n="quick_links"></h2>
                     <div class="row">
                       <div class="col-lg-6 col-md-6 col-12">
                         <ul>
                           <li>
-                            <a href="index.html"
-                              ><i
-                                class="fa fa-caret-right"
-                                aria-hidden="true"
-                              ></i
-                              >Home</a
-                            >
+                            <a href="index.html" data-i18n="home"></a>
                           </li>
                           <li>
-                            <a href="contact.html"
-                              ><i
-                                class="fa fa-caret-right"
-                                aria-hidden="true"
-                              ></i
-                              >About Us</a
-                            >
+                            <a href="contact.html" data-i18n="about_us_link"></a>
                           </li>
                           <li>
-                            <a href="outmotives.html"
-                              ><i
-                                class="fa fa-caret-right"
-                                aria-hidden="true"
-                              ></i
-                              >Motive</a
-                            >
+                            <a href="outmotives.html" data-i18n="motive"></a>
                           </li>
                         </ul>
                       </div>
@@ -671,11 +600,8 @@
                   class="col-lg-3 col-md-6 col-12 order-lg-3 order-md-3 order-3"
                 >
                   <div class="single-footer">
-                    <h2>Newsletter</h2>
-                    <p>
-                      Subscribe to our newsletter for the latest updates and
-                      news.
-                    </p>
+                    <h2 data-i18n="newsletter"></h2>
+                    <p data-i18n="newsletter_desc"></p>
                     <form
                       action="mail/mail.php"
                       method="get"
@@ -707,10 +633,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-12">
                   <div class="copyright-content">
-                    <p>
-                      © Copyright 2024 | All Rights Reserved by Vemireddy
-                      Prabhakar Reddy
-                    </p>
+                    <p data-i18n="copyright"></p>
                   </div>
                 </div>
               </div>
@@ -772,5 +695,100 @@
           nav.classList.toggle("active");
         });
     </script>
-  </body>
+    <div
+      id="language-popup"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div
+        style="
+          background: #fffbe6;
+          padding: 32px 24px;
+          border-radius: 16px;
+          box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+          text-align: center;
+          max-width: 90vw;
+        "
+      >
+        <h2 style="margin-bottom: 18px" data-i18n="select_language_popup"></h2>
+        <button
+          id="lang-en"
+          style="
+            margin: 10px 18px 0 0;
+            padding: 10px 28px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            border: none;
+            background: #ffd600;
+            color: #222;
+            font-weight: 600;
+            cursor: pointer;
+          "
+        >
+          English
+        </button>
+        <button
+          id="lang-te"
+          style="
+            margin: 10px 0 0 0;
+            padding: 10px 28px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            border: none;
+            background: #ffd600;
+            color: #222;
+            font-weight: 600;
+            cursor: pointer;
+          "
+        >
+          తెలుగు
+        </button>
+      </div>
+    </div>
+
+    <script type="module">
+      import { translations } from "./js/translations.js";
+
+      function setLanguage(lang) {
+        sessionStorage.setItem("lang", lang);
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (translations[lang][key]) {
+            el.innerHTML = translations[lang][key];
+          }
+        });
+      }
+
+      // Show popup only if language not set
+      document.addEventListener("DOMContentLoaded", () => {
+        const lang = sessionStorage.getItem("lang");
+        if (!lang) {
+          document.getElementById("language-popup").style.display = "flex";
+        } else {
+          document.getElementById("language-popup").style.display = "none";
+          setLanguage(lang);
+        }
+      });
+
+      // Handle language selection
+      document.getElementById("lang-en").onclick = () => {
+        setLanguage("en");
+        document.getElementById("language-popup").style.display = "none";
+      };
+      document.getElementById("lang-te").onclick = () => {
+        setLanguage("te");
+        document.getElementById("language-popup").style.display = "none";
+      };
+      
+    </script>
 </html>

@@ -48,56 +48,78 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="custom.css" />
-    <style></style>
+    <style>
+      .section-title h1 {
+        color: red;
+      }
+      .section-title h4 {
+        color: #333;
+      }
+      .column {
+        width: 33.33%;
+        padding: 30px;
+      }
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      @media screen and (max-width: 500px) {
+        .column {
+          width: 100%;
+        }
+      }
+      body {
+        overflow-x: hidden;
+      }
+      * {
+        box-sizing: border-box;
+      }
+    </style>
   </head>
   <!-- End New Container -->
 
   <!-- Header Inner -->
-  <style>
-    body {
-      overflow-x: hidden;
-    }
-    * {
-      box-sizing: border-box;
-    }
-
-    /* Active state for hamburger (transforms to X) */
-    .menu-toggle.active span:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
-
-    .menu-toggle.active span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .menu-toggle.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -5px);
-    }
-  </style>
-
   <div class="header">
-    <div class="left-images">
-      <img src="img/TDPLogo.png" alt="TDP" />
-    </div>
-    <div class="menu-toggle" id="mobile-menu">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="mobile-header">
+      <div class="left-images">
+        <img src="img/TDPLogo.png" alt="TDP" />
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <nav class="nav-links" id="main-nav">
-      <a href="index.html">Home</a>
-      <a href="outmotives.html">Our Initiatives</a>
-      <a href="photogallary.html">Media</a>
-      <a href="contact.html">Contact Us</a>
-      <a href="blog-single.html">About</a>
-      <a href="grievances.html">Grievances</a>
+      <a href="index.html" data-i18n="home"></a>
+      <a href="outmotives.html" data-i18n="our_initiatives"></a>
+      <a href="photogallary.html" data-i18n="media"></a>
+      <a href="contact.html" data-i18n="contact_us"></a>
+      <a href="blog-single.html" data-i18n="about"></a>
+      <a href="grievances.html" data-i18n="grievances"></a>
       <div class="dropdown-nav">
-        <a href="#" class="dropdown-toggle" onclick="return false;">Join </a>
+        <a
+          href="#"
+          class="dropdown-toggle"
+          onclick="return false;"
+          data-i18n="join"
+        ></a>
         <div class="dropdown-content">
-          <a href="yuva-shakthi.html">Yuva Shakthi Member</a>
-          <a href="PMK.html">Complaint Form</a>
-          <a href="scheme-eligibility.html">Schemes & Eligibility Form</a>
-          <a href="yuvaform.html">Social media warriors</a>
+          <a href="yuva-shakthi.html" data-i18n="yuva_shakthi_member"></a>
+          <a
+            href="scheme-eligibility.html"
+            data-i18n="schemes_eligibility_form"
+          ></a>
+          <a href="volunteer.html" data-i18n="join_volunteer"></a>
+          <a
+            href="mahila-shakti-grievance.html"
+            data-i18n="mahila_shakti_grievance"
+          ></a>
+          <a
+            href="social-media-grievance.html"
+            data-i18n="social_media_warriors"
+          ></a>
         </div>
       </div>
     </nav>
@@ -118,61 +140,18 @@
 
   <!--/ End Header Inner -->
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    .column {
-      width: 33.33%;
-      padding: 30px;
-    }
-
-    /* Clearfix (clear floats) */
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
-    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 500px) {
-      .column {
-        width: 100%;
-      }
-    }
-  </style>
-
   <body>
     <section class="pricing-table section" style="background-color: white">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="section-title">
-              <h1>Aim</h1>
+              <h1 data-i18n="aim_title"></h1>
               <br />
-              <h4 style="text-align: justify">
-                As a committed Member of Parliament from Nellore, Vemireddy
-                Prabhakar Reddy is deeply focused on driving inclusive
-                development and uplifting the lives of his constituents. His
-                mission revolves around holistic progress, with special emphasis
-                on agricultural advancement, youth empowerment, education,
-                healthcare, and robust infrastructure. Passionate about
-                preserving cultural values while embracing innovation, he
-                continues to champion initiatives that bridge rural and urban
-                growth, ensuring a brighter and more sustainable future for all.
-              </h4>
+              <h4 style="text-align: justify" data-i18n="aim_desc"></h4>
             </div>
           </div>
         </div>
-        <style>
-          .section-title h1 {
-            color: red; /* Change this to your desired color */
-          }
-          .section-title h4 {
-            color: #333; /* Change this to your desired color */
-          }
-        </style>
       </div>
     </section>
     <section>
@@ -181,40 +160,30 @@
           <div class="containere">
             <img src="/public/2.png" alt="Women" class="imagee" />
             <div class="overlaye">
-              <p>మహిళా సాధికారత శిబిరాలు:</p>
-              <span>Women Empowerment Workshops </span>
+              <p data-i18n="women_empowerment_title"></p>
+              <span data-i18n="women_empowerment_en"></span>
             </div>
-            <p>
-              Launched skill-building programs for women in tailoring, crafts,
-              and small-scale entrepreneurship.
-            </p>
+            <p data-i18n="women_empowerment_desc"></p>
           </div>
         </div>
-
         <div class="column">
           <div class="containere">
             <img src="/public/1.png" alt="Yuva" class="imagee" />
             <div class="overlaye">
-              <p>విద్యా వేదికలు:</p>
-              <span>Educational Drives</span>
+              <p data-i18n="education_title"></p>
+              <span data-i18n="education_en"></span>
             </div>
-            <p>
-              Organized large-scale scholarship programs and digital learning
-              initiatives to uplift rural students.
-            </p>
+            <p data-i18n="education_desc"></p>
           </div>
         </div>
         <div class="column">
           <div class="containere">
             <img src="/public/6.png" alt="Basic eminities" class="imagee" />
             <div class="overlaye">
-              <p>ఆరోగ్య శిబిరాలు:</p>
-              <span>Health Camps</span>
+              <p data-i18n="health_title"></p>
+              <span data-i18n="health_en"></span>
             </div>
-            <p>
-              Conducted free health camps and medical check-ups in remote
-              villages to ensure accessible healthcare.
-            </p>
+            <p data-i18n="health_desc"></p>
           </div>
         </div>
       </div>
@@ -223,39 +192,30 @@
           <div class="containere">
             <img src="/public/5.png" alt="Farmer" class="imagee" />
             <div class="overlaye">
-              <p>రైతన్నకు తోడు:</p>
-              <span>Farmer Welfare</span>
+              <p data-i18n="farmer_welfare_title"></p>
+              <span data-i18n="farmer_welfare_en"></span>
             </div>
-            <p>
-              Dedicated to addressing the issues faced by farmers and ensuring
-              their well-being.
-            </p>
+            <p data-i18n="farmer_welfare_desc"></p>
           </div>
         </div>
         <div class="column">
           <div class="containere">
             <img src="/public/7.png" alt="welfare" class="imagee" />
             <div class="overlaye">
-              <p>రైతు చైతన్య యాత్రలు:</p>
-              <span>Farmer Awareness Tours</span>
+              <p data-i18n="farmer_awareness_title"></p>
+              <span data-i18n="farmer_awareness_en"></span>
             </div>
-            <p>
-              Held interactive sessions with farmers, promoting modern
-              agricultural practices and government schemes.
-            </p>
+            <p data-i18n="farmer_awareness_desc"></p>
           </div>
         </div>
         <div class="column">
           <div class="containere">
             <img src="/public/3.png" alt="Employment" class="imagee" />
             <div class="overlaye">
-              <p>రక్తదాన శిబిరాలు:</p>
-              <span>Blood Donation Camps</span>
+              <p data-i18n="blood_donation_title"></p>
+              <span data-i18n="blood_donation_en"></span>
             </div>
-            <p>
-              Led multiple blood donation drives through VPR Foundation,
-              encouraging youth participation.
-            </p>
+            <p data-i18n="blood_donation_desc"></p>
           </div>
         </div>
       </div>
@@ -264,194 +224,263 @@
           <div class="containere">
             <img src="/public/4.png" alt="Entrepreneurship" class="imagee" />
             <div class="overlaye">
-              <p>స్వచ్ఛంద సేవా కార్యక్రమాలు:</p>
-              <span>Community Welfare Activities </span>
+              <p data-i18n="community_welfare_title"></p>
+              <span data-i18n="community_welfare_en"></span>
             </div>
-            <p>
-              Participated in and funded cleanliness drives, drinking water
-              projects, and green initiatives in the constituency.
-            </p>
+            <p data-i18n="community_welfare_desc"></p>
           </div>
         </div>
       </div>
     </section>
-  </body>
 
-  <!-- Footer Area -->
-  <!-- Footer Area -->
-  <footer id="footer" class="footer">
-    <div style="justify-content: center">
-      <footer id="footer" class="footer">
-        <!-- Footer Top -->
-        <div class="footer-top">
-          <div class="container">
-            <div class="row">
-              <div
-                class="col-lg-3 col-md-6 col-12 order-lg-1 order-md-1 order-2"
-              >
-                <div class="single-footer">
-                  <h2>About Us</h2>
-                  <p>
-                    We are committed to making a positive impact on society
-                    through our objectives and initiatives. Join us in our
-                    mission for a better tomorrow.
-                  </p>
-                  <!-- Social -->
-                  <ul class="social">
-                    <li>
-                      <a
-                        href="https://www.facebook.com/vemireddyprabhakarreddy"
-                        target="_blank"
-                        ><i class="icofont-facebook"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.instagram.com/vemireddyprabhakarreddy"
-                        target="_blank"
-                        ><i class="icofont-instagram"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="https://x.com/VemireddyVpr" target="_blank"
-                        ><i class="icofont-twitter"></i
-                      ></a>
-                    </li>
-                  </ul>
-                  <!-- End Social -->
+    <!-- Footer Area -->
+    <footer id="footer" class="footer">
+      <div style="justify-content: center">
+        <footer id="footer" class="footer">
+          <!-- Footer Top -->
+          <div class="footer-top">
+            <div class="container">
+              <div class="row">
+                <div
+                  class="col-lg-3 col-md-6 col-12 order-lg-1 order-md-1 order-2"
+                >
+                  <div class="single-footer">
+                    <h2 data-i18n="about_us"></h2>
+                    <p data-i18n="about_us_desc"></p>
+                    <!-- Social -->
+                    <ul class="social">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/vemireddyprabhakarreddy"
+                          target="_blank"
+                          ><i class="icofont-facebook"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.instagram.com/vemireddyprabhakarreddy"
+                          target="_blank"
+                          ><i class="icofont-instagram"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="https://x.com/VemireddyVpr" target="_blank"
+                          ><i class="icofont-twitter"></i
+                        ></a>
+                      </li>
+                    </ul>
+                    <!-- End Social -->
+                  </div>
                 </div>
-              </div>
-              <div
-                class="col-lg-3 col-md-6 col-12 order-lg-2 order-md-2 order-1"
-              >
-                <div class="single-footer f-link">
-                  <h2>Quick Links</h2>
-                  <div class="row">
-                    <div class="col-lg-6 col-md-6 col-12">
-                      <ul>
-                        <li>
-                          <a href="index.html"
-                            ><i class="fa fa-caret-right" aria-hidden="true"></i
-                            >Home</a
-                          >
-                        </li>
-                        <li>
-                          <a href="contact.html"
-                            ><i class="fa fa-caret-right" aria-hidden="true"></i
-                            >About Us</a
-                          >
-                        </li>
-                        <li>
-                          <a href="outmotives.html"
-                            ><i class="fa fa-caret-right" aria-hidden="true"></i
-                            >Motive</a
-                          >
-                        </li>
-                      </ul>
+                <div
+                  class="col-lg-3 col-md-6 col-12 order-lg-2 order-md-2 order-1"
+                >
+                  <div class="single-footer f-link">
+                    <h2 data-i18n="quick_links"></h2>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-12">
+                        <ul>
+                          <li>
+                            <a href="index.html" data-i18n="home"></a>
+                          </li>
+                          <li>
+                            <a
+                              href="contact.html"
+                              data-i18n="about_us_link"
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="outmotives.html" data-i18n="motive"></a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="col-lg-3 col-md-6 col-12 order-lg-3 order-md-3 order-3"
-              >
-                <div class="single-footer">
-                  <h2>Newsletter</h2>
-                  <p>
-                    Subscribe to our newsletter for the latest updates and news.
-                  </p>
-                  <form
-                    action="mail/mail.php"
-                    method="get"
-                    target="_blank"
-                    class="newsletter-inner"
-                  >
-                    <input
-                      name="email"
-                      placeholder="Email Address"
-                      class="common-input"
-                      onfocus="this.placeholder = ''"
-                      onblur="this.placeholder = 'Your email address'"
-                      required=""
-                      type="email"
-                    />
-                    <button class="button">
-                      <i class="icofont icofont-paper-plane"></i>
-                    </button>
-                  </form>
+                <div
+                  class="col-lg-3 col-md-6 col-12 order-lg-3 order-md-3 order-3"
+                >
+                  <div class="single-footer">
+                    <h2 data-i18n="newsletter"></h2>
+                    <p data-i18n="newsletter_desc"></p>
+                    <form
+                      action="mail/mail.php"
+                      method="get"
+                      target="_blank"
+                      class="newsletter-inner"
+                    >
+                      <input
+                        name="email"
+                        placeholder="Email Address"
+                        class="common-input"
+                        onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Your email address'"
+                        required=""
+                        type="email"
+                      />
+                      <button class="button">
+                        <i class="icofont icofont-paper-plane"></i>
+                      </button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!--/ End Footer Top -->
-        <!-- Copyright -->
-        <div class="copyright">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12 col-md-12 col-12">
-                <div class="copyright-content">
-                  <p>
-                    © Copyright 2024 | All Rights Reserved by Vemireddy
-                    Prabhakar Reddy
-                  </p>
+          <!--/ End Footer Top -->
+          <!-- Copyright -->
+          <div class="copyright">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div class="copyright-content">
+                    <p data-i18n="copyright"></p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </footer>
-    </div>
-  </footer>
+          <!--/ End Copyright -->
+        </footer>
+      </div>
+    </footer>
 
-  <!-- jquery Min JS -->
-  <script src="js/jquery.min.js"></script>
-  <!-- jquery Migrate JS -->
-  <script src="js/jquery-migrate-3.0.0.js"></script>
-  <!-- jquery Ui JS -->
-  <script src="js/jquery-ui.min.js"></script>
-  <!-- Easing JS -->
-  <script src="js/easing.js"></script>
-  <!-- Color JS -->
-  <script src="js/colors.js"></script>
-  <!-- Popper JS -->
-  <script src="js/popper.min.js"></script>
-  <!-- Bootstrap Datepicker JS -->
-  <script src="js/bootstrap-datepicker.js"></script>
-  <!-- Jquery Nav JS -->
-  <script src="js/jquery.nav.js"></script>
-  <!-- Slicknav JS -->
-  <script src="js/slicknav.min.js"></script>
-  <!-- ScrollUp JS -->
-  <script src="js/jquery.scrollUp.min.js"></script>
-  <!-- Niceselect JS -->
-  <script src="js/niceselect.js"></script>
-  <!-- Tilt Jquery JS -->
-  <script src="js/tilt.jquery.min.js"></script>
-  <!-- Owl Carousel JS -->
-  <script src="js/owl-carousel.js"></script>
-  <!-- counterup JS -->
-  <script src="js/jquery.counterup.min.js"></script>
-  <!-- Steller JS -->
-  <script src="js/steller.js"></script>
-  <!-- Wow JS -->
-  <script src="js/wow.min.js"></script>
-  <!-- Magnific Popup JS -->
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <!-- Counter Up CDN JS -->
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-  <!-- Bootstrap JS -->
-  <script src="js/bootstrap.min.js"></script>
-  <!-- Main JS -->
-  <script src="js/main.js"></script>
-  <script>
-    // JavaScript for the mobile menu toggle
-    document
-      .getElementById("mobile-menu")
-      .addEventListener("click", function () {
-        var nav = document.getElementById("main-nav");
-        this.classList.toggle("active");
-        nav.classList.toggle("active");
+    <!-- jquery Min JS -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jquery Migrate JS -->
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <!-- jquery Ui JS -->
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- Easing JS -->
+    <script src="js/easing.js"></script>
+    <!-- Color JS -->
+    <script src="js/colors.js"></script>
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap Datepicker JS -->
+    <script src="js/bootstrap-datepicker.js"></script>
+    <!-- Jquery Nav JS -->
+    <script src="js/jquery.nav.js"></script>
+    <!-- Slicknav JS -->
+    <script src="js/slicknav.min.js"></script>
+    <!-- ScrollUp JS -->
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- Niceselect JS -->
+    <script src="js/niceselect.js"></script>
+    <!-- Tilt Jquery JS -->
+    <script src="js/tilt.jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="js/owl-carousel.js"></script>
+    <!-- counterup JS -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Steller JS -->
+    <script src="js/steller.js"></script>
+    <!-- Wow JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up CDN JS -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+    <script type="module">
+      import { translations } from "./js/translations.js";
+      function setLanguage(lang) {
+        sessionStorage.setItem("lang", lang);
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (translations[lang][key]) {
+            el.innerHTML = translations[lang][key];
+          }
+        });
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        const lang = sessionStorage.getItem("lang");
+        if (!lang) {
+          document.getElementById("language-popup").style.display = "flex";
+        } else {
+          document.getElementById("language-popup").style.display = "none";
+          setLanguage(lang);
+        }
       });
-  </script>
+      document.getElementById("lang-en").onclick = () => {
+        setLanguage("en");
+        document.getElementById("language-popup").style.display = "none";
+      };
+      document.getElementById("lang-te").onclick = () => {
+        setLanguage("te");
+        document.getElementById("language-popup").style.display = "none";
+      };
+
+      document
+        .getElementById("mobile-menu")
+        .addEventListener("click", function () {
+          var nav = document.getElementById("main-nav");
+          this.classList.toggle("active");
+          nav.classList.toggle("active");
+        });
+    </script>
+    <div
+      id="language-popup"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div
+        style="
+          background: #fffbe6;
+          padding: 32px 24px;
+          border-radius: 16px;
+          box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+          text-align: center;
+          max-width: 90vw;
+        "
+      >
+        <h2 style="margin-bottom: 18px" data-i18n="select_language_popup"></h2>
+        <button
+          id="lang-en"
+          style="
+            margin: 10px 18px 0 0;
+            padding: 10px 28px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            border: none;
+            background: #ffd600;
+            color: #222;
+            font-weight: 600;
+            cursor: pointer;
+          "
+        >
+          English
+        </button>
+        <button
+          id="lang-te"
+          style="
+            margin: 10px 0 0 0;
+            padding: 10px 28px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            border: none;
+            background: #ffd600;
+            color: #222;
+            font-weight: 600;
+            cursor: pointer;
+          "
+        >
+          తెలుగు
+        </button>
+      </div>
+    </div>
+  </body>
 </html>

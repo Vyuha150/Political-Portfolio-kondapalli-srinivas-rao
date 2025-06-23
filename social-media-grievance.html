@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="keywords"
-      content="Telugu Desam Party, TDP, Volunteer, Andhra Pradesh"
+      content="Social Media, Grievance, Engagement, TDP, Support, Online"
     />
     <meta
       name="description"
-      content="Join the Telugu Desam Party (TDP) as a volunteer and contribute to a better Andhra Pradesh."
+      content="Submit your social media grievance or suggestion. Be the voice. Shape the change."
     />
     <meta name="copyright" content="Vemireddy Prabhakar Reddy" />
     <meta
@@ -17,7 +17,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <title>Telugu Desam Party (TDP) - Volunteer</title>
+    <title>Social Media Grievance & Engagement Form</title>
 
     <link rel="icon" href="img/TDPLogo.png" />
 
@@ -50,59 +50,97 @@
         line-height: 1.6;
         color: var(--text-color);
       }
-
-      /* --- Volunteer Form Styles --- */
       .form-container {
         background-color: var(--primary-color);
-        padding: 30px; /* More padding */
-        border-radius: 12px; /* More rounded corners */
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
-        width: 90%; /* Responsive width */
-        max-width: 550px; /* Increased max-width */
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        width: 90%;
+        max-width: 650px;
         margin: 40px auto;
         text-align: center;
-        box-sizing: border-box; /* Include padding in width */
+        box-sizing: border-box;
       }
-
       .form-container h2 {
-        margin-bottom: 25px; /* More space */
+        margin-bottom: 10px;
         color: var(--secondary-color);
-        font-size: 2em; /* Larger heading */
+        font-size: 2em;
         font-weight: 700;
       }
-
+      .form-container .explanation {
+        font-size: 1.1em;
+        color: var(--text-color);
+        margin-bottom: 25px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 8px;
+        padding: 10px 15px;
+      }
+      .form-container label {
+        display: block;
+        text-align: left;
+        margin: 8px 0 4px 2px;
+        font-weight: 500;
+      }
       .form-container input,
       .form-container textarea,
       .form-container select {
-        width: 100%; /* Full width within container */
-        padding: 12px 15px; /* More padding */
-        margin: 10px 0;
+        width: 100%;
+        padding: 12px 15px;
+        margin: 8px 0 16px 0;
         border: 1px solid #ccc;
-        border-radius: 8px; /* Slightly more rounded */
+        border-radius: 8px;
         font-size: 1em;
-        box-sizing: border-box; /* Crucial for responsiveness */
+        box-sizing: border-box;
       }
-
       .form-container textarea {
-        resize: vertical; /* Allow vertical resizing */
-        min-height: 100px; /* Minimum height */
+        resize: vertical;
+        min-height: 80px;
       }
-
+      .form-container .checkbox-group,
+      .form-container .radio-group {
+        text-align: left;
+        margin-bottom: 16px;
+      }
+      .form-container .checkbox-group label,
+      .form-container .radio-group label {
+        display: inline-block;
+        margin-right: 15px;
+        font-weight: 400;
+      }
       .form-container button {
         background-color: var(--button-success);
         color: white;
-        padding: 12px 25px; /* More padding */
+        padding: 12px 25px;
         border: none;
         border-radius: 8px;
-        cursor: pointer;
         font-size: 1.1em;
         font-weight: 600;
         transition: background-color 0.3s ease;
         margin-top: 15px;
       }
-
+      .form-container button[type="reset"] {
+        background-color: #aaa;
+        color: #fff;
+        margin-left: 10px;
+      }
       .form-container button:hover {
         background-color: var(--button-success-hover);
+      }
+      .vpr-image-container {
+        text-align: center;
+        margin-top: 30px;
+      }
+      .vpr-image-container img {
+        max-width: 160px;
+        width: 100%;
+        border-radius: 50%;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+        margin-bottom: 18px;
+      }
+      @media (max-width: 600px) {
+        .form-container {
+          padding: 10px;
+        }
       }
     </style>
   </head>
@@ -175,53 +213,166 @@
       </div>
     </div>
 
+    <div class="vpr-image-container">
+      <img src="/public/vpr4.png" alt="Vemireddy Prabhakar Reddy" />
+    </div>
+
     <div class="form-container">
-      <!-- Volunteer Form Heading -->
-      <h2>Join as a Volunteer / వాలంటీర్‌గా చేరండి</h2>
-      <form action="index.html" method="post">
-        <input
-          type="text"
-          name="name"
-          placeholder="Full Name / పూర్తి పేరు"
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email / ఇమెయిల్"
-          required
-        />
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Phone Number / ఫోన్ నంబర్"
-          required
-        />
+      <h2>
+        🗳 Social Media Grievance & Engagement Form / సోషల్ మీడియా ఫిర్యాదు &
+        పాల్గొనడం ఫారం
+      </h2>
+      <div class="explanation">
+        Be the voice. Shape the change. / మీ స్వరం వినిపించండి. మార్పును
+        ఆవిష్కరించండి.
+      </div>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <!-- Your Information -->
+        <h4 style="color: black">👤 Your Information / మీ సమాచారం</h4>
+        <small
+          >(We value your privacy. Your information will never be shared without
+          consent.)</small
+        >
+        <label for="sm_fullname">Full Name / పూర్తి పేరు</label>
+        <input type="text" name="sm_fullname" id="sm_fullname" required />
 
-        <select name="constituency" required>
-          <option value="" disabled selected>
-            Select Constituency / నియోజకవర్గాన్ని ఎంచుకోండి
-          </option>
-          <option value="Nellore City">Nellore City / నెల్లూరు నగరం</option>
-          <option value="Nellore Rural">
-            Nellore Rural / నెల్లూరు గ్రామీణ
-          </option>
-          <option value="Kovur">Kovur / కోవూరు</option>
-          <option value="Atmakur">Atmakur / ఆత్మకూరు</option>
-          <option value="Kavali">Kavali / కవలి</option>
-          <option value="Udayagiri">Udayagiri / ఉదయగిరి</option>
-          <option value="Sarvepalli">Sarvepalli / సర్వేపల్లి</option>
-          <option value="Sullurpet">Sullurpet / సుల్లూరుపేట</option>
-          <option value="Gudur">Gudur / గూడూరు</option>
-        </select>
+        <label for="sm_email">Email Address / ఇమెయిల్ చిరునామా</label>
+        <input type="email" name="sm_email" id="sm_email" required />
 
+        <label for="sm_phone"
+          >Phone Number (Optional) / ఫోన్ నంబర్ (ఐచ్ఛికం)</label
+        >
+        <input type="tel" name="sm_phone" id="sm_phone" />
+
+        <label for="sm_location"
+          >Location (City/District/State) / ప్రాంతం
+          (నగరం/జిల్లా/రాష్ట్రం)</label
+        >
+        <input type="text" name="sm_location" id="sm_location" required />
+
+        <!-- Social Media Platform -->
+        <h4 style="color: black">
+          📱 Social Media Platform / సోషల్ మీడియా వేదిక
+        </h4>
+        <div class="checkbox-group">
+          <label
+            ><input type="checkbox" name="sm_platform" value="Facebook" />
+            Facebook / ఫేస్‌బుక్</label
+          >
+          <label
+            ><input type="checkbox" name="sm_platform" value="X (Twitter)" /> X
+            (Twitter) / ఎక్స్ (ట్విట్టర్)</label
+          >
+          <label
+            ><input type="checkbox" name="sm_platform" value="Instagram" />
+            Instagram / ఇన్‌స్టాగ్రామ్</label
+          >
+          <label
+            ><input type="checkbox" name="sm_platform" value="WhatsApp" />
+            WhatsApp / వాట్సాప్</label
+          >
+          <label
+            ><input type="checkbox" name="sm_platform" value="YouTube" />
+            YouTube / యూట్యూబ్</label
+          >
+          <label
+            ><input type="checkbox" name="sm_platform" value="Other" /> Other /
+            ఇతర:
+            <input type="text" name="sm_platform_other" style="width: 100%"
+          /></label>
+        </div>
+
+        <!-- Nature of Grievance / Concern -->
+        <h4 style="color: black">
+          📌 Nature of Grievance / Concern / ఫిర్యాదు / సమస్య స్వభావం
+        </h4>
+        <label for="sm_grievance"
+          >Tell us what's happening or needs urgent attention. / ఏం జరుగుతోంది
+          లేదా తక్షణమే స్పందించాల్సిన అంశం ఏమిటో చెప్పండి.</label
+        >
         <textarea
-          name="message"
-          rows="4"
-          placeholder="Why do you want to volunteer? / మీరు వాలంటీర్‌గా ఎందుకు చేరాలనుకుంటున్నారు?"
+          name="sm_grievance"
+          id="sm_grievance"
+          maxlength="500"
           required
+          placeholder="Describe your concern (max 500 characters) / మీ సమస్యను వివరించండి (గరిష్టంగా 500 అక్షరాలు)"
         ></textarea>
-        <button type="submit">Submit / సమర్పించండి</button>
+
+        <!-- Suggested Action or Support Needed -->
+        <h4 style="color: black">
+          🎯 Suggested Action or Support Needed / సూచించిన చర్య లేదా అవసరమైన
+          సహాయం
+        </h4>
+        <label for="sm_action"
+          >How would you like us or the politician to respond? / మేము లేదా
+          నాయకుడు ఎలా స్పందించాలి అనుకుంటున్నారు?</label
+        >
+        <textarea
+          name="sm_action"
+          id="sm_action"
+          rows="3"
+          maxlength="300"
+          placeholder="Your suggestion or support needed / మీ సూచన లేదా అవసరమైన సహాయం"
+        ></textarea>
+
+        <!-- Upload Screenshot / Video -->
+        <h4 style="color: black">
+          📤 Upload Screenshot / Video (Optional) / స్క్రీన్‌షాట్ / వీడియో
+          అప్‌లోడ్ చేయండి (ఐచ్ఛికం)
+        </h4>
+        <label for="sm_file"
+          >Visual proof helps us act faster. / దృశ్య ఆధారాలు వేగంగా స్పందించడంలో
+          సహాయపడతాయి.</label
+        >
+        <input
+          type="file"
+          name="sm_file"
+          id="sm_file"
+          accept="image/*,video/*"
+        />
+
+        <!-- Social Media Warrior -->
+        <h4 style="color: black">
+          🎙 Would you like to be a Social Media Warrior? / మీరు సోషల్ మీడియా
+          వారియర్‌గా ఉండాలనుకుంటున్నారా?
+        </h4>
+        <div class="checkbox-group">
+          <label
+            ><input
+              type="checkbox"
+              name="sm_warrior"
+              value="Volunteer Online"
+            />
+            Yes, I want to volunteer online / అవును, నేను ఆన్‌లైన్ వాలంటీర్‌గా
+            ఉండాలనుకుంటున్నాను</label
+          >
+          <label
+            ><input type="checkbox" name="sm_warrior" value="Virtual Events" />
+            Yes, I want to attend virtual events or live sessions / అవును,
+            వర్చువల్ ఈవెంట్స్ లేదా లైవ్ సెషన్లలో పాల్గొనాలనుకుంటున్నాను</label
+          >
+          <label
+            ><input type="checkbox" name="sm_warrior" value="Updates Only" />
+            Just keep me updated / కేవలం తాజా సమాచారం పంపండి</label
+          >
+        </div>
+
+        <!-- Stay Connected -->
+        <h4 style="color: black">🔁 Stay Connected / కనెక్ట్‌లో ఉండండి</h4>
+        <div class="checkbox-group">
+          <label
+            ><input type="checkbox" name="sm_updates" value="Subscribe" />
+            Subscribe to weekly updates / వారపు నవీకరణలకు సభ్యత్వం
+            పొందండి</label
+          >
+          <label
+            ><input type="checkbox" name="sm_updates" value="Direct Replies" />
+            Receive direct replies from public representatives / ప్రజా
+            ప్రతినిధుల నుండి ప్రత్యక్ష స్పందనలు పొందండి</label
+          >
+        </div>
+
+        <button type="submit">SUBMIT FORM / ఫారం సమర్పించండి</button>
       </form>
     </div>
 
@@ -379,7 +530,7 @@
     <script src="js/pagescroll.min.js"></script>
     <script src="js/active.js"></script>
     <script type="module" src="js/supabaseClient.js"></script>
-    <script type="module" src="js/volunteer.js"></script>
+    <script type="module" src="js/social-media-grievance.js"></script>
 
     <script>
       // JavaScript for the mobile menu toggle
