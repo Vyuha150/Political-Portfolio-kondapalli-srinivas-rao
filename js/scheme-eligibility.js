@@ -1,16 +1,7 @@
 import { supabase } from "./supabaseClient.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
-  // Check if user is signed in
-  const {
-    data: { session },
-  } = await supabase.auth.getSession();
-  if (!session) {
-    alert("You must be signed in to submit this form.");
-    window.location.href = "signin.html";
-    return;
-  }
-
+  // No session check required, anyone can submit
   const form = document.getElementById("eligibilityForm");
   if (form) {
     form.addEventListener("submit", async (e) => {
@@ -18,9 +9,20 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       const formData = new FormData(form);
 
+      // Try to get user_id if logged in, else leave undefined
+      let user_id = undefined;
+      try {
+        const {
+          data: { session },
+        } = await supabase.auth.getSession();
+        if (session && session.user && session.user.id) {
+          user_id = session.user.id;
+        }
+      } catch (e) {}
+
       const { error } = await supabase.from("scheme_eligibility").insert([
         {
-          user_id: session.user.id,
+          user_id: user_id,
           fullname: formData.get("fullname"),
           age: parseInt(formData.get("age")),
           gender: formData.get("gender"),

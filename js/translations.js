@@ -257,6 +257,7 @@ export const translations = {
       "This Privacy Policy may be updated from time to time to reflect legal, technological, or operational changes. We encourage users to review this page periodically. Any changes will be posted with an updated effective date.",
     privacy_updates_para2:
       "By continuing to use our services, you acknowledge and agree to this Privacy Policy.",
+    signin: "Sign In",
   },
   te: {
     select_language_popup:
@@ -407,7 +408,7 @@ export const translations = {
       "<b>ఎంపీ (నెల్లూరు), పబ్లిక్ అండర్‌టేకింగ్స్ కమిటీ సభ్యుడు</b><br />జాతీయ స్థాయిలో చురుకైన చట్టసభ కార్యకలాపాలు, ప్రజా రంగ సంస్థల పర్యవేక్షణ, విధాన చర్చల్లో పాల్గొనడం.",
     activity2_title: "ఉద్యోగ అవకాశాల ఏర్పాట్లు",
     activity2_desc:
-      "<b>ఈవెంట్: మెగా జాబ్ ఫెయిర్, నెల్లూరు | నిర్వాహకుడు: VPR ఫౌండేషన్</b><br />ఉద్యోగార్థులను కంపెనీలతో కలిపి, నైపుణ్య వనరులు అందించారు. వందలాది మంది ఇంటర్వ్యూలకు నమోదు చేసుకున్నారు.",
+      "<b>ఈవెంట్: మెగా జాబ్ ఫెయిర్, నెలల్లూరు | నిర్వాహకుడు: VPR ఫౌండేషన్</b><br />ఉద్యోగార్థులను కంపెనీలతో కలిపి, నైపుణ్య వనరులు అందించారు. వందలాది మంది ఇంటర్వ్యూలకు నమోదు చేసుకున్నారు.",
     activity3_title: "విపత్తు సహాయం & దాతృత్వం",
     activity3_desc:
       "<b>ముఖ్యమంత్రి వరద సహాయ నిధికి విరాళం (సెప్టెంబర్ 3, 2024)</b><br />వరద బాధిత కుటుంబాలకు సహాయ సామగ్రి పంపిణీ, పునరావాసానికి మద్దతు.",
@@ -512,5 +513,6 @@ export const translations = {
       "చట్టపరమైన, సాంకేతిక, ఆపరేషన్ మార్పులను ప్రతిబింబించేందుకు ఈ గోప్యతా విధానం కాలానుగుణంగా నవీకరించబడవచ్చు. వినియోగదారులు ఈ పేజీని తరచుగా పరిశీలించమని మేము సూచిస్తున్నాము. మార్పులు జరిగితే, నవీకరించిన తేదీతో ప్రచురించబడతాయి.",
     privacy_updates_para2:
       "మా సేవలను కొనసాగించి ఉపయోగించడం ద్వారా, మీరు ఈ గోప్యతా విధానాన్ని అంగీకరిస్తున్నారు.",
+    signin: "సైన్ ఇన్",
   },
 };

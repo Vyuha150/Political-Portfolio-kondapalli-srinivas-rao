@@ -170,7 +170,7 @@
           >
         </div>
       </div>
-      <a href="signin.html">Signin</a>
+      <a href="signin.html" data-i18n="signin">Signin</a>
     </nav>
     <div class="right-image">
       <img
@@ -188,6 +188,46 @@
   </div>
 
   <!--/ End Header Inner -->
+
+  <div
+    id="top-lang-select"
+    style="
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px 24px 0 0;
+      gap: 10px;
+    "
+  >
+    <button
+      id="top-lang-en"
+      style="
+        padding: 6px 18px;
+        border-radius: 6px;
+        border: none;
+        background: #ffd600;
+        color: #222;
+        font-weight: 600;
+        cursor: pointer;
+      "
+    >
+      English
+    </button>
+    <button
+      id="top-lang-te"
+      style="
+        padding: 6px 18px;
+        border-radius: 6px;
+        border: none;
+        background: #ffd600;
+        color: #222;
+        font-weight: 600;
+        cursor: pointer;
+      "
+    >
+      తెలుగు
+    </button>
+  </div>
 
   <body>
     <!-- Preloader -->
@@ -1101,16 +1141,39 @@
           document.getElementById("language-popup").style.display = "none";
           setLanguage(lang);
         }
+        // Set top button highlight
+        if (lang === "te") {
+          document.getElementById("top-lang-te").style.background = "#ffd600";
+          document.getElementById("top-lang-en").style.background = "#eee";
+        } else {
+          document.getElementById("top-lang-en").style.background = "#ffd600";
+          document.getElementById("top-lang-te").style.background = "#eee";
+        }
       });
 
-      // Handle language selection
+      // Handle language selection (popup)
       document.getElementById("lang-en").onclick = () => {
         setLanguage("en");
         document.getElementById("language-popup").style.display = "none";
+        document.getElementById("top-lang-en").style.background = "#ffd600";
+        document.getElementById("top-lang-te").style.background = "#eee";
       };
       document.getElementById("lang-te").onclick = () => {
         setLanguage("te");
         document.getElementById("language-popup").style.display = "none";
+        document.getElementById("top-lang-te").style.background = "#ffd600";
+        document.getElementById("top-lang-en").style.background = "#eee";
+      };
+      // Handle language selection (top bar)
+      document.getElementById("top-lang-en").onclick = () => {
+        setLanguage("en");
+        document.getElementById("top-lang-en").style.background = "#ffd600";
+        document.getElementById("top-lang-te").style.background = "#eee";
+      };
+      document.getElementById("top-lang-te").onclick = () => {
+        setLanguage("te");
+        document.getElementById("top-lang-te").style.background = "#ffd600";
+        document.getElementById("top-lang-en").style.background = "#eee";
       };
     </script>
   </body>

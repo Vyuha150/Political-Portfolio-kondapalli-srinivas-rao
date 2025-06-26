@@ -79,7 +79,7 @@ Version:	1.1
 		=================================*/
     $(".hero-slider").owlCarousel({
       loop: true,
-      autoplay: true,
+      autoplay: false, // changed from true to false
       smartSpeed: 500,
       autoplayTimeout: 3500,
       singleItem: true,
