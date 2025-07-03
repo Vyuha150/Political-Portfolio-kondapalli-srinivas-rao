@@ -1,20 +1,22 @@
 import { supabase } from "./supabaseClient.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
-  // Check if user is signed in
-  const {
-    data: { session },
-  } = await supabase.auth.getSession();
-  if (!session) {
-    alert("You must be signed in to submit this form.");
-    window.location.href = "signin.html";
-    return;
-  }
-
+  // No session check required, anyone can submit
   const form = document.querySelector(".form-container form");
   if (form) {
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
+
+      // Try to get user_id if logged in, else leave undefined
+      let user_id = undefined;
+      try {
+        const {
+          data: { session },
+        } = await supabase.auth.getSession();
+        if (session && session.user && session.user.id) {
+          user_id = session.user.id;
+        }
+      } catch (e) {}
 
       // Handle file upload (single file)
       let fileUrls = [];
@@ -50,7 +52,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       // Insert grievance
       const { error } = await supabase.from("social_media_grievances").insert([
         {
-          user_id: session.user.id,
+          user_id: user_id,
           fullname: document.getElementById("sm_fullname").value,
           email: document.getElementById("sm_email").value,
           phone: document.getElementById("sm_phone").value,

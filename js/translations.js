@@ -5,7 +5,7 @@ export const translations = {
     home: "Home",
     our_initiatives: "Our Initiatives",
     media: "Media",
-    contact_us: "Contact Us",
+    contact_us: "Cast Your Vote",
     about: "About",
     grievances: "Grievances",
     join: "Join",

@@ -123,26 +123,54 @@ create table if not exists grievances (
   submitted_at timestamp with time zone default timezone('utc'::text, now())
 );
 
-create table if not exists mahila_shakti_grievances (
+-- Create the new Mahila Shakti registrations table
+create table if not exists mahila_shakti_registrations (
   id uuid primary key default gen_random_uuid(),
   user_id uuid references auth.users on delete set null,
-  fullname text,
-  age integer,
-  gender text,
-  mobile text,
+  fullname text not null,
+  age integer not null,
+  mobile text not null,
   email text,
-  district text,
-  constituency text,
-  mandal text,
-  ward text,
-  grievance_types text[], -- array of selected types
-  grievance_other text,
-  description text,
-  attachments text[], -- file URLs
-  response_modes text[], -- array of selected modes
-  volunteer text,
-  declaration boolean,
-  status text default 'Under Review',
+  address text not null,
+  district text not null,
+  constituency text not null,
+  organization text not null, -- 'Yes' or 'No'
+  organization_details text,
+  interest_areas text[], -- array of selected interests
+  why_join text not null,
+  experience text not null, -- 'Yes' or 'No'
+  experience_details text,
+  grievance text, -- optional grievance/concern
+  declaration boolean not null default false,
+  status text default 'Registered',
+  submitted_at timestamp with time zone default timezone('utc'::text, now())
+);
+
+-- Create citizen feedback table
+create table if not exists citizen_feedback (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid references auth.users on delete set null,
+  name text not null,
+  mobile text not null,
+  area text not null,
+  roads_condition text not null,
+  power_issues text not null,
+  water_supply text not null,
+  drainage_system text not null,
+  public_transport text not null,
+  infrastructure_satisfaction text not null,
+  scheme_awareness text not null,
+  scheme_benefits text not null,
+  scheme_satisfaction text not null,
+  education_facilities text not null,
+  education_satisfaction text not null,
+  employment_opportunities text not null,
+  employment_satisfaction text not null,
+  healthcare_access text not null,
+  accessibility_satisfaction text not null,
+  issues_heard text not null,
+  leadership_satisfaction text not null,
+  priority_issue text not null,
   submitted_at timestamp with time zone default timezone('utc'::text, now())
 );
 
