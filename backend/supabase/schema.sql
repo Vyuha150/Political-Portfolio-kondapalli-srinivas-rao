@@ -119,6 +119,14 @@ create table if not exists grievances (
   opponent_name text,
   opponent_phone text,
   opponent_details text,
+  -- New fields added
+  previous_complaint text,
+  govt_department text,
+  acknowledgement_url text,
+  video_url text,
+  district text,
+  mandal text,
+  village text,
   status text default 'open',
   submitted_at timestamp with time zone default timezone('utc'::text, now())
 );

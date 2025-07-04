@@ -473,6 +473,225 @@
           ></textarea>
         </div>
 
+        <!-- E. Previous Complaint History -->
+        <label>
+          Have you already raised a complaint in any government office? /
+          <span style="font-size: 0.95em"
+            >మీరు ఇదివరకు ఏదైనా ప్రభుత్వ కార్యాలయంలో ఫిర్యాదు చేశారా?</span
+          >
+        </label>
+        <div class="radio-group">
+          <label>
+            <input
+              type="radio"
+              name="previous_complaint"
+              value="Yes"
+              required
+            />
+            Yes / అవును
+          </label>
+          <label>
+            <input type="radio" name="previous_complaint" value="No" required />
+            No / కాదు
+          </label>
+        </div>
+
+        <div id="previous-complaint-details" style="display: none">
+          <label for="govt_department">
+            Which Government Department? /
+            <span style="font-size: 0.95em">ఏ ప్రభుత్వ శాఖ?</span>
+          </label>
+          <select name="govt_department" id="govt_department">
+            <option value="" disabled selected>
+              Select Department / శాఖను ఎంచుకోండి
+            </option>
+            <option value="Revenue Department">
+              Revenue Department / రెవిన్యూ శాఖ
+            </option>
+            <option value="Police Department">
+              Police Department / పోలీస్ శాఖ
+            </option>
+            <option value="Panchayat Raj">Panchayat Raj / పంచాయతీరాజ్</option>
+            <option value="Collector Office">
+              Collector Office / కలెక్టర్ కార్యాలయం
+            </option>
+            <option value="MRO Office">MRO Office / MRO కార్యాలయం</option>
+            <option value="Tahsildar Office">
+              Tahsildar Office / తహసీల్దార్ కార్యాలయం
+            </option>
+            <option value="VRO Office">VRO Office / VRO కార్యాలయం</option>
+            <option value="Social Welfare">
+              Social Welfare / సమాజ సంక్షేమ శాఖ
+            </option>
+            <option value="Health Department">
+              Health Department / ఆరోగ్య శాఖ
+            </option>
+            <option value="Education Department">
+              Education Department / విద్యా శాఖ
+            </option>
+            <option value="Agriculture Department">
+              Agriculture Department / వ్యవసాయ శాఖ
+            </option>
+            <option value="Rural Development">
+              Rural Development / గ్రామీణాభివృద్ధి
+            </option>
+            <option value="Urban Development">
+              Urban Development / పట్టణాభివృద్ధి
+            </option>
+            <option value="Transport Department">
+              Transport Department / రవాణా శాఖ
+            </option>
+            <option value="Electricity Board">
+              Electricity Board / విద్యుత్ బోర్డు
+            </option>
+            <option value="Water Board">Water Board / వాటర్ బోర్డు</option>
+            <option value="Municipal Corporation">
+              Municipal Corporation / మునిసిపల్ కార్పొరేషన్
+            </option>
+            <option value="Municipality">Municipality / మునిసిపాలిటీ</option>
+            <option value="Gram Panchayat">
+              Gram Panchayat / గ్రామ పంచాయతీ
+            </option>
+            <option value="Sub-Registrar Office">
+              Sub-Registrar Office / సబ్ రిజిస్ట్రార్ కార్యాలయం
+            </option>
+            <option value="Employment Office">
+              Employment Office / ఉపాధి కార్యాలయం
+            </option>
+            <option value="Ration Shop">Ration Shop / రేషన్ దుకాణం</option>
+            <option value="Bank">Bank / బ్యాంకు</option>
+            <option value="Post Office">Post Office / పోస్ట్ ఆఫీస్</option>
+            <option value="Court">Court / కోర్టు</option>
+            <option value="Forest Department">
+              Forest Department / అటవీ శాఖ
+            </option>
+            <option value="Fisheries Department">
+              Fisheries Department / మత్స్య శాఖ
+            </option>
+            <option value="Animal Husbandry">
+              Animal Husbandry / పశుపోషణ శాఖ
+            </option>
+            <option value="Industries Department">
+              Industries Department / పరిశ్రమల శాఖ
+            </option>
+            <option value="Tourism Department">
+              Tourism Department / పర్యాటక శాఖ
+            </option>
+            <option value="Labour Department">
+              Labour Department / కార్మిక శాఖ
+            </option>
+            <option value="Women & Child Welfare">
+              Women & Child Welfare / మహిళా, శిశు సంక్షేమ శాఖ
+            </option>
+            <option value="BC Welfare Department">
+              BC Welfare Department / బీసీ సంక్షేమ శాఖ
+            </option>
+            <option value="SC/ST Welfare Department">
+              SC/ST Welfare Department / ఎస్సీ/ఎస్టీ సంక్షేమ శాఖ
+            </option>
+            <option value="Minority Welfare">
+              Minority Welfare / మైనారిటీ సంక్షేమ శాఖ
+            </option>
+            <option value="Others">Others / ఇతరులు</option>
+          </select>
+
+          <label for="acknowledgement">
+            Upload Acknowledgement (if any) /
+            <span style="font-size: 0.95em">రసీదు అప్లోడ్ చేయండి (ఉంటే)</span>
+          </label>
+          <input
+            type="file"
+            name="acknowledgement"
+            id="acknowledgement"
+            accept=".jpg,.jpeg,.png,.pdf"
+          />
+        </div>
+
+        <!-- F. Video Explanation -->
+        <label for="video_explanation">
+          Video Explanation (Optional - Record a short video explaining your
+          problem) /
+          <span style="font-size: 0.95em"
+            >వీడియో వివరణ (ఐచ్ఛికం - మీ సమస్యను వివరించే చిన్న వీడియో రికార్డ్
+            చేయండి)</span
+          >
+        </label>
+        <input
+          type="file"
+          name="video_explanation"
+          id="video_explanation"
+          accept=".mp4,.avi,.mov,.wmv"
+        />
+
+        <!-- G. Location Details -->
+        <label for="district">
+          District /
+          <span style="font-size: 0.95em">జిల్లా</span>
+        </label>
+        <select name="district" id="district" required>
+          <option value="" disabled selected>
+            Select District / జిల్లాను ఎంచుకోండి
+          </option>
+          <option value="SPSR Nellore">SPSR Nellore / నెల్లూరు</option>
+        </select>
+
+        <label for="mandal">
+          Mandal /
+          <span style="font-size: 0.95em">మండలం</span>
+        </label>
+        <select name="mandal" id="mandal" required>
+          <option value="" disabled selected>
+            Select Mandal / మండలాన్ని ఎంచుకోండి
+          </option>
+          <option value="Nellore">Nellore / నెల్లూరు</option>
+          <option value="Atmakur">Atmakur / ఆత్మకూరు</option>
+          <option value="Kavali">Kavali / కవలి</option>
+          <option value="Kovur">Kovur / కోవూరు</option>
+          <option value="Gudur">Gudur / గూడూరు</option>
+          <option value="Sullurpet">Sullurpet / సుల్లూరుపేట</option>
+          <option value="Venkatagiri">Venkatagiri / వెంకటగిరి</option>
+          <option value="Udayagiri">Udayagiri / ఉదయగిరి</option>
+          <option value="Sarvepalli">Sarvepalli / సర్వేపల్లి</option>
+          <option value="Buchireddipalem">
+            Buchireddipalem / బుచ్చిరెడ్డిపాలెం
+          </option>
+          <option value="Vidavalur">Vidavalur / విడవలూరు</option>
+          <option value="Chillakur">Chillakur / చిల్లకూరు</option>
+          <option value="Kaluvoya">Kaluvoya / కలువోయ</option>
+          <option value="Manubolu">Manubolu / మనుబోలు</option>
+          <option value="Thotapalligudur">
+            Thotapalligudur / తోటపల్లిగూడూరు
+          </option>
+          <option value="Pellakur">Pellakur / పెల్లకూరు</option>
+          <option value="Balayapalli">Balayapalli / బాలయపల్లి</option>
+          <option value="Dagadarthi">Dagadarthi / దగదర్తి</option>
+          <option value="Kaligiri">Kaligiri / కాలిగిరి</option>
+          <option value="Kondapuram">Kondapuram / కొండపురం</option>
+          <option value="Kota">Kota / కోట</option>
+          <option value="Varikuntapadu">Varikuntapadu / వరికుంటపాడు</option>
+          <option value="Jaladanki">Jaladanki / జలదంకి</option>
+          <option value="Dakkili">Dakkili / దక్కిలి</option>
+          <option value="Podalakur">Podalakur / పోడలకూరు</option>
+          <option value="Bogole">Bogole / బోగోలు</option>
+          <option value="Rapur">Rapur / రాపూరు</option>
+          <option value="Vakadu">Vakadu / వకడు</option>
+          <option value="Vinjamur">Vinjamur / విజంమూరు</option>
+          <option value="Chejerla">Chejerla / చేజర్ల</option>
+          <option value="Allur">Allur / అల్లూరు</option>
+          <option value="Ozili">Ozili / ఓజిలి</option>
+          <option value="Indukurpet">Indukurpet / ఇందుకూర్పేట</option>
+        </select>
+
+        <label for="village">
+          Village /
+          <span style="font-size: 0.95em">గ్రామం</span>
+        </label>
+        <select name="village" id="village" required>
+          <option value="" disabled selected>
+            First select Mandal / మొదట మండలాన్ని ఎంచుకోండి
+          </option>
+        </select>
+
         <button type="submit">
           Submit /
           <span style="font-size: 0.95em">సమర్పించండి</span>
@@ -716,6 +935,322 @@
         setLanguage("te");
         document.getElementById("language-popup").style.display = "none";
       };
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Show/hide previous complaint details
+        var previousComplaintRadios =
+          document.getElementsByName("previous_complaint");
+        var previousComplaintDetails = document.getElementById(
+          "previous-complaint-details"
+        );
+
+        previousComplaintRadios.forEach(function (radio) {
+          radio.addEventListener("change", function () {
+            if (this.value === "Yes") {
+              previousComplaintDetails.style.display = "block";
+            } else {
+              previousComplaintDetails.style.display = "none";
+            }
+          });
+        });
+
+        // Village data for each mandal
+        const villageData = {
+          Nellore: [
+            "Nellore City",
+            "Kakani",
+            "Kota",
+            "Murukonda",
+            "Varikuntapadu",
+            "Jaladanki",
+            "Kodavalur",
+            "Kandi",
+            "Ananthasagaram",
+          ],
+          Atmakur: [
+            "Atmakur",
+            "Ananthavaram",
+            "Chinna Atmakur",
+            "Koyamutturu",
+            "Narayanavanam",
+            "Seetharamapuram",
+            "Thotapalem",
+          ],
+          Kavali: [
+            "Kavali",
+            "Mypadu",
+            "Moturu",
+            "Iskapalle",
+            "Pentakota",
+            "Bogole",
+            "Chintakunta",
+            "Komaragiri",
+          ],
+          Kovur: [
+            "Kovur",
+            "Doravarisatram",
+            "Pichatur",
+            "Varadaiahpalem",
+            "Chinavenkatareddipalle",
+            "Chintareddipalem",
+          ],
+          Gudur: [
+            "Gudur",
+            "Vayalur",
+            "Kothapet",
+            "Yerraguntla",
+            "Chittamur",
+            "Bitragunta",
+            "Thimmayapalem",
+          ],
+          Sullurpet: [
+            "Sullurpet",
+            "Tada",
+            "Doravarisatram",
+            "Dugarajapatnam",
+            "Pulicat",
+            "Elagandula",
+            "Mamandur",
+          ],
+          Venkatagiri: [
+            "Venkatagiri",
+            "Chillakur",
+            "Kaluvoya",
+            "Ramatheertham",
+            "Sangam",
+            "Peddakandukur",
+            "Chinna Kandukur",
+          ],
+          Udayagiri: [
+            "Udayagiri",
+            "Manubolu",
+            "Sydapuram",
+            "Buchireddipalem",
+            "Peda Araveedu",
+            "Chinna Araveedu",
+          ],
+          Sarvepalli: [
+            "Sarvepalli",
+            "Kotha Kodur",
+            "Lingasamudram",
+            "Vijayaramamam",
+            "Kondapuram",
+            "Chintalapudi",
+          ],
+          Buchireddipalem: [
+            "Buchireddipalem",
+            "Penumur",
+            "Chinnamuppalla",
+            "Gollapalli",
+            "Ramatheertham",
+            "Chinna Buchireddipalem",
+          ],
+          Vidavalur: [
+            "Vidavalur",
+            "Pamuru",
+            "Chillakuru",
+            "Ananthasagaram",
+            "Penchalakona",
+            "Duttalur",
+          ],
+          Chillakur: [
+            "Chillakur",
+            "Kothapeta",
+            "Kodavalur",
+            "Ramatheertham",
+            "Vedayapalem",
+            "Podalakur",
+          ],
+          Kaluvoya: [
+            "Kaluvoya",
+            "Kamalapuram",
+            "Kothapet",
+            "Rayala Cheruvu",
+            "Venkatachalam",
+            "Peddakandlur",
+          ],
+          Manubolu: [
+            "Manubolu",
+            "Peddamudium",
+            "Chinnamudium",
+            "Malkapuram",
+            "Kothapalli",
+            "Ramatheertham",
+          ],
+          Thotapalligudur: [
+            "Thotapalligudur",
+            "Kodavalur",
+            "Marripadu",
+            "Pedda Thotapalligudur",
+            "Chinna Thotapalligudur",
+          ],
+          Pellakur: [
+            "Pellakur",
+            "Kothapalli",
+            "Ramatheertham",
+            "Venkatachalam",
+            "Chintalapudi",
+            "Kodavalur",
+          ],
+          Balayapalli: [
+            "Balayapalli",
+            "Marripadu",
+            "Kothapalli",
+            "Pedda Balayapalli",
+            "Chinna Balayapalli",
+          ],
+          Dagadarthi: [
+            "Dagadarthi",
+            "Utukur",
+            "Brahmanapalle",
+            "Kammavaripalem",
+            "Chinakakani",
+            "Peddakakani",
+          ],
+          Kaligiri: [
+            "Kaligiri",
+            "Narayanavanam",
+            "Kothapalli",
+            "Ramatheertham",
+            "Chintalapudi",
+            "Kodavalur",
+          ],
+          Kondapuram: [
+            "Kondapuram",
+            "Lingasamudram",
+            "Kotha Kodur",
+            "Chintalapudi",
+            "Ramatheertham",
+          ],
+          Kota: [
+            "Kota",
+            "Sydapuram",
+            "Peddakandukur",
+            "Chinna Kandukur",
+            "Ramatheertham",
+            "Venkatachalam",
+          ],
+          Varikuntapadu: [
+            "Varikuntapadu",
+            "Jaladanki",
+            "Kakani",
+            "Kodavalur",
+            "Murukonda",
+            "Ananthasagaram",
+          ],
+          Jaladanki: [
+            "Jaladanki",
+            "Varikuntapadu",
+            "Kakani",
+            "Ananthasagaram",
+            "Kodavalur",
+            "Murukonda",
+          ],
+          Dakkili: [
+            "Dakkili",
+            "Rapur",
+            "Ozili",
+            "Chinna Dakkili",
+            "Pedda Dakkili",
+            "Venkatachalam",
+          ],
+          Podalakur: [
+            "Podalakur",
+            "Chillakuru",
+            "Kodavalur",
+            "Ramatheertham",
+            "Penchalakona",
+            "Vedayapalem",
+          ],
+          Bogole: [
+            "Bogole",
+            "Mypadu",
+            "Pentakota",
+            "Chintakunta",
+            "Komaragiri",
+            "Iskapalle",
+          ],
+          Rapur: [
+            "Rapur",
+            "Dakkili",
+            "Ozili",
+            "Indukurpet",
+            "Chinna Rapur",
+            "Pedda Rapur",
+          ],
+          Vakadu: [
+            "Vakadu",
+            "Chejerla",
+            "Allur",
+            "Vinjamur",
+            "Chinna Vakadu",
+            "Pedda Vakadu",
+          ],
+          Vinjamur: [
+            "Vinjamur",
+            "Vakadu",
+            "Chejerla",
+            "Allur",
+            "Chinna Vinjamur",
+            "Pedda Vinjamur",
+          ],
+          Chejerla: [
+            "Chejerla",
+            "Vakadu",
+            "Vinjamur",
+            "Allur",
+            "Chinna Chejerla",
+            "Pedda Chejer్ల",
+          ],
+          Allur: [
+            "Allur",
+            "Chejerla",
+            "Vakadu",
+            "Vinjamur",
+            "Chinna Allur",
+            "Pedda Allur",
+          ],
+          Ozili: [
+            "Ozili",
+            "Rapur",
+            "Dakkili",
+            "Indukurpet",
+            "Chinna Ozili",
+            "Pedda Ozili",
+          ],
+          Indukurpet: [
+            "Indukurpet",
+            "Ozili",
+            "Rapur",
+            "Dakkili",
+            "Chinna Indukurpet",
+            "Pedda Indukurpet",
+          ],
+        };
+
+        // Handle mandal selection and populate villages
+        var mandalSelect = document.getElementById("mandal");
+        var villageSelect = document.getElementById("village");
+
+        mandalSelect.addEventListener("change", function () {
+          var selectedMandal = this.value;
+
+          // Clear village dropdown
+          villageSelect.innerHTML =
+            '<option value="" disabled selected>Select Village / గ్రామాన్ని ఎంచుకోండి</option>';
+
+          if (selectedMandal && villageData[selectedMandal]) {
+            villageData[selectedMandal].forEach(function (village) {
+              var option = document.createElement("option");
+              option.value = village;
+              option.textContent = village;
+              villageSelect.appendChild(option);
+            });
+          }
+        });
+      });
     </script>
   </body>
 </html>
