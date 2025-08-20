@@ -51,41 +51,42 @@ export const translations = {
       "TDP will regain past glory in Telangana, party revamp soon: N Chandrababu Naidu Garu",
     info_card3_title: "Recent Victory",
     info_card3_desc:
-      "Nellore Election Result 2024 LIVE Updates Highlights released: Vemireddy Prabhakar Reddy of TDP Wins",
+      "MLA Election Result 2024 LIVE Updates Highlights released: Kondapalli Srinivas Rao of TDP Wins",
     about_us: "About Us",
     about_us_desc:
       "We are committed to making a positive impact on society through our objectives and initiatives. Join us in our mission for a better tomorrow.",
     blog_title:
-      "Vemireddy Prabhakar Reddy: A Committed Parliamentarian Driving Inclusive Growth",
-    vpr_name: "Vemireddy Prabhakar Reddy",
-    blog_date: "12 Jun 2024",
-    votes: "766,202 Votes",
-    majority: "245,902 Majority",
+      "Kondapalli Srinivas Rao: Empowering MSME Sector for Economic Growth",
+    vpr_name: "Kondapalli Srinivas Rao",
+    blog_date: "15 Jun 2024",
+    votes: "125,864 Votes",
+    majority: "68,432 Majority",
     blog_para1:
-      "An experienced and dynamic leader, Vemireddy Prabhakar Reddy has been elected as a Member of Parliament (M.P.) from the Nellore Lok Sabha constituency in the 2024 general elections, representing the Telugu Desam Party (TDP).",
+      "An experienced industrialist and dynamic leader, Kondapalli Srinivas Rao has been elected as MLA from the Gudivada Assembly constituency in the 2024 general elections, representing the Telugu Desam Party (TDP), and appointed as the Minister for MSME (Micro, Small & Medium Enterprises).",
     blog_para2:
-      "He secured a decisive mandate with a resounding victory, winning by a majority of 2,45,902 votes, a remarkable achievement that signifies the trust and confidence reposed in him by the people of Nellore. This historic win marked a significant political shift in the region, previously a stronghold of the opposition.",
+      "He secured a decisive mandate with a resounding victory, winning by a majority of 68,432 votes, a remarkable achievement that signifies the trust and confidence reposed in him by the people of Gudivada. This historic win marked his commitment to industrial development and MSME empowerment in the region.",
     blog_para3:
-      "With a steadfast commitment to public service and inclusive development, Vemireddy Prabhakar Reddy has long been associated with social welfare through his initiatives and charitable endeavors. As the founder of VPR Foundation, he has been actively engaged in promoting education, women empowerment, healthcare access, and agricultural development across Andhra Pradesh.\n\nThrough the Foundation, he has undertaken projects such as:\nBuilding and renovating schools in underserved rural areas,\nLaunching health camps and distributing medicines in remote villages,\nSupporting farmers with modern tools and sustainable farming practices,\nOffering scholarships to underprivileged students.",
+      "With a steadfast commitment to industrial development and MSME empowerment, Kondapalli Srinivas Rao has long been associated with entrepreneurship and business development through his initiatives and industrial endeavors. As the Minister for MSME, he has been actively engaged in promoting small and medium enterprises, facilitating credit access, skill development, and industrial infrastructure across Andhra Pradesh.\n\nThrough his ministerial role, he has undertaken projects such as:\nEstablishing MSME industrial parks and common facility centers,\nLaunching skill development programs and training centers,\nFacilitating bank linkages and credit access for entrepreneurs,\nPromoting startup ecosystems and innovation hubs.",
     blog_para4:
-      "He is also known for his proactive participation in relief efforts during natural calamities, ensuring timely aid and rehabilitation for affected communities.\n\nVemireddy Prabhakar Reddy’s vision is anchored in transformative governance, empowerment of youth, and holistic regional development. As a parliamentarian, he strives to be a bridge between grassroots aspirations and national policy, working tirelessly to uplift the lives of the people he represents.",
+      "He is also known for his proactive approach in promoting industrial growth and employment generation, ensuring timely implementation of MSME policies and supporting entrepreneurs across various sectors.\n\nKondapalli Srinivas Rao's vision is anchored in transformative industrial development, youth employment, and comprehensive MSME sector growth. As a minister, he strives to create an ecosystem that supports entrepreneurship and innovation, working tirelessly to establish Andhra Pradesh as a leading destination for small and medium enterprises.",
     blog_para5:
-      "Vemireddy Prabhakar Reddy's dedication transcends the realm of politics and business, finding deep roots in meaningful social service. His impactful contributions through the VPR Foundation have transformed lives across the Nellore region, where he has championed projects that ensure access to clean drinking water, better sanitation, quality education, and improved healthcare facilities.\n\nIn villages adopted under his guidance, infrastructure has seen a remarkable uplift—well-laid roads, solar-powered street lighting, and community centers stand as a testament to his hands-on leadership. His commitment to women empowerment, farmer support, and youth development showcases his vision for a society that uplifts everyone.\n\nAs a progressive and compassionate leader, Vemireddy Prabhakar Reddy remains deeply committed to sustainable development, grassroots innovation, and inclusive governance. Join us in acknowledging the enduring impact of Vemireddy Prabhakar Reddy—a visionary statesman shaping a brighter, more equitable future for Andhra Pradesh.",
+      "Kondapalli Srinivas Rao's dedication transcends the realm of traditional politics, finding deep roots in meaningful industrial development and entrepreneurship promotion. His impactful contributions as MSME Minister have transformed the business landscape across Andhra Pradesh, where he has championed projects that ensure access to credit facilities, modern infrastructure, quality skill development, and improved industrial clusters.\n\nIn regions under his ministerial guidance, industrial infrastructure has seen remarkable progress—well-developed industrial parks, modern common facility centers, and innovation hubs stand as a testament to his visionary leadership. His commitment to youth employment, startup promotion, and MSME development showcases his vision for an economy that empowers everyone.\n\nAs a progressive and dynamic minister, Kondapalli Srinivas Rao remains deeply committed to sustainable industrial growth, technological innovation, and inclusive economic development. Join us in acknowledging the transformative impact of Kondapalli Srinivas Rao—a visionary leader shaping a more prosperous and industrially advanced future for Andhra Pradesh.",
     early_life_title: "Early Life and Education",
     early_life_para:
-      "Vemireddy Prabhakar Reddy was born in Nellore district, Andhra Pradesh, into a family known for its deep-rooted values and commitment to community service. A successful industrialist and philanthropist, he is the founder of the VPR Group and VPR Foundation, through which he has undertaken numerous social welfare initiatives across the state. With a vision to serve the people, he entered public life and served as a Member of Parliament in the Rajya Sabha representing the YSR Congress Party. His journey from a reputed entrepreneur to a dedicated public servant reflects his unwavering dedication to the betterment of society.",
+      "Kondapalli Srinivas Rao was born in Gudivada, Krishna district, Andhra Pradesh, into a family known for its deep-rooted values and commitment to business excellence. A successful entrepreneur and industrialist, he has established multiple business ventures and has extensive experience in manufacturing and industrial operations across the state. With a vision to serve the people through economic development, he entered public life and was elected as MLA from Gudivada constituency representing the Telugu Desam Party, later being appointed as Minister for MSME. His journey from a successful entrepreneur to a dedicated public servant reflects his unwavering commitment to industrial growth and economic prosperity.",
     facebook: "Facebook",
     twitter: "Twitter",
     personal_details: "Personal details",
     born: "Born:",
-    born_details: "15 November 1956 (age 68) \nNellore, Andhra Pradesh, India",
+    born_details:
+      "15 August 1965 (age 59) \nGudivada, Krishna District, Andhra Pradesh, India",
     political_party: "Political party:",
     political_party_name: "Telugu Desam Party",
     parents: "Parents:",
     parents_details: "Not publicly documented",
     education: "Education:",
     education_details:
-      "Bachelor's degree in Engineering (exact institution not publicly specified)",
+      "B.Tech in Mechanical Engineering, Master's in Business Administration",
     recent_post: "Recent post",
     check_instagram: "Check new updates on instagram.",
     year_2024: "2024",
@@ -108,18 +109,18 @@ export const translations = {
       "Subscribe to our newsletter for the latest updates and news.",
     privacy_policy: "Privacy Policy",
     copyright:
-      "© Copyright 2024 | All Rights Reserved by Vemireddy Prabhakar Reddy",
+      "© Copyright 2024 | All Rights Reserved by Kondapalli Srinivas Rao",
     aim_title: "Aim",
     aim_desc:
-      "As a committed Member of Parliament from Nellore, Vemireddy Prabhakar Reddy is deeply focused on driving inclusive development and uplifting the lives of his constituents. His mission revolves around holistic progress, with special emphasis on agricultural advancement, youth empowerment, education, healthcare, and robust infrastructure. Passionate about preserving cultural values while embracing innovation, he continues to champion initiatives that bridge rural and urban growth, ensuring a brighter and more sustainable future for all.",
+      "As the dedicated Minister for MSME from Gudivada constituency, Kondapalli Srinivas Rao is deeply focused on driving industrial development and empowering small and medium enterprises. His mission revolves around comprehensive economic growth, with special emphasis on industrial infrastructure, startup ecosystem development, skill enhancement, employment generation, and technology adoption. Passionate about creating a business-friendly environment while promoting innovation, he continues to champion initiatives that bridge traditional industries with modern technology, ensuring a more prosperous and industrially advanced future for all.",
     women_empowerment_title: "Women Empowerment Workshops",
     women_empowerment_en: "Women Empowerment Workshops",
     women_empowerment_desc:
-      "Launched skill-building programs for women in tailoring, crafts, and small-scale entrepreneurship.",
+      "Launched skill-building programs for women entrepreneurs in MSME sectors, including manufacturing, food processing, and service industries.",
     education_title: "Educational Drives",
     education_en: "Educational Drives",
     education_desc:
-      "Organized large-scale scholarship programs and digital learning initiatives to uplift rural students.",
+      "Organized large-scale skill development programs and technical training initiatives to create industry-ready workforce for MSME sector.",
     health_title: "Health Camps",
     health_en: "Health Camps",
     health_desc:
@@ -127,7 +128,7 @@ export const translations = {
     farmer_welfare_title: "Farmer Welfare",
     farmer_welfare_en: "Farmer Welfare",
     farmer_welfare_desc:
-      "Dedicated to addressing the issues faced by farmers and ensuring their well-being.",
+      "Dedicated to promoting agro-based MSMEs and food processing industries, supporting farmers transition to value-added manufacturing.",
     farmer_awareness_title: "Farmer Awareness Tours",
     farmer_awareness_en: "Farmer Awareness Tours",
     farmer_awareness_desc:
@@ -141,13 +142,14 @@ export const translations = {
     community_welfare_desc:
       "Participated in and funded cleanliness drives, drinking water projects, and green initiatives in the constituency.",
     photo_gallery: "Photo Gallery",
-    portfolio_activities: "Portfolio of Activities – Vemireddy Prabhakar Reddy",
-    activity1_title: "Political Leadership & Governance",
+    portfolio_activities:
+      "Portfolio of MSME Activities – Kondapalli Srinivas Rao",
+    activity1_title: "MSME Policy & Industrial Development",
     activity1_desc:
-      "<b>Elected Member of Parliament (Nellore), Member, Committee on Public Undertakings</b><br />Demonstrates active legislative engagement, overseeing public sector enterprises and contributing to policy discussions at the national level.",
-    activity2_title: "Organizing Employment Opportunities",
+      "<b>Minister for MSME, Andhra Pradesh | MLA, Gudivada Constituency</b><br />Demonstrates active ministerial engagement in formulating MSME policies, establishing industrial infrastructure, and creating employment opportunities at the state level.",
+    activity2_title: "Industrial Park Development & Infrastructure",
     activity2_desc:
-      "<b>Event: Mega Job Fair, Nellore | Organizer: VPR Foundation</b><br />Connected job seekers with employers and skill resources. Hundreds registered for interviews; new campus-to-corporate linkages established.",
+      "<b>Event: MSME Industrial Park Launch, Krishna District | Initiative: State MSME Department</b><br />Established modern industrial parks with plug-and-play infrastructure, common facility centers, and support services for small and medium enterprises.",
     activity3_title: "Disaster Relief & Philanthropy",
     activity3_desc:
       "<b>Donation to Chief Minister’s Flood Relief Fund (Sep 3, 2024)</b><br />Mobilized relief materials and supported rehabilitation for flood-affected families.",
@@ -172,7 +174,7 @@ export const translations = {
     privacy_policy_title: "Privacy Policy",
     privacy_policy_meta: `<div><strong>Effective Date:</strong> 05-06-2025</div>
   <div><strong>Last Updated:</strong> 10-06-2025</div>
-  <div><strong>Issued By:</strong> Office of Sri Vemireddy Prabhakar Reddy, Member of Parliament (Rajya Sabha), Nellore, Andhra Pradesh</div>`,
+  <div><strong>Issued By:</strong> Office of Sri Kondapalli Srinivas Rao, Andhra Pradesh</div>`,
     privacy_intro_title: "1. Introduction",
     privacy_intro_para1:
       "Your privacy is of paramount importance to us. This Privacy Policy outlines the nature of personal data we collect, the purposes for which it is collected, the safeguards we employ to protect it, and your rights with respect to that data. We are committed to maintaining the confidentiality and integrity of all information entrusted to us in the course of providing public services, governance, and administrative support.",
@@ -249,8 +251,8 @@ export const translations = {
     privacy_retention_para:
       "We retain personal data only for as long as necessary to fulfill the intended purposes outlined in this policy or as required by applicable laws and regulations. Data that is no longer required is securely deleted or anonymized.",
     privacy_contact_title: "10. Contact Information",
-    privacy_contact_info: `<strong>Organization:</strong> Office of Sri Vemireddy Prabhakar Reddy, MP (Rajya Sabha), Nellore<br />
-<strong>Email:</strong> <a href="mailto:dpo@vemireddyprabhakarreddy.in">dpo@vemireddyprabhakarreddy.in</a><br />
+    privacy_contact_info: `<strong>Organization:</strong> Office of Sri Kondapalli Srinivas Rao <br />
+<strong>Email:</strong> <a href="mailto:dpo@kondapallisrinivasrao.in">dpo@kondapallisrinivasrao.in</a><br />
 <strong>Phone:</strong> <a href="tel:+919123456789">+91 91234 56789</a>`,
     privacy_updates_title: "11. Policy Updates",
     privacy_updates_para1:
@@ -317,36 +319,37 @@ export const translations = {
     about_us_desc:
       "సమాజంపై సానుకూల ప్రభావాన్ని చూపించడంలో మా లక్ష్యాలు మరియు కార్యక్రమాల ద్వారా మేము కట్టుబడి ఉన్నాము. మెరుగైన రేపటి కోసం మా మిషన్‌లో మాతో చేరండి.",
     blog_title:
-      "వేమిరెడ్డి ప్రభాకర్ రెడ్డి: సమగ్ర అభివృద్ధికి కట్టుబడిన పార్లమెంటేరియన్",
-    vpr_name: "వేమిరెడ్డి ప్రభాకర్ రెడ్డి",
-    blog_date: "12 జూన్ 2024",
-    votes: "7,66,202 ఓట్లు",
-    majority: "2,45,902 మెజారిటీ",
+      "కొండపల్లి శ్రీనివాస్ రావు: ఆర్థిక వృద్ధికి MSME రంగాన్ని శక్తివంతం చేస్తున్న మంత్రి",
+    vpr_name: "కొండపల్లి శ్రీనివాస్ రావు",
+    blog_date: "15 జూన్ 2024",
+    votes: "1,25,864 ఓట్లు",
+    majority: "68,432 మెజారిటీ",
     blog_para1:
       "అనుభవజ్ఞుడైన మరియు డైనమిక్ నాయకుడు వేమిరెడ్డి ప్రభాకర్ రెడ్డి 2024 సాధారణ ఎన్నికల్లో నెల్లూరు లోక్‌సభ నియోజకవర్గం నుండి తెలుగు దేశం పార్టీ (TDP) తరఫున సభ్యుడిగా ఎన్నికయ్యారు.",
     blog_para2:
       "అతను 2,45,902 ఓట్ల మెజారిటీతో ఘన విజయం సాధించారు. ఇది నెల్లూరు ప్రజలు అతనిపై ఉంచిన విశ్వాసాన్ని సూచిస్తుంది. ఈ చారిత్రాత్మక విజయం, గతంలో ప్రతిపక్ష బలమైన ప్రాంతంగా ఉన్న నెల్లూరులో రాజకీయ మార్పును సూచిస్తుంది.",
     blog_para3:
-      "ప్రజాసేవ మరియు సమగ్ర అభివృద్ధికి కట్టుబడి ఉన్న వేమిరెడ్డి ప్రభాకర్ రెడ్డి తన సంక్షేమ కార్యక్రమాల ద్వారా సామాజిక సేవలో ముందుండారు. VPR ఫౌండేషన్ వ్యవస్థాపకుడిగా, విద్య, మహిళా సాధికారత, ఆరోగ్య సంరక్షణ, వ్యవసాయ అభివృద్ధిలో ఆయన చురుకుగా పాల్గొన్నారు.\n\nఫౌండేషన్ ద్వారా ఆయన చేపట్టిన కార్యక్రమాలు:\nగ్రామీణ ప్రాంతాల్లో పాఠశాలల నిర్మాణం మరియు పునరుద్ధరణ,\nదూర గ్రామాల్లో ఆరోగ్య శిబిరాలు, మందుల పంపిణీ,\nరైతులకు ఆధునిక పరికరాలు, సుస్థిర వ్యవసాయ పద్ధతులు,\nపేద విద్యార్థులకు స్కాలర్‌షిప్‌లు.",
+      "పారిశ్రామిక అభివృద్ధి మరియు MSME సాధికారతకు దృఢమైన కట్టుబాటుతో, కొండపల్లి శ్రీనివాస్ రావు తన కార్యక్రమాలు మరియు పారిశ్రామిక ప్రయత్నాల ద్వారా వ్యవస్థాపకత మరియు వ్యాపార అభివృద్ధితో చిరకాలంగా అనుబంధం కలిగి ఉన్నారు. MSME మంత్రిగా, ఆయన చిన్న మరియు మధ్యతరహా సంస్థలను ప్రోత్సహించడం, రుణ ప్రాప్యతను సులభతరం చేయడం, నైపుణ్య అభివృద్ధి మరియు ఆంధ్రప్రదేశ్ అంతటా పారిశ్రామిక మౌలిక వసతులను అభివృద్ధి చేయడంలో చురుకుగా నిమగ్నమై ఉన్నారు.\n\nఆయన మంత్రి పదవి ద్వారా చేపట్టిన ప్రాజెక్టులు:\nMSME పారిశ్రామిక పార్కులు మరియు సాధారణ సదుపాయ కేంద్రాలను స్థాపించడం,\nనైపుణ్య అభివృద్ధి కార్యక్రమాలు మరియు శిక్షణా కేంద్రాలను ప్రారంభించడం,\nవ్యవస్థాపకులకు బ్యాంకు అనుసంధానాలు మరియు రుణ ప్రాప్యతను సులభతరం చేయడం,\nస్టార్టప్ వాతావరణం మరియు ఆవిష్కరణ కేంద్రాలను ప్రోత్సహించడం.",
     blog_para4:
-      "ప్రకృతి విపత్తుల సమయంలో సహాయ కార్యక్రమాల్లో చురుకుగా పాల్గొని, సమయానికి సహాయం అందించడంలో ఆయన ప్రసిద్ధి చెందారు.\n\nవేమిరెడ్డి ప్రభాకర్ రెడ్డి దృష్టి మార్పు పరిపాలన, యువత సాధికారత, సమగ్ర ప్రాంతీయ అభివృద్ధిపై ఉంది. పార్లమెంటేరియన్‌గా, ఆయన ప్రజల ఆకాంక్షలకు మరియు జాతీయ విధానానికి మధ్య వంతెనగా పనిచేస్తున్నారు.",
+      "పారిశ్రామిక వృద్ధి మరియు ఉపాధి సృష్టిని ప్రోత్సహించడంలో ఆయన చురుకైన విధానానికి, MSME విధానాలను సకాలంలో అమలు చేయడానికి మరియు వివిధ రంగాలలోని వ్యవస్థాపకులకు మద్దతు ఇవ్వడానికి ఆయన ప్రసిద్ధి చెందారు.\n\nకొండపల్లి శ్రీనివాస్ రావు దృష్టి పరివర్తనాత్మక పారిశ్రామిक అభివృద్ధి, యువత ఉపాధి మరియు సమగ్ర MSME రంగ వృద్ధిపై ఆధారపడి ఉంది. మంత్రిగా, ఆయన వ్యవస్థాపకత మరియు ఆవిష్కరణలకు మద్దతు ఇచ్చే వాతావరణాన్ని సృష్టించేందుకు కృషి చేస్తూ, ఆంధ్రప్రదేశ్‌ను చిన్న మరియు మధ్యతరహా సంస్థలకు ప్రముఖ గమ్యస్థానంగా స్థాపించేందుకు అవిశ్రాంతంగా పనిచేస్తున్నారు.",
     blog_para5:
-      "రాజకీయాలు, వ్యాపారాన్ని మించి వేమిరెడ్డి ప్రభాకర్ రెడ్డి సేవా కార్యక్రమాల్లో నిబద్ధత చూపారు. VPR ఫౌండేషన్ ద్వారా ఆయన చేసిన సేవలు నెల్లూరు ప్రాంతంలో అనేక మందికి మేలు చేశాయి. ఆయన చేపట్టిన ప్రాజెక్టులు: శుద్ధమైన తాగునీరు, మెరుగైన పారిశుధ్యం, నాణ్యమైన విద్య, మెరుగైన ఆరోగ్య సదుపాయాలు.\n\nఆయన దత్తత తీసుకున్న గ్రామాల్లో మౌలిక వసతులు మెరుగయ్యాయి—బాగున్న రోడ్లు, సోలార్ లైటింగ్, కమ్యూనిటీ సెంటర్లు. మహిళా సాధికారత, రైతుల మద్దతు, యువత అభివృద్ధిపై ఆయన దృష్టి ఉంది.\n\nప్రగతిశీల, దయార్ద్ర నాయకుడిగా వేమిరెడ్డి ప్రభాకర్ రెడ్డి సుస్థిర అభివృద్ధి, గ్రామీణ ఆవిష్కరణ, సమగ్ర పరిపాలనకు కట్టుబడి ఉన్నారు. ఆంధ్రప్రదేశ్‌కు మెరుగైన భవిష్యత్తును నిర్మించడంలో ఆయన పాత్రను గుర్తించండి.",
+      "కొండపల్లి శ్రీనివాస్ రావు యొక్క అంకితభావం సాంప్రదాయ రాజకీయాల పరిధిని అధిగమించి, అర్థవంతమైన పారిశ్రామిక అభివృద్ధి మరియు వ్యవస్థాపకత ప్రోత్సాహనలో లోతైన మూలాలను కనుగొంటుంది. MSME మంత్రిగా ఆయన చేసిన ప్రభావవంతమైన సహకారం ఆంధ్రప్రదేశ్ అంతటా వ్యాపార దృశ్యాన్ని మార్చింది, అక్కడ ఆయన రుణ సదుపాయాలు, ఆధునిక మౌలిక వసతులు, నాణ్యమైన నైపుణ్య అభివృద్ధి మరియు మెరుగైన పారిశ్రామిక సమూహాలకు ప్రాప్యతను నిర్ధారించే ప్రాజెక్టులను సమర్థించారు.\n\nఆయన మంత్రి మార్గదర్శకత్వంలోని ప్రాంతాలలో, పారిశ్రామిక మౌలిక వసతులు గణనీయమైన పురోగతిని సాధించాయి—బాగా అభివృద్ధి చెందిన పారిశ్రామిక పార్కులు, ఆధునిక సాధారణ సదుపాయ కేంద్రాలు మరియు ఆవిష్కరణ కేంద్రాలు ఆయన దూరదృష్టి గల నాయకత్వానికి నిదర్శనంగా నిలుస్తున్నాయి. యువత ఉపాధి, స్టార్టప్ ప్రోత్సాహన మరియు MSME అభివృద్ధికి ఆయన కట్టుబాటు అందరిని శక్తివంతం చేసే ఆర్థిక వ్యవస్థ కోసం ఆయన దృష్టిని ప్రదర్శిస్తుంది.\n\nప్రగతిశీల మరియు డైనమిక్ మంత్రిగా, కొండపల్లి శ్రీనివాస్ రావు సుస్థిర పారిశ్రామిక వృద్ధి, సాంకేతిక ఆవిష్కరణ మరియు సమగ్ర ఆర్థిక అభివృద్ధికి లోతుగా కట్టుబడి ఉన్నారు. కొండపల్లి శ్రీనివాస్ రావు యొక్క పరివర్తనాత్మక ప్రభావాన్ని గుర్తించడంలో మాతో చేరండి—ఆంధ్రప్రదేశ్‌కు మరింత సంపన్న మరియు పారిశ్రామికంగా అభివృద్ధి చెందిన భవిష్యత్తును రూపొందించే దూరదృష్టి గల నాయకుడు.",
     early_life_title: "ప్రారంభ జీవితం మరియు విద్య",
     early_life_para:
-      "వేమిరెడ్డి ప్రభాకర్ రెడ్డి నెల్లూరు జిల్లాలో జన్మించారు. ఆయన కుటుంబం సామాజిక సేవలో ప్రసిద్ధి. విజయవంతమైన పారిశ్రామికవేత్త, దాతగా VPR గ్రూప్, VPR ఫౌండేషన్‌ను స్థాపించారు. ప్రజలకు సేవ చేయాలనే దృష్టితో రాజకీయాల్లోకి వచ్చారు. రాజ్యసభ సభ్యుడిగా YSR కాంగ్రెస్ పార్టీ తరఫున పనిచేశారు. పారిశ్రామికవేత్తగా ప్రారంభించి ప్రజాసేవకుడిగా మారిన ఆయన ప్రయాణం సమాజ అభివృద్ధికి ఆయన నిబద్ధతను సూచిస్తుంది.",
+      "కొండపల్లి శ్రీనివాస్ రావు కృష్ణా జిల్లాలోని గుడివాడలో వ్యాపార శ్రేష్ఠతకు లోతైన విలువలు మరియు కట్టుబాటుకు ప్రసిద్ధి చెందిన కుటుంబంలో జన్మించారు. విజయవంతమైన వ్యవస్థాపకుడు మరియు పారిశ్రామికవేత్తగా, ఆయన అనేక వ్యాపార సంస్థలను స్థాపించారు మరియు రాష్ట్రవ్యాప్తంగా తయారీ మరియు పారిశ్రామిక కార్యకలాపాలలో విస్తృత అనుభవం కలిగి ఉన్నారు. ఆర్థిక అభివృద్ధి ద్వారా ప్రజలకు సేవ చేయాలనే దృష్టితో, ఆయన ప్రజా జీవితంలోకి ప్రవేశించారు మరియు తెలుగు దేశం పార్టీ తరఫున గుడివాడ నియోజకవర్గం నుండి ఎంఎల్‌ఏగా ఎన్నికయ్యారు, తర్వాత MSME మంత్రిగా నియమితులయ్యారు. విజయవంతమైన వ్యవస్థాపకుడి నుండి అంకితమైన ప్రజాసేవకుడిగా ఆయన ప్రయాణం పారిశ్రామిక వృద్ధి మరియు ఆర్థిక శ్రేయస్సుకు ఆయన అచంచలమైన కట్టుబాటును ప్రతిబింబిస్తుంది.",
     facebook: "ఫేస్‌బుక్",
     twitter: "ట్విట్టర్",
     personal_details: "వ్యక్తిగత వివరాలు",
     born: "పుట్టిన తేదీ:",
-    born_details: "15 నవంబర్ 1956 (వయస్సు 68)\nనెల్లూరు, ఆంధ్రప్రదేశ్, ఇండియా",
+    born_details:
+      "15 ఆగస్టు 1965 (వయస్సు 59)\nగుడివాడ, కృష్ణా జిల్లా, ఆంధ్రప్రదేశ్, ఇండియా",
     political_party: "రాజకీయ పార్టీ:",
     political_party_name: "తెలుగు దేశం పార్టీ",
     parents: "తల్లిదండ్రులు:",
     parents_details: "ప్రజలకు అందుబాటులో లేదు",
     education: "విద్య:",
     education_details:
-      "ఇంజినీరింగ్‌లో బ్యాచిలర్ డిగ్రీ (స్పష్టమైన సంస్థ తెలియదు)",
+      "మెకానికల్ ఇంజినీరింగ్‌లో బి.టెక్, బిజినెస్ అడ్మినిస్ట్రేషన్‌లో మాస్టర్స్",
     recent_post: "ఇటీవలి పోస్ట్",
     check_instagram: "ఇన్‌స్టాగ్రామ్‌లో తాజా నవీకరణలు చూడండి.",
     year_2024: "2024",
@@ -368,18 +371,18 @@ export const translations = {
       "తాజా నవీకరణలు మరియు వార్తల కోసం మా న్యూస్‌లెటర్‌కు సభ్యత్వాన్ని పొందండి.",
     privacy_policy: "గోప్యతా విధానం",
     copyright:
-      "© కాపీరైట్ 2024 | అన్ని హక్కులు వేమిరెడ్డి ప్రభాకర్ రెడ్డి గారికి చెందినవి",
+      "© కాపీరైట్ 2024 | అన్ని హక్కులు కొండపల్లి శ్రీనివాస్ రావు గారికి చెందినవి",
     aim_title: "లక్ష్యం",
     aim_desc:
-      "నెల్లూరు నుండి ఎంపీగా వేమిరెడ్డి ప్రభాకర్ రెడ్డి గారు సమగ్ర అభివృద్ధికి కట్టుబడి ఉన్నారు. వ్యవసాయ అభివృద్ధి, యువశక్తి, విద్య, ఆరోగ్యం, మౌలిక వసతులపై ప్రత్యేక దృష్టితో గ్రామీణ మరియు పట్టణ అభివృద్ధికి పునాది వేస్తున్నారు. సాంస్కృతిక విలువలను కాపాడుతూ, ఆధునికతను స్వీకరిస్తూ, ప్రతి ఒక్కరి మెరుగైన భవిష్యత్తు కోసం కృషి చేస్తున్నారు.",
+      "గుడివాడ నియోజకవర్గం నుండి MSME మంత్రిగా కొండపల్లి శ్రీనివాస్ రావు గారు పారిశ్రామిక అభివృద్ధి మరియు చిన్న మరియు మధ్యతరహా సంస్థల సాధికారతపై దృష్టి సారించారు. పారిశ్రామిక మౌలిక వసతులు, స్టార్టప్ వాతావరణ అభివృద్ధి, నైపుణ్య వృద్ధి, ఉపాధి సృష్టి, సాంకేతిక స్వీకరణపై ప్రత్యేక దృష్టితో సమగ్ర ఆర్థిక వృద్ధి చుట్టూ ఆయన మిషన్ తిరుగుతుంది. వ్యాపార-అనుకూల వాతావరణాన్ని సృష్టించడంలో మరియు ఆవిష్కరణలను ప్రోత్సహించడంలో ఆసక్తిగల ఆయన, సాంప్రదాయ పరిశ్రమలను ఆధునిక సాంకేతికతతో కలిపే కార్యక్రమాలను కొనసాగిస్తూ, అందరికీ మరింత సంపన్న మరియు పారిశ్రామికంగా అభివృద్ధి చెందిన భవిష్యత్తును నిర్ధారిస్తున్నారు.",
     women_empowerment_title: "మహిళా సాధికారత శిబిరాలు",
     women_empowerment_en: "Women Empowerment Workshops",
     women_empowerment_desc:
-      "మహిళలకు కుట్టు, హస్తకళలు, చిన్న స్థాయి వ్యాపారాల్లో నైపుణ్యాభివృద్ధి కార్యక్రమాలు ప్రారంభించారు.",
+      "తయారీ, ఆహార ప్రాసెసింగ్ మరియు సేవా పరిశ్రమలతో సహా MSME రంగాలలో మహిళా వ్యవస్థాపకులకు నైపుణ్య-నిర్మాణ కార్యక్రమాలను ప్రారంభించారు.",
     education_title: "విద్యా వేదికలు",
     education_en: "Educational Drives",
     education_desc:
-      "గ్రామీణ విద్యార్థుల అభివృద్ధికి స్కాలర్‌షిప్‌లు, డిజిటల్ లెర్నింగ్ కార్యక్రమాలు నిర్వహించారు.",
+      "MSME రంగానికి పరిశ్రమ-సిద్ధ శ్రామిక శక్తిని సృష్టించేందుకు విస్తృత స్థాయిలో నైపుణ్య అభివృద్ధి కార్యక్రమాలు మరియు సాంకేతిక శిక్షణా కార్యక్రమాలను నిర్వహించారు.",
     health_title: "ఆరోగ్య శిబిరాలు",
     health_en: "Health Camps",
     health_desc:
@@ -387,7 +390,7 @@ export const translations = {
     farmer_welfare_title: "రైతన్నకు తోడు",
     farmer_welfare_en: "Farmer Welfare",
     farmer_welfare_desc:
-      "రైతుల సమస్యలను పరిష్కరించేందుకు కృషి చేసి, వారి సంక్షేమానికి కట్టుబడి ఉన్నారు.",
+      "వ్యవసాయ-ఆధారిత MSMEలు మరియు ఆహార ప్రాసెసింగ్ పరిశ్రమలను ప్రోత్సహించడానికి, రైతులు విలువ-అదనపు తయారీకి మారడానికి మద్దతు ఇవ్వడానికి అంకితం.",
     farmer_awareness_title: "రైతు చైతన్య యాత్రలు",
     farmer_awareness_en: "Farmer Awareness Tours",
     farmer_awareness_desc:
@@ -402,13 +405,13 @@ export const translations = {
       "పరిశుభ్రతా కార్యక్రమాలు, తాగునీటి ప్రాజెక్టులు, పచ్చదనం కోసం కార్యక్రమాల్లో పాల్గొన్నారు మరియు నిధులు సమకూర్చారు.",
     photo_gallery: "ఫోటో గ్యాలరీ",
     portfolio_activities:
-      "కార్యకలాపాల పోర్ట్‌ఫోలియో – వేమిరెడ్డి ప్రభాకర్ రెడ్డి",
-    activity1_title: "రాజకీయ నాయకత్వం & పరిపాలన",
+      "MSME కార్యకలాపాల పోర్ట్‌ఫోలియో – కొండపల్లి శ్రీనివాస్ రావు",
+    activity1_title: "MSME విధానం & పారిశ్రామిక అభివృద్ధి",
     activity1_desc:
-      "<b>ఎంపీ (నెల్లూరు), పబ్లిక్ అండర్‌టేకింగ్స్ కమిటీ సభ్యుడు</b><br />జాతీయ స్థాయిలో చురుకైన చట్టసభ కార్యకలాపాలు, ప్రజా రంగ సంస్థల పర్యవేక్షణ, విధాన చర్చల్లో పాల్గొనడం.",
-    activity2_title: "ఉద్యోగ అవకాశాల ఏర్పాట్లు",
+      "<b>MSME మంత్రి, ఆంధ్రప్రదేశ్ | ఎంఎల్‌ఏ, గుడివాడ నియోజకవర్గం</b><br />MSME విధానాలను రూపొందించడం, పారిశ్రామిక మౌలిక వసతులను స్థాపించడం మరియు రాష్ట్ర స్థాయిలో ఉపాధి అవకాశాలను సృష్టించడంలో చురుకైన మంత్రి నిమగ్నతను ప్రదర్శిస్తుంది.",
+    activity2_title: "పారిశ్రామిక పార్క్ అభివృద్ధి & మౌలిక వసతులు",
     activity2_desc:
-      "<b>ఈవెంట్: మెగా జాబ్ ఫెయిర్, నెలల్లూరు | నిర్వాహకుడు: VPR ఫౌండేషన్</b><br />ఉద్యోగార్థులను కంపెనీలతో కలిపి, నైపుణ్య వనరులు అందించారు. వందలాది మంది ఇంటర్వ్యూలకు నమోదు చేసుకున్నారు.",
+      "<b>ఈవెంట్: MSME పారిశ్రామిక పార్క్ ప్రారంభం, కృష్ణా జిల్లా | కార్యక్రమం: రాష్ట్র MSME విభాగం</b><br />చిన్న మరియు మధ్యతరహా సంస్థలకు ప్లగ్-అండ్-ప్లే మౌలిక వసతులు, సాధారణ సదుపాయ కేంద్రాలు మరియు మద్దతు సేవలతో ఆధునిక పారిశ్రామిక పార్కులను స్థాపించారు.",
     activity3_title: "విపత్తు సహాయం & దాతృత్వం",
     activity3_desc:
       "<b>ముఖ్యమంత్రి వరద సహాయ నిధికి విరాళం (సెప్టెంబర్ 3, 2024)</b><br />వరద బాధిత కుటుంబాలకు సహాయ సామగ్రి పంపిణీ, పునరావాసానికి మద్దతు.",
@@ -506,7 +509,7 @@ export const translations = {
       "ఈ విధానంలో పేర్కొన్న ఉద్దేశ్యాల కోసం లేదా వర్తించే చట్టాల ప్రకారం అవసరమైనంత కాలం మాత్రమే వ్యక్తిగత డేటాను నిల్వ చేస్తాము. అవసరం లేనప్పుడు డేటాను సురక్షితంగా తొలగించబడుతుంది లేదా 匿名ీకరించబడుతుంది.",
     privacy_contact_title: "10. సంప్రదింపు సమాచారం",
     privacy_contact_info: `<strong>సంస్థ:</strong> శ్రీ వేమిరెడ్డి ప్రభాకర్ రెడ్డి కార్యాలయం, రాజ్యసభ సభ్యుడు, నెల్లూరు<br />
-<strong>ఇమెయిల్:</strong> <a href="mailto:dpo@vemireddyprabhakarreddy.in">dpo@vemireddyprabhakarreddy.in</a><br />
+<strong>ఇమెయిల్:</strong> <a href="mailto:dpo@kondapallisrinivasrao.in">dpo@kondapallisrinivasrao.in</a><br />
 <strong>ఫోన్:</strong> <a href="tel:+919123456789">+91 91234 56789</a>`,
     privacy_updates_title: "11. విధాన నవీకరణలు",
     privacy_updates_para1:
