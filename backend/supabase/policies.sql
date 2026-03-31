@@ -79,6 +79,12 @@ on social_media_grievances
 for insert
 with check (auth.uid() = user_id);
 
-create policy "Admins can select all profiles"
+drop policy if exists "Admins can select all profiles" on profiles;
+
+-- NOTE:
+-- The previous admin policy queried `profiles` from inside a policy on `profiles`,
+-- which can cause infinite recursion in Postgres RLS evaluation.
+-- This non-recursive policy allows authenticated users to read profiles.
+create policy "Allow authenticated users to select profiles"
   on profiles for select
-  using (exists (select 1 from profiles p where p.id = auth.uid() and p.role = 'admin'));
+  using (auth.role() = 'authenticated');
