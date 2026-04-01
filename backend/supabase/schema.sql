@@ -131,6 +131,93 @@ create table if not exists grievances (
   submitted_at timestamp with time zone default timezone('utc'::text, now())
 );
 
+-- Create Mahila Shakti grievances table
+create table if not exists mahila_shakti_grievances (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid references auth.users on delete set null,
+  fullname text,
+  age integer,
+  gender text,
+  mobile text,
+  email text,
+  district text,
+  constituency text,
+  mandal text,
+  ward text,
+  grievance_types text[],
+  grievance_other text,
+  description text,
+  attachments text[],
+  response_modes text[],
+  volunteer text,
+  declaration boolean default false,
+  status text default 'Under Review',
+  submitted_at timestamp with time zone default timezone('utc'::text, now())
+);
+
+-- Backfill columns for older existing tables (safe no-op if already present)
+alter table if exists mahila_shakti_grievances add column if not exists user_id uuid references auth.users on delete set null;
+alter table if exists mahila_shakti_grievances add column if not exists fullname text;
+alter table if exists mahila_shakti_grievances add column if not exists age integer;
+alter table if exists mahila_shakti_grievances add column if not exists gender text;
+alter table if exists mahila_shakti_grievances add column if not exists mobile text;
+alter table if exists mahila_shakti_grievances add column if not exists email text;
+alter table if exists mahila_shakti_grievances add column if not exists district text;
+alter table if exists mahila_shakti_grievances add column if not exists constituency text;
+alter table if exists mahila_shakti_grievances add column if not exists mandal text;
+alter table if exists mahila_shakti_grievances add column if not exists ward text;
+alter table if exists mahila_shakti_grievances add column if not exists grievance_types text[];
+alter table if exists mahila_shakti_grievances add column if not exists grievance_other text;
+alter table if exists mahila_shakti_grievances add column if not exists description text;
+alter table if exists mahila_shakti_grievances add column if not exists attachments text[];
+alter table if exists mahila_shakti_grievances add column if not exists response_modes text[];
+alter table if exists mahila_shakti_grievances add column if not exists volunteer text;
+alter table if exists mahila_shakti_grievances add column if not exists declaration boolean default false;
+alter table if exists mahila_shakti_grievances add column if not exists status text default 'Under Review';
+alter table if exists mahila_shakti_grievances add column if not exists submitted_at timestamp with time zone default timezone('utc'::text, now());
+
+-- Normalize legacy constraints to match current optional fields
+alter table if exists mahila_shakti_grievances alter column age drop not null;
+alter table if exists mahila_shakti_grievances alter column user_id drop not null;
+alter table if exists mahila_shakti_grievances alter column fullname drop not null;
+alter table if exists mahila_shakti_grievances alter column gender drop not null;
+alter table if exists mahila_shakti_grievances alter column mobile drop not null;
+alter table if exists mahila_shakti_grievances alter column email drop not null;
+alter table if exists mahila_shakti_grievances alter column district drop not null;
+alter table if exists mahila_shakti_grievances alter column constituency drop not null;
+alter table if exists mahila_shakti_grievances alter column mandal drop not null;
+alter table if exists mahila_shakti_grievances alter column ward drop not null;
+alter table if exists mahila_shakti_grievances alter column grievance_types drop not null;
+alter table if exists mahila_shakti_grievances alter column grievance_other drop not null;
+alter table if exists mahila_shakti_grievances alter column description drop not null;
+alter table if exists mahila_shakti_grievances alter column attachments drop not null;
+alter table if exists mahila_shakti_grievances alter column response_modes drop not null;
+alter table if exists mahila_shakti_grievances alter column volunteer drop not null;
+alter table if exists mahila_shakti_grievances alter column declaration drop not null;
+alter table if exists mahila_shakti_grievances alter column status drop not null;
+alter table if exists mahila_shakti_grievances alter column submitted_at drop not null;
+
+-- Safety net for older/unknown legacy columns (e.g., address) that may still be NOT NULL
+do $$
+declare
+  r record;
+begin
+  for r in
+    select c.column_name
+    from information_schema.columns c
+    where c.table_schema = 'public'
+      and c.table_name = 'mahila_shakti_grievances'
+      and c.is_nullable = 'NO'
+      and c.column_name <> 'id' -- keep PK semantics intact
+  loop
+    execute format(
+      'alter table if exists public.mahila_shakti_grievances alter column %I drop not null',
+      r.column_name
+    );
+  end loop;
+end
+$$;
+
 -- Create the new Mahila Shakti registrations table
 create table if not exists mahila_shakti_registrations (
   id uuid primary key default gen_random_uuid(),
